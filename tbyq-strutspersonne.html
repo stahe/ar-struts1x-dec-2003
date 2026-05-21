@@ -1,0 +1,1365 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="مقدمة إلى Struts 1.x من خلال أمثلة">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/ar-struts1x-dec-2003/tbyq-strutspersonne.html">
+      
+      
+        <link rel="prev" href="mlwmt-m.html">
+      
+      
+        <link rel="next" href="mlj-lnmwdhj-bws-wd-ltkm.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>2. تطبيق strutspersonne - مقدمة إلى Struts 1.x من خلال أمثلة</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var siteName = "مقدمة إلى Struts 1.x من خلال أمثلة";
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+  </script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2-strutspersonne" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="مقدمة إلى Struts 1.x من خلال أمثلة" class="md-header__button md-logo" aria-label="مقدمة إلى Struts 1.x من خلال أمثلة" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            مقدمة إلى Struts 1.x من خلال أمثلة
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2. تطبيق strutspersonne
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="التبديل إلى الوضع الداكن"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="التبديل إلى الوضع الداكن" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="التبديل إلى الوضع الفاتح"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="التبديل إلى الوضع الفاتح" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://stahe.github.io/ar-struts1x-dec-2003" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="مقدمة إلى Struts 1.x من خلال أمثلة" class="md-nav__button md-logo" aria-label="مقدمة إلى Struts 1.x من خلال أمثلة" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    مقدمة إلى Struts 1.x من خلال أمثلة
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://stahe.github.io/ar-struts1x-dec-2003" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    مرحبًا بكم
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mlwmt-m.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. معلومات عامة
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. تطبيق strutspersonne
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="tbyq-strutspersonne.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. تطبيق strutspersonne
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. كيف يعمل التطبيق
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-struts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2. بنية Struts للتطبيق
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-struts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3. تجميع الفئات المطلوبة لتطبيق Struts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-strutspersonne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4. طرق عرض تطبيق strutspersonne
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4. طرق عرض تطبيق strutspersonne">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241-errorspersonnejsp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.1. طريقة العرض errors.personne.jsp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#242-errorspersonjsp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.2. اختبار عرض errors.person.jsp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#243-reponsepersonnejsp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.3. طريقة العرض reponse.personne.jsp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#244-reponsepersonnejsp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.4. اختبار عرض reponse.personne.jsp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#245-formulairepersonnejsp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.5. طريقة العرض formulaire.personne.jsp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#246-formulairepersonnejsp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.6. البيان المرتبط بالنموذج formulaire.personne.jsp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#247-formulairepersonnejsp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.7. اختبار عرض formulaire.personne.jsp
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mlj-lnmwdhj-bws-wd-ltkm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. معالجة النموذج بواسطة وحدة التحكم
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stkhdm-lnmdhj-ldynmyky.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. استخدام النماذج الديناميكية
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lnmdhj-ldynmyky-m-qywd-ltkml.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. النماذج الديناميكية مع قيود التكامل
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nmdhj-html.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. نماذج HTML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="-tbyq-quiest.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.  تطبيق QuiEst
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nsh-mkwn-fy.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. إنشاء مكون إضافي
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lml-m-mdr-lbynt.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. العمل مع مصدر البيانات
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lmlq.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. الملاحق
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="2-strutspersonne">2. <span style="color: #365f91">تطبيق <bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></span></h1>
+<p>لقد قمنا بتنفيذ تطبيق <strong>&quot;<bdi dir="ltr" class="odt-ltr-term">person</bdi></strong>&quot; باستخدام الطريقة التقليدية: سيرفلتس وصفحات <bdi dir="ltr" class="odt-ltr-term">JSP.</bdi> نقترح الآن تقديم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> باستخدام هذا التطبيق نفسه.</p>
+<h2 id="21">2.1. <span style="color: #4f81bd">كيف يعمل التطبيق</span></h2>
+<p>دعونا نستعرض كيفية عمل تطبيق <strong>&quot;<bdi dir="ltr" class="odt-ltr-term">person</bdi>&quot;</strong> الذي قمنا بتطويره. يتكون من:</p>
+<ul>
+  <li><bdi dir="ltr" class="odt-ltr-term">Servlet</bdi> <b>رئيسي</b>. يتولى هذا معالجة جميع منطق التطبيق.
+  </li>
+  <li>ثلاث صفحات <bdi dir="ltr" class="odt-ltr-term">JSP:</bdi> <b><bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi> </b>و <b><bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi> </b>و <b><bdi dir="ltr" class="odt-ltr-term">erreurs.personne.jsp</bdi></b>
+  </li>
+</ul>
+
+<p>يعمل التطبيق على النحو التالي. يمكن الوصول إليه عبر عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/personne/main</bdi></strong>. عند هذا العنوان، يتم عرض نموذج مقدم من صفحة <strong><bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi></strong>:</p>
+<p><img src="images/1000000000000181000000EE943A5129.png" width="385" height="238" style="width:10.185cm;height:6.295cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000181000000EE943A5129.png" /></p>
+<p><strong>يقوم</strong> المستخدم <strong>بملء</strong> النموذج والنقر على زر [<bdi dir="ltr" class="odt-ltr-term">Submit</bdi>]. زر [<bdi dir="ltr" class="odt-ltr-term">Reset</bdi>] هو زر <strong>إعادة</strong> تعيين، مما يعني أنه يعيد المستند إلى الحالة التي تم استلامه بها. زر [<bdi dir="ltr" class="odt-ltr-term">Delete</bdi>] هو <strong>زر</strong> قياسي. يجب على المستخدم إدخال اسم وعمر صالحين. إذا لم يكن الأمر كذلك، يتم إرسال صفحة خطأ إليه عبر صفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">erreurs.personne.jsp</bdi></strong>. فيما يلي بعض الأمثلة:</p>
+<p><strong>التبادل رقم 1</strong></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>الطلب
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>الرد
+</code></pre></div>
+</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000011C000000F7CB15923D.png" width="284" height="247" style="display:inline-block; margin:4px;width:7.512cm;height:6.533cm;" class="odt-zoomable" data-zoom-src="images/100000000000011C000000F7CB15923D.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000019E0000008BA0C7AA85.png" width="414" height="139" style="display:inline-block; margin:4px;width:10.952cm;height:3.678cm;" class="odt-zoomable" data-zoom-src="images/100000000000019E0000008BA0C7AA85.png" /></td></tr></table>
+
+<p>إذا اتبعت رابط [العودة إلى النموذج]، فستجد النموذج في الحالة التي تركته عليها:</p>
+<p><strong>التبادل رقم 2</strong></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>طلب
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>الرد
+</code></pre></div>
+</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000019700000097ECADF2E2.png" width="407" height="151" style="display:inline-block; margin:4px;width:10.767cm;height:3.995cm;" class="odt-zoomable" data-zoom-src="images/100000000000019700000097ECADF2E2.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000101000000B3BA43B161.png" width="257" height="179" style="display:inline-block; margin:4px;width:6.8cm;height:4.736cm;" class="odt-zoomable" data-zoom-src="images/1000000000000101000000B3BA43B161.png" /></td></tr></table>
+
+<p>إذا أرسل المستخدم بيانات صالحة، فإن التطبيق يرسل استجابة عبر صفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi></strong>.</p>
+<p><strong>التبادل رقم 1</strong></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>الطلب
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>الرد
+</code></pre></div>
+</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000F6000000B4C2BD6142.png" width="246" height="180" style="display:inline-block; margin:4px;width:6.509cm;height:4.763cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F6000000B4C2BD6142.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000DB000000AE9A49ACD9.png" width="219" height="174" style="display:inline-block; margin:4px;width:5.794cm;height:4.604cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DB000000AE9A49ACD9.png" /></td></tr></table>
+
+<p>إذا اتبعت رابط [العودة إلى النموذج]، فستجد النموذج في الحالة التي تركته عليها:</p>
+<p><strong>التبادل رقم 2</strong></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>الطلب
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>الرد
+</code></pre></div>
+</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000DC000000B87D1CA95C.png" width="220" height="184" style="display:inline-block; margin:4px;width:5.821cm;height:4.868cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DC000000B87D1CA95C.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000102000000BFE8C1AA58.png" width="258" height="191" style="display:inline-block; margin:4px;width:6.826cm;height:5.054cm;" class="odt-zoomable" data-zoom-src="images/1000000000000102000000BFE8C1AA58.png" /></td></tr></table>
+
+<h2 id="22-struts">2.2. <span style="color: #4f81bd">بنية <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> للتطبيق</span></h2>
+<p>سنعتمد بنية <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> التالية:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005340000027B494721AE.png" width="643" height="306" style="display:inline-block; margin:4px;width:17cm;height:8.103cm;" class="odt-zoomable" data-zoom-src="images/10000000000005340000027B494721AE.png" /></td></tr></table>
+
+<ul>
+  <li>ستكون هناك ثلاث طرق للعرض 
+  </li>
+  <li>سيكون وحدة التحكم هي تلك التي يوفرها <bdi dir="ltr" class="odt-ltr-term">Struts</bdi>
+  </li>
+  <li><b><bdi dir="ltr" class="odt-ltr-term">FormBean</bdi> </b>هي الفئة المسؤولة عن تخزين القيم من النموذج الذي يعرضه العرض <b><bdi dir="ltr" class="odt-ltr-term">form.person.jsp</bdi></b>
+  </li>
+  <li><b><bdi dir="ltr" class="odt-ltr-term">FormAction</bdi> </b>هي الفئة المسؤولة عن معالجة قيم <b><bdi dir="ltr" class="odt-ltr-term">FormBean</bdi> </b>وتحديد صفحة الاستجابة المراد إرسالها: 
+    <ul>
+      <li>عرض<b> <bdi dir="ltr" class="odt-ltr-term">errors.person.jsp</bdi> </b>إذا كانت بيانات النموذج غير صحيحة
+      </li>
+      <li>عرض<b> <bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi> </b>في الحالات الأخرى
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>بالنسبة للمطور، تتمثل المهمة في كتابة الكود:</p>
+<ul>
+  <li>العروض الثلاثة
+  </li>
+  <li><b><bdi dir="ltr" class="odt-ltr-term">FormBean</bdi> </b>المرتبط بالنموذج
+  </li>
+  <li>فئة <b><bdi dir="ltr" class="odt-ltr-term">FormAction</bdi> </b>المسؤولة عن معالجة النموذج
+  </li>
+</ul>
+
+<h2 id="23-struts">2.3. <span style="color: #4f81bd">تجميع الفئات المطلوبة لتطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi></span></h2>
+<p>لتجميع الفئات المطلوبة لتطبيقنا، سنستخدم <bdi dir="ltr" class="odt-ltr-term">JBuilder.</bdi> يعمل <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> مع <bdi dir="ltr" class="odt-ltr-term">JDK</bdi> لا يحتوي على الفئات المطلوبة لتطبيقات <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> يمكننا تكوين <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> على النحو التالي:</p>
+<ul>
+<li>أدوات / تكوين <bdi dir="ltr" class="odt-ltr-term">JDKs</bdi></li>
+</ul>
+<p><img src="images/10000000000001A3000001AA2F602FA8.png" width="419" height="426" style="width:11.084cm;height:11.269cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001A3000001AA2F602FA8.png" /></p>
+<ul>
+<li>استخدم زر [إضافة] لإضافة ملفات .jar التي يوفرها <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> إلى أرشيفات فئات <bdi dir="ltr" class="odt-ltr-term">JBuilder.</bdi> إذا كنت قد قمت باستخراج أرشيف <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> إلى القرص الخاص بك، فيمكنك إضافة جميع ملفات .jar من المجلد <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">struts</bdi>&gt;/lib</strong> إلى <bdi dir="ltr" class="odt-ltr-term">JBuilder:</bdi></li>
+</ul>
+<p><img src="images/100000000000016F0000011E3E8ECBF9.png" width="367" height="286" style="width:9.708cm;height:7.565cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000016F0000011E3E8ECBF9.png" /></p>
+<p>يمكنك إضافة جميع ملفات .jar المذكورة أعلاه إلى أرشيفات <bdi dir="ltr" class="odt-ltr-term">JBuilder.</bdi> وقد رأينا بالفعل أن <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> يحتاج أيضًا إلى الوصول إلى أرشيفات <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> بالنسبة لـ <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> 4.x، يمكنك وضع ملفات .jar الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> في <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">tomcat4</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">common</bdi>\lib</strong>. بالنسبة لـ <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> 5.x، يمكنك وضعها في <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">tomcat5</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">shared</bdi>\lib</strong>. يمكنك بعد ذلك تكوين <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> لتحديد موقع ملفات .jar الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> في نفس موقع <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> هذا ما تم فعله في لقطة الشاشة التي تظهر ملفات .jar الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> المذكورة سابقًا. تم أخذها من <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">tomcat5</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">shared</bdi>\<bdi dir="ltr" class="odt-ltr-term">lib.</bdi></strong></p>
+<p>لذا، إذا أبلغ <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> أنه لا يمكنه العثور على فئة <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> أثناء ترجمة فئة ما، فتحقق من أمرين:</p>
+<ul>
+  <li>تهجئة الفئة
+  </li>
+  <li>ملفات .jar المستخدمة بواسطة <bdi dir="ltr" class="odt-ltr-term">JBuilder.</bdi> يجب تضمين جميع ملفات <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> .<bdi dir="ltr" class="odt-ltr-term">jar.</bdi>
+  </li>
+</ul>
+
+<h2 id="24-strutspersonne">2.4. <span style="color: #4f81bd">طرق عرض تطبيق <bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></span></h2>
+<p>طرق العرض الثلاثة للتطبيق هي كما يلي:</p>
+<ul>
+  <li><b><bdi dir="ltr" class="odt-ltr-term">form.person.jsp</bdi></b>: يعرض النموذج لإدخال اسم الشخص وعمره
+  </li>
+  <li><b><bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi></b>: يعرض القيم التي تم إدخالها إذا كانت صالحة
+  </li>
+  <li><b><bdi dir="ltr" class="odt-ltr-term">errors.person.jsp</bdi></b>: يعرض أي أخطاء
+  </li>
+</ul>
+
+<h3 id="241-errorspersonnejsp">2.4.1. <span style="color: #4f81bd">طريقة العرض <bdi dir="ltr" class="odt-ltr-term">errors.personne.jsp</bdi></span></h3>
+<p>سيتم تعريف هذا العرض، الذي يعرض قائمة بالأخطاء، على النحو التالي:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="err">&lt;</span>%@ taglib uri=&quot;/WEB-INF/struts-html.tld&quot; prefix=&quot;html&quot; %&gt;
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Personne<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>      <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Les erreurs suivantes se sont produites<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>        <span class="p">&lt;</span><span class="nt">html:errors</span><span class="p">/&gt;</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>    <span class="p">&lt;</span><span class="nt">html:link</span> <span class="na">page</span><span class="o">=</span><span class="s">&quot;/formulaire.do&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>            Retour au formulaire
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>        <span class="p">&lt;/</span><span class="nt">html:link</span><span class="p">&gt;</span>    
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>هناك ميزتان جديدتان في هذا الكود:</p>
+<ol>
+  <li>وجود علامات<b> &lt;<bdi dir="ltr" class="odt-ltr-term">html:XX/</bdi>&gt;</b>، وهي ليست علامات <bdi dir="ltr" class="odt-ltr-term">HTML.</bdi> يمكنك إنشاء مكتبات لعلامات <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> التي يتم تحويلها إلى كود <bdi dir="ltr" class="odt-ltr-term">Java</bdi> عند تحويل صفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> إلى سيرفلت.
+  </li>
+  <li>يجب أن تعلن صفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> عن مكتبات العلامات التي تستخدمها. وهي تفعل ذلك هنا بالسطر 
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>&lt;%@ taglib uri=&quot;/WEB-INF/struts-html.tld&quot; prefix=&quot;html&quot; %&gt;
+</code></pre></div>
+<p>يقدم هذا السطر معلومتين:</p>
+<ul>
+  <li><b>uri</b>: موقع الملف الذي يحكم قواعد استخدام المكتبة. يتم تضمين ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-html.tld</bdi> </b>في توزيع <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> في المثال أعلاه، تم وضعه في مجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF.</bdi>
+  </li>
+  <li><b><bdi dir="ltr" class="odt-ltr-term">prefix</bdi></b>: المعرف المستخدم في الكود لإضافة بادئة لعلامات المكتبة. وهذا يمنع تعارضات التسمية التي قد تنشأ عند استخدام مكتبات علامات متعددة في وقت واحد. من الممكن العثور على علامتين تحملان نفس الاسم في مكتبتين مختلفتين. ومن خلال إعطاء كل مكتبة بادئة مختلفة، يتم التخلص من أي غموض.
+  </li>
+</ul>
+
+<ul>
+  <li>تعرض علامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">html:errors</bdi></b>&gt; قائمة الأخطاء التي يرسلها وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> إليها.
+  </li>
+  <li>تقوم علامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">html:link</bdi></b>&gt; بإنشاء رابط يشير إلى <b>/<bdi dir="ltr" class="odt-ltr-term">C/page</bdi> </b>حيث
+    <ul>
+      <li><b>حيث <bdi dir="ltr" class="odt-ltr-term">C</bdi> </b>هو سياق التطبيق
+      </li>
+      <li><b><bdi dir="ltr" class="odt-ltr-term">page</bdi> </b>هو عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المحدد في سمة <bdi dir="ltr" class="odt-ltr-term">page</bdi> للعلامة
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>ال</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>    <span class="p">&lt;</span><span class="nt">html:link</span> <span class="na">page</span><span class="o">=</span><span class="s">&quot;/formulaire.do&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>            Retour au formulaire
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>        <span class="p">&lt;/</span><span class="nt">html:link</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>سيؤدي إلى إنشاء كود <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> التالي:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/C/formulaire.do&quot;</span><span class="p">&gt;</span>Retour au formulaire<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>حيث <strong><bdi dir="ltr" class="odt-ltr-term">C</bdi></strong> هو سياق التطبيق</p>
+<h3 id="242-errorspersonjsp">2.4.2. <span style="color: #4f81bd">اختبار عرض <bdi dir="ltr" class="odt-ltr-term">errors.person.jsp</bdi></span></h3>
+<ul>
+  <li>يتم وضع ملف<b> <bdi dir="ltr" class="odt-ltr-term">errors.person.jsp</bdi> </b>في مجلد <b><bdi dir="ltr" class="odt-ltr-term">views</bdi> </b>الخاص بتطبيق <b><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></b>:
+  </li>
+</ul>
+
+<p><img src="images/1000000000000153000000457E445417.png" width="339" height="69" style="width:8.968cm;height:1.826cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000153000000457E445417.png" /></p>
+<ul>
+  <li>يتم أخذ ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-html.tld</bdi> </b>من توزيع <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> (<b>&lt;<bdi dir="ltr" class="odt-ltr-term">struts</bdi>&gt;/lib</b>) ووضعه في <b><bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi></b>:
+  </li>
+</ul>
+
+<p><img src="images/100000000000013A0000005CC82C53BC.png" width="314" height="92" style="width:8.306cm;height:2.434cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000013A0000005CC82C53BC.png" /></p>
+<ul>
+  <li>يتم تعديل ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>على النحو التالي:
+  </li>
+</ul>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot; ?&gt;</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="cp">&lt;!DOCTYPE struts-config PUBLIC</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="cp">          &quot;-//Apache Software Foundation//DTD Struts Configuration 1.1//EN&quot;</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="cp">          &quot;http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd&quot;&gt;</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="nt">&lt;struts-config&gt;</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">    </span><span class="nt">&lt;action-mappings&gt;</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="w">      </span><span class="nt">&lt;action</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">          </span><span class="na">path=</span><span class="s">&quot;/main&quot;</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="w">          </span><span class="na">parameter=</span><span class="s">&quot;/vues/main.html&quot;</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="w">          </span><span class="na">type=</span><span class="s">&quot;org.apache.struts.actions.ForwardAction&quot;</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="w">      </span><span class="nt">/&gt;</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="w">      </span><span class="nt">&lt;action</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="w">          </span><span class="na">path=</span><span class="s">&quot;/erreurs&quot;</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="w">          </span><span class="na">parameter=</span><span class="s">&quot;/vues/erreurs.personne.jsp&quot;</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="w">          </span><span class="na">type=</span><span class="s">&quot;org.apache.struts.actions.ForwardAction&quot;</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="w">      </span><span class="nt">/&gt;</span>
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="w">    </span><span class="nt">&lt;/action-mappings&gt;</span>
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="nt">&lt;/struts-config&gt;</span>
+</code></pre></div>
+<p>نقوم بإنشاء عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> جديد <strong>هو /<bdi dir="ltr" class="odt-ltr-term">errors</bdi></strong> في ملف التكوين ليتولى معالجته وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> وسيتم إعادة توجيه عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">errors.do</bdi></strong> إلى صفحة العرض <strong>/<bdi dir="ltr" class="odt-ltr-term">views/errors.person.jsp</bdi></strong>. ويتم وضع ملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> في مجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF.</bdi></p>
+<ul>
+  <li>نقوم بإعادة تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> حتى يتم أخذ ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>الجديد في الاعتبار، ثم نطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi><b> <bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne/erreurs.do</bdi></b>:
+  </li>
+</ul>
+
+<p><img src="images/1000000000000208000000A366AB9994.png" width="520" height="163" style="width:13.757cm;height:4.313cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000208000000A366AB9994.png" /></p>
+<p>لم تنتج العلامة <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">html:errors/</bdi>&gt;</strong> أي شيء. هذا أمر طبيعي؛ لم تقم <strong><bdi dir="ltr" class="odt-ltr-term">ForwardAction</bdi></strong> بإنشاء قائمة الأخطاء التي تتوقعها العلامة. ومع ذلك، تظهر الاستجابة أعلاه أن عرض <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> الخاص بنا صحيح من الناحية النحوية على الأقل؛ وإلا لكنا قد تلقينا صفحة خطأ. دعونا نتحقق من كود <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> الذي تلقاه المتصفح (عرض/المصدر):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Personne - erreurs<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>      <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Les erreurs suivantes se sont produites<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>        
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/strutspersonne/formulaire.do&quot;</span><span class="p">&gt;</span>Retour au formulaire<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>    
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>لاحظ الرابط الذي تم إنشاؤه بواسطة علامة &lt;<strong><bdi dir="ltr" class="odt-ltr-term">html:link</bdi></strong>&gt;. تم تضمين سياق <strong>/<bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></strong> تلقائيًا في الرابط. وهذا يسمح بنقل التطبيق من سياق إلى آخر (على سبيل المثال، تغيير الأجهزة) دون الحاجة إلى تغيير الروابط التي تم إنشاؤها بواسطة &lt;<strong><bdi dir="ltr" class="odt-ltr-term">html:link</bdi></strong>&gt;.</p>
+<h3 id="243-reponsepersonnejsp">2.4.3. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">طريقة العرض <bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi></span></strong></span></h3>
+<p>هذه العرض، الذي يؤكد القيم التي تم إدخالها في النموذج، هو كما يلي:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="err">&lt;</span>%@ taglib uri=&quot;/WEB-INF/struts-html.tld&quot; prefix=&quot;html&quot; %&gt;
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="err">&lt;</span>%
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    // on récupère les données nom, age
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>  //String nom=(String)request.getAttribute(&quot;nom&quot;);
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>  String nom=&quot;jean&quot;;
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>  //String age=(String)request.getAttribute(&quot;age&quot;); 
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>  String age=&quot;24&quot;; 
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>%&gt;
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Personne<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>      <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Personne - réponse<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a>    <span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
+<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a>    <span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+<a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>        <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a>          <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a>        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span><span class="err">&lt;</span>%= nom %&gt;
+<a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a>      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a>        <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a>          <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Age<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a>        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span><span class="err">&lt;</span>%= age %&gt;
+<a id="__codelineno-14-27" name="__codelineno-14-27" href="#__codelineno-14-27"></a>      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-14-28" name="__codelineno-14-28" href="#__codelineno-14-28"></a>    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>      
+<a id="__codelineno-14-29" name="__codelineno-14-29" href="#__codelineno-14-29"></a>    <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-14-30" name="__codelineno-14-30" href="#__codelineno-14-30"></a>    <span class="p">&lt;</span><span class="nt">html:link</span> <span class="na">page</span><span class="o">=</span><span class="s">&quot;/formulaire.do&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-14-31" name="__codelineno-14-31" href="#__codelineno-14-31"></a>            Retour au formulaire
+<a id="__codelineno-14-32" name="__codelineno-14-32" href="#__codelineno-14-32"></a>        <span class="p">&lt;/</span><span class="nt">html:link</span><span class="p">&gt;</span>    
+<a id="__codelineno-14-33" name="__codelineno-14-33" href="#__codelineno-14-33"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-14-34" name="__codelineno-14-34" href="#__codelineno-14-34"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>تعرض الصفحة معلومتين، هما [<bdi dir="ltr" class="odt-ltr-term">name</bdi>] و[age]، اللتين سيتم تمريرهما إليها من وحدة التحكم ضمن كائن <strong>الطلب</strong> المُعرَّف مسبقًا. هنا، نجري اختبارًا لن تتمكن فيه وحدة التحكم من تعيين قيم [<bdi dir="ltr" class="odt-ltr-term">name</bdi>] و[age]. ولذلك، نقوم بتهيئة هاتين المعلومتين بقيم عشوائية. بالإضافة إلى ذلك، يتم هنا أيضًا إنشاء الرابط للعودة إلى النموذج باستخدام علامة &lt;<strong><bdi dir="ltr" class="odt-ltr-term">html:link</bdi></strong>&gt;.</p>
+<h3 id="244-reponsepersonnejsp">2.4.4. <span style="color: #4f81bd">اختبار عرض <bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi></span></h3>
+<ul>
+  <li>يوجد ملف<b> <bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi> </b>في مجلد <b><bdi dir="ltr" class="odt-ltr-term">views</bdi> </b>الخاص بتطبيق <b><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></b>:
+  </li>
+</ul>
+
+<p><img src="images/100000000000015F0000004EBBDF68D5.png" width="351" height="78" style="width:9.285cm;height:2.064cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000015F0000004EBBDF68D5.png" /></p>
+<ul>
+  <li>يتم تعديل ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>على النحو التالي:
+  </li>
+</ul>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot; ?&gt;</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="cp">&lt;!DOCTYPE struts-config PUBLIC</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="cp">          &quot;-//Apache Software Foundation//DTD Struts Configuration 1.1//EN&quot;</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="cp">          &quot;http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd&quot;&gt;</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="nt">&lt;struts-config&gt;</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">    </span><span class="nt">&lt;action-mappings&gt;</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">      </span><span class="nt">&lt;action</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="w">          </span><span class="na">path=</span><span class="s">&quot;/main&quot;</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="w">          </span><span class="na">parameter=</span><span class="s">&quot;/vues/main.html&quot;</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="w">          </span><span class="na">type=</span><span class="s">&quot;org.apache.struts.actions.ForwardAction&quot;</span>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="w">      </span><span class="nt">/&gt;</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="w">      </span><span class="nt">&lt;action</span>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="w">          </span><span class="na">path=</span><span class="s">&quot;/erreurs&quot;</span>
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="w">          </span><span class="na">parameter=</span><span class="s">&quot;/vues/erreurs.personne.jsp&quot;</span>
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="w">          </span><span class="na">type=</span><span class="s">&quot;org.apache.struts.actions.ForwardAction&quot;</span>
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="w">      </span><span class="nt">/&gt;</span>
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="w">      </span><span class="nt">&lt;action</span>
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a><span class="w">          </span><span class="na">path=</span><span class="s">&quot;/reponse&quot;</span>
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a><span class="w">          </span><span class="na">parameter=</span><span class="s">&quot;/vues/reponse.personne.jsp&quot;</span>
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a><span class="w">          </span><span class="na">type=</span><span class="s">&quot;org.apache.struts.actions.ForwardAction&quot;</span>
+<a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a><span class="w">      </span><span class="nt">/&gt;</span>
+<a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a><span class="w">    </span><span class="nt">&lt;/action-mappings&gt;</span>
+<a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a><span class="nt">&lt;/struts-config&gt;</span>
+</code></pre></div>
+<p>نقوم بإنشاء عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> جديد <strong>/<bdi dir="ltr" class="odt-ltr-term">reponse</bdi></strong> في ملف التكوين ليتم معالجته بواسطة وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> سيتم إعادة توجيه عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">reponse.do</bdi></strong> إلى العرض <strong>/<bdi dir="ltr" class="odt-ltr-term">vues/reponse.personne.jsp</bdi></strong>. يتم وضع ملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> في مجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF.</bdi></p>
+<ul>
+  <li>نقوم بإعادة تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> حتى يتم أخذ ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>الجديد في الاعتبار، ثم نطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi><b> <bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne/erreurs.do</bdi></b>:
+  </li>
+</ul>
+
+<p><img src="images/100000000000020A000001025729052F.png" width="522" height="258" style="width:13.809cm;height:6.824cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000020A000001025729052F.png" /></p>
+<p>نحصل على النتيجة التي توقعناها بالضبط.</p>
+<h3 id="245-formulairepersonnejsp">2.4.5. <span style="color: #4f81bd">طريقة العرض <bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi></span></h3>
+<p>تعرض هذه العرض النموذج الخاص بإدخال اسم المستخدم وعمره. وفيما يلي كود <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> الخاص بها:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="err">&lt;</span>%@ taglib uri=&quot;/WEB-INF/struts-html.tld&quot; prefix=&quot;html&quot; %&gt;
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;pragma&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;no-cache&quot;</span><span class="p">&gt;</span> 
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Personne - formulaire<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">language</span><span class="o">=</span><span class="s">&quot;javascript&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">        </span><span class="kd">function</span><span class="w"> </span><span class="nx">effacer</span><span class="p">(){</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">          </span><span class="kd">with</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">frmPersonne</span><span class="p">){</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w">            </span><span class="nx">nom</span><span class="p">.</span><span class="nx">value</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="w">          </span><span class="nx">age</span><span class="p">.</span><span class="nx">value</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="w">      </span><span class="p">}</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a>
+<a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a>      <span class="p">&lt;</span><span class="nt">center</span><span class="p">&gt;</span>
+<a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a>        <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Personne - formulaire<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<a id="__codelineno-16-20" name="__codelineno-16-20" href="#__codelineno-16-20"></a>      <span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
+<a id="__codelineno-16-21" name="__codelineno-16-21" href="#__codelineno-16-21"></a>      <span class="p">&lt;</span><span class="nt">html:form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;/main&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;frmPersonne&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;istia.st.struts.personne.FormulaireBean&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-16-22" name="__codelineno-16-22" href="#__codelineno-16-22"></a>          <span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+<a id="__codelineno-16-23" name="__codelineno-16-23" href="#__codelineno-16-23"></a>            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-16-24" name="__codelineno-16-24" href="#__codelineno-16-24"></a>              <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-16-25" name="__codelineno-16-25" href="#__codelineno-16-25"></a>            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">html:text</span> <span class="na">property</span><span class="o">=</span><span class="s">&quot;nom&quot;</span> <span class="na">size</span><span class="o">=</span><span class="s">&quot;20&quot;</span><span class="p">/&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-16-26" name="__codelineno-16-26" href="#__codelineno-16-26"></a>          <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-16-27" name="__codelineno-16-27" href="#__codelineno-16-27"></a>          <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-16-28" name="__codelineno-16-28" href="#__codelineno-16-28"></a>              <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Age<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-16-29" name="__codelineno-16-29" href="#__codelineno-16-29"></a>            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">html:text</span> <span class="na">property</span><span class="o">=</span><span class="s">&quot;age&quot;</span> <span class="na">size</span><span class="o">=</span><span class="s">&quot;3&quot;</span><span class="p">/&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-16-30" name="__codelineno-16-30" href="#__codelineno-16-30"></a>          <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-16-31" name="__codelineno-16-31" href="#__codelineno-16-31"></a>            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-16-32" name="__codelineno-16-32" href="#__codelineno-16-32"></a>        <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+<a id="__codelineno-16-33" name="__codelineno-16-33" href="#__codelineno-16-33"></a>        <span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+<a id="__codelineno-16-34" name="__codelineno-16-34" href="#__codelineno-16-34"></a>            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-16-35" name="__codelineno-16-35" href="#__codelineno-16-35"></a>              <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">html:submit</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Envoyer&quot;</span><span class="p">/&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-16-36" name="__codelineno-16-36" href="#__codelineno-16-36"></a>            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">html:reset</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Rétablir&quot;</span><span class="p">/&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-16-37" name="__codelineno-16-37" href="#__codelineno-16-37"></a>            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">html:button</span> <span class="na">property</span><span class="o">=</span><span class="s">&quot;btnEffacer&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Effacer&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;effacer()&quot;</span><span class="p">/&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-16-38" name="__codelineno-16-38" href="#__codelineno-16-38"></a>          <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-16-39" name="__codelineno-16-39" href="#__codelineno-16-39"></a>        <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+<a id="__codelineno-16-40" name="__codelineno-16-40" href="#__codelineno-16-40"></a>      <span class="p">&lt;/</span><span class="nt">html:form</span><span class="p">&gt;</span>
+<a id="__codelineno-16-41" name="__codelineno-16-41" href="#__codelineno-16-41"></a>    <span class="p">&lt;/</span><span class="nt">center</span><span class="p">&gt;</span>
+<a id="__codelineno-16-42" name="__codelineno-16-42" href="#__codelineno-16-42"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-16-43" name="__codelineno-16-43" href="#__codelineno-16-43"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>نرى مكتبة العلامات <strong><bdi dir="ltr" class="odt-ltr-term">struts-html.tld</bdi></strong> مستخدمة في عرض <strong>الأخطاء</strong>. تظهر علامات جديدة:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>html:form
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">تُستخدم لإنشاء علامة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> &lt;<b><bdi dir="ltr" class="odt-ltr-term">form</bdi></b>&gt; ولتزويد وحدة التحكم بالمعلومات التي ستعالج هذا النموذج:</div><table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>action
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي سيتم إرسال قيم النموذج إليه</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>name
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">اسم نموذج <bdi dir="ltr" class="odt-ltr-term">HTML.</bdi> وهو أيضًا اسم الكائن الذي سيخزن قيم النموذج</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>النوع
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">اسم الفئة التي يجب إنشاء مثيل لها للحصول على <bdi dir="ltr" class="odt-ltr-term">bean</bdi> تخزين النموذج</div></td></tr></table><div style="margin:0 0 0.5em 0">لاحظ أن الطريقة المستخدمة لإرسال معلمات النموذج (<bdi dir="ltr" class="odt-ltr-term">GET/POST</bdi>) إلى وحدة التحكم غير محددة. يمكن القيام بذلك باستخدام سمة <b><bdi dir="ltr" class="odt-ltr-term">method</bdi></b>. إذا كانت هذه السمة مفقودة، يتم استخدام طريقة <b><bdi dir="ltr" class="odt-ltr-term">POST</bdi> </b>بشكل افتراضي.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>html:text
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">تُستخدم لإنشاء العلامة <b>&lt;<bdi dir="ltr" class="odt-ltr-term">input type</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">text</bdi>&quot; <bdi dir="ltr" class="odt-ltr-term">value</bdi>=&quot;...&quot;&gt;</b>:</div><table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>الخاصية
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">اسم الحقل في حبة النموذج الذي سيتم ربطه بحقل الإدخال. عند إرسال النموذج إلى الخادم (العميل -&gt; الخادم)، سيأخذ حقل الحبة قيمة حقل الإدخال. عند عرض النموذج (الخادم -&gt; العميل)، يتم عرض القيمة الموجودة في حقل الحبة في حقل الإدخال.</div></td></tr></table></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>html:submit
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يُستخدم لإنشاء علامة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> &lt;<b><bdi dir="ltr" class="odt-ltr-term">input type</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">submit</bdi>&quot;</b>...&gt;</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>html:reset
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يُستخدم لإنشاء علامة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> &lt;<b><bdi dir="ltr" class="odt-ltr-term">input type</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">reset</bdi>&quot;</b>...&gt;</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>html:button
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">يُستخدم لإنشاء علامة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> &lt;<b><bdi dir="ltr" class="odt-ltr-term">input type</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">button</bdi>&quot;</b>...&gt;</div></td></tr></table>
+
+<h3 id="246-formulairepersonnejsp">2.4.6. <span style="color: #4f81bd">البيان المرتبط بالنموذج <bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi></span></h3>
+<ul>
+  <li>مع <bdi dir="ltr" class="odt-ltr-term">Struts</bdi>، يجب أن يكون كل نموذج مرتبطًا بـ <bdi dir="ltr" class="odt-ltr-term">bean</bdi> مسؤول عن تخزين قيم النموذج والحفاظ عليها في الجلسة الحالية. <bdi dir="ltr" class="odt-ltr-term">bean</bdi> هو فئة <bdi dir="ltr" class="odt-ltr-term">Java</bdi> يجب أن تلتزم بصيغة محددة. يجب أن يمتد <bdi dir="ltr" class="odt-ltr-term">bean</bdi> المرتبط بنموذج ما إلى فئة <b><bdi dir="ltr" class="odt-ltr-term">ActionForm</bdi> </b>المحددة في مكتبة <bdi dir="ltr" class="odt-ltr-term">Struts:</bdi>
+  </li>
+</ul>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">FormulaireBean</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">ActionForm</span><span class="w"> </span><span class="p">{</span>
+</code></pre></div>
+<ul>
+  <li>يجب أن تتطابق أسماء سمات <bdi dir="ltr" class="odt-ltr-term">bean</bdi> مع حقول النموذج (سمات <b>خصائص </b>علامات<b> &lt;<bdi dir="ltr" class="odt-ltr-term">html:text</bdi>&gt; </b>الخاصة بالنموذج). استنادًا إلى الكود من النموذج السابق، يجب أن يحتوي <bdi dir="ltr" class="odt-ltr-term">bean</bdi> على حقلين باسم <b><bdi dir="ltr" class="odt-ltr-term">name</bdi> </b>و <b>age</b>.
+  </li>
+  <li>لكل حقل <bdi dir="ltr" class="odt-ltr-term">XX</bdi> في النموذج، يجب أن يحدد <bdi dir="ltr" class="odt-ltr-term">bean</bdi> طريقتين:
+    <ul>
+      <li><bdi dir="ltr" class="odt-ltr-term">public void</bdi> <b><bdi dir="ltr" class="odt-ltr-term">setXX</bdi></b>(<bdi dir="ltr" class="odt-ltr-term">Type value</bdi>): لتعيين قيمة لخاصية <bdi dir="ltr" class="odt-ltr-term">XX</bdi>
+      </li>
+      <li><bdi dir="ltr" class="odt-ltr-term">public</bdi> <b><bdi dir="ltr" class="odt-ltr-term">getXX</bdi></b>(<bdi dir="ltr" class="odt-ltr-term">Value type</bdi>): لاسترداد قيمة حقل <bdi dir="ltr" class="odt-ltr-term">XX</bdi>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>يمكن أن يكون الفول المرتبط بالنموذج السابق كما يلي:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">istia.st.struts.personne</span><span class="p">;</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">org.apache.struts.action.ActionForm</span><span class="p">;</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">FormulaireBean</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">ActionForm</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="w">   </span><span class="c1">// name</span>
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">nom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">getNom</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">nom</span><span class="p">;</span>
+<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setNom</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">nom</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">nom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nom</span><span class="p">;</span>
+<a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a>
+<a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a><span class="w">   </span><span class="c1">// age</span>
+<a id="__codelineno-27-16" name="__codelineno-27-16" href="#__codelineno-27-16"></a><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<a id="__codelineno-27-17" name="__codelineno-27-17" href="#__codelineno-27-17"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">getAge</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-18" name="__codelineno-27-18" href="#__codelineno-27-18"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
+<a id="__codelineno-27-19" name="__codelineno-27-19" href="#__codelineno-27-19"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-27-20" name="__codelineno-27-20" href="#__codelineno-27-20"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setAge</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">age</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-27-21" name="__codelineno-27-21" href="#__codelineno-27-21"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
+<a id="__codelineno-27-22" name="__codelineno-27-22" href="#__codelineno-27-22"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-27-23" name="__codelineno-27-23" href="#__codelineno-27-23"></a><span class="p">}</span>
+</code></pre></div>
+<p>سنقوم بتجميع هذه الفئة باستخدام <bdi dir="ltr" class="odt-ltr-term">JBuilder.</bdi></p>
+<h3 id="247-formulairepersonnejsp">2.4.7. <span style="color: #4f81bd">اختبار عرض <bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi></span></h3>
+<p>يتم وضع ملف <strong><bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi></strong> في مجلد <strong><bdi dir="ltr" class="odt-ltr-term">views</bdi></strong> الخاص بتطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></strong>:</p>
+<p><img src="images/100000000000015E0000005D985EE8CF.png" width="350" height="93" style="width:9.259cm;height:2.461cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000015E0000005D985EE8CF.png" /></p>
+<ul>
+  <li>يتم تعديل ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>على النحو التالي:
+  </li>
+</ul>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot; ?&gt;</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="cp">&lt;!DOCTYPE struts-config PUBLIC</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="cp">          &quot;-//Apache Software Foundation//DTD Struts Configuration 1.1//EN&quot;</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="cp">          &quot;http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd&quot;&gt;</span>
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="nt">&lt;struts-config&gt;</span>
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="w">    </span><span class="nt">&lt;action-mappings&gt;</span>
+<a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="w">      </span><span class="nt">&lt;action</span>
+<a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a><span class="w">          </span><span class="na">path=</span><span class="s">&quot;/main&quot;</span>
+<a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="w">          </span><span class="na">parameter=</span><span class="s">&quot;/vues/main.html&quot;</span>
+<a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a><span class="w">          </span><span class="na">type=</span><span class="s">&quot;org.apache.struts.actions.ForwardAction&quot;</span>
+<a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a><span class="w">      </span><span class="nt">/&gt;</span>
+<a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a><span class="w">      </span><span class="nt">&lt;action</span>
+<a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a><span class="w">          </span><span class="na">path=</span><span class="s">&quot;/erreurs&quot;</span>
+<a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a><span class="w">          </span><span class="na">parameter=</span><span class="s">&quot;/vues/erreurs.personne.jsp&quot;</span>
+<a id="__codelineno-28-17" name="__codelineno-28-17" href="#__codelineno-28-17"></a><span class="w">          </span><span class="na">type=</span><span class="s">&quot;org.apache.struts.actions.ForwardAction&quot;</span>
+<a id="__codelineno-28-18" name="__codelineno-28-18" href="#__codelineno-28-18"></a><span class="w">      </span><span class="nt">/&gt;</span>
+<a id="__codelineno-28-19" name="__codelineno-28-19" href="#__codelineno-28-19"></a><span class="w">      </span><span class="nt">&lt;action</span>
+<a id="__codelineno-28-20" name="__codelineno-28-20" href="#__codelineno-28-20"></a><span class="w">          </span><span class="na">path=</span><span class="s">&quot;/reponse&quot;</span>
+<a id="__codelineno-28-21" name="__codelineno-28-21" href="#__codelineno-28-21"></a><span class="w">          </span><span class="na">parameter=</span><span class="s">&quot;/vues/reponse.personne.jsp&quot;</span>
+<a id="__codelineno-28-22" name="__codelineno-28-22" href="#__codelineno-28-22"></a><span class="w">          </span><span class="na">type=</span><span class="s">&quot;org.apache.struts.actions.ForwardAction&quot;</span>
+<a id="__codelineno-28-23" name="__codelineno-28-23" href="#__codelineno-28-23"></a><span class="w">      </span><span class="nt">/&gt;</span>
+<a id="__codelineno-28-24" name="__codelineno-28-24" href="#__codelineno-28-24"></a><span class="w">      </span><span class="nt">&lt;action</span>
+<a id="__codelineno-28-25" name="__codelineno-28-25" href="#__codelineno-28-25"></a><span class="w">          </span><span class="na">path=</span><span class="s">&quot;/formulaire&quot;</span>
+<a id="__codelineno-28-26" name="__codelineno-28-26" href="#__codelineno-28-26"></a><span class="w">          </span><span class="na">parameter=</span><span class="s">&quot;/vues/formulaire.personne.jsp&quot;</span>
+<a id="__codelineno-28-27" name="__codelineno-28-27" href="#__codelineno-28-27"></a><span class="w">          </span><span class="na">type=</span><span class="s">&quot;org.apache.struts.actions.ForwardAction&quot;</span>
+<a id="__codelineno-28-28" name="__codelineno-28-28" href="#__codelineno-28-28"></a><span class="w">      </span><span class="nt">/&gt;</span>
+<a id="__codelineno-28-29" name="__codelineno-28-29" href="#__codelineno-28-29"></a><span class="w">    </span><span class="nt">&lt;/action-mappings&gt;</span>
+<a id="__codelineno-28-30" name="__codelineno-28-30" href="#__codelineno-28-30"></a><span class="nt">&lt;/struts-config&gt;</span>
+</code></pre></div>
+<p>في ملف التكوين، نقوم بإنشاء عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> جديد <strong>/<bdi dir="ltr" class="odt-ltr-term">form</bdi></strong> ليتولى معالجته وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> سيتم إعادة توجيه عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">form.do</bdi></strong> إلى العرض <strong>/<bdi dir="ltr" class="odt-ltr-term">views/form.person.jsp</bdi></strong>. يتم وضع ملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> في مجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF.</bdi></p>
+<ul>
+  <li>نضع فئة <b><bdi dir="ltr" class="odt-ltr-term">FormulaireBean</bdi> </b>في <b><bdi dir="ltr" class="odt-ltr-term">WEB-INF/classes</bdi></b>:
+  </li>
+</ul>
+
+<p><img src="images/10000000000001FF00000066D8ACF269.png" width="511" height="102" style="width:13.518cm;height:2.699cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001FF00000066D8ACF269.png" /></p>
+<ul>
+  <li>نقوم بإعادة تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> حتى يتم أخذ ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>الجديد في الاعتبار، ثم نطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi><b> <bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne/formulaire.do</bdi></b>:
+  </li>
+</ul>
+
+<p><img src="images/1000000000000191000000FB1E91DDC5.png" width="401" height="251" style="width:10.608cm;height:6.639cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000191000000FB1E91DDC5.png" /></p>
+<p>يتم عرض النموذج بشكل صحيح. قد نشعر بالفضول لمعرفة كيف تم &quot;ترجمة&quot; علامات <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">html:XX</bdi>&gt;</strong> المنتشرة في جميع أنحاء كود <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> الخاص بالنموذج:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;pragma&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;no-cache&quot;</span><span class="p">&gt;</span> 
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Personne - formulaire<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">language</span><span class="o">=</span><span class="s">&quot;javascript&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="w">        </span><span class="kd">function</span><span class="w"> </span><span class="nx">effacer</span><span class="p">(){</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a><span class="w">          </span><span class="kd">with</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">frmPersonne</span><span class="p">){</span>
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a><span class="w">            </span><span class="nx">nom</span><span class="p">.</span><span class="nx">value</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a><span class="w">          </span><span class="nx">age</span><span class="p">.</span><span class="nx">value</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a><span class="w">      </span><span class="p">}</span>
+<a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a>
+<a id="__codelineno-29-15" name="__codelineno-29-15" href="#__codelineno-29-15"></a>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-29-16" name="__codelineno-29-16" href="#__codelineno-29-16"></a>      <span class="p">&lt;</span><span class="nt">center</span><span class="p">&gt;</span>
+<a id="__codelineno-29-17" name="__codelineno-29-17" href="#__codelineno-29-17"></a>
+<a id="__codelineno-29-18" name="__codelineno-29-18" href="#__codelineno-29-18"></a>        <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Personne - formulaire<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<a id="__codelineno-29-19" name="__codelineno-29-19" href="#__codelineno-29-19"></a>      <span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
+<a id="__codelineno-29-20" name="__codelineno-29-20" href="#__codelineno-29-20"></a>      <span class="p">&lt;</span><span class="nt">form</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;frmPersonne&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;/strutspersonne/main.do&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-29-21" name="__codelineno-29-21" href="#__codelineno-29-21"></a>          <span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+<a id="__codelineno-29-22" name="__codelineno-29-22" href="#__codelineno-29-22"></a>            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-29-23" name="__codelineno-29-23" href="#__codelineno-29-23"></a>              <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-29-24" name="__codelineno-29-24" href="#__codelineno-29-24"></a>            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nom&quot;</span> <span class="na">size</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-29-25" name="__codelineno-29-25" href="#__codelineno-29-25"></a>          <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-29-26" name="__codelineno-29-26" href="#__codelineno-29-26"></a>
+<a id="__codelineno-29-27" name="__codelineno-29-27" href="#__codelineno-29-27"></a>          <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-29-28" name="__codelineno-29-28" href="#__codelineno-29-28"></a>              <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Age<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-29-29" name="__codelineno-29-29" href="#__codelineno-29-29"></a>            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;age&quot;</span> <span class="na">size</span><span class="o">=</span><span class="s">&quot;3&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-29-30" name="__codelineno-29-30" href="#__codelineno-29-30"></a>          <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-29-31" name="__codelineno-29-31" href="#__codelineno-29-31"></a>            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-29-32" name="__codelineno-29-32" href="#__codelineno-29-32"></a>        <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+<a id="__codelineno-29-33" name="__codelineno-29-33" href="#__codelineno-29-33"></a>        <span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+<a id="__codelineno-29-34" name="__codelineno-29-34" href="#__codelineno-29-34"></a>            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-29-35" name="__codelineno-29-35" href="#__codelineno-29-35"></a>
+<a id="__codelineno-29-36" name="__codelineno-29-36" href="#__codelineno-29-36"></a>              <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Envoyer&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-29-37" name="__codelineno-29-37" href="#__codelineno-29-37"></a>            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;reset&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Rétablir&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-29-38" name="__codelineno-29-38" href="#__codelineno-29-38"></a>            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;btnEffacer&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Effacer&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;effacer()&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-29-39" name="__codelineno-29-39" href="#__codelineno-29-39"></a>          <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-29-40" name="__codelineno-29-40" href="#__codelineno-29-40"></a>        <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+<a id="__codelineno-29-41" name="__codelineno-29-41" href="#__codelineno-29-41"></a>      <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<a id="__codelineno-29-42" name="__codelineno-29-42" href="#__codelineno-29-42"></a>    <span class="p">&lt;/</span><span class="nt">center</span><span class="p">&gt;</span>
+<a id="__codelineno-29-43" name="__codelineno-29-43" href="#__codelineno-29-43"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-29-44" name="__codelineno-29-44" href="#__codelineno-29-44"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>في النموذج الناتج، يعمل زر [<bdi dir="ltr" class="odt-ltr-term">Reset</bdi>] وزر [<bdi dir="ltr" class="odt-ltr-term">Clear</bdi>]. يقوم زر [<bdi dir="ltr" class="odt-ltr-term">Submit</bdi>] بإعادة التوجيه إلى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">strutspersonne/main.do</bdi></strong>. وفقًا لملف <strong><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi></strong> الخاص بالتطبيق، سيتولى وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> معالجة هذا الأمر. وفقًا لملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.html</bdi></strong>، يجب على وحدة التحكم إعادة توجيه الطلب إلى العرض <strong>/<bdi dir="ltr" class="odt-ltr-term">vues/main.html</bdi></strong>. دعونا نجرب ذلك:</p>
+<p><img src="images/10000000000002060000009339E6DD43.png" width="518" height="147" style="width:13.704cm;height:3.889cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002060000009339E6DD43.png" /></p>
+<p>كل شيء يعمل كما هو متوقع. ما زلنا بحاجة إلى معالجة قيم النموذج فعليًا، أي كتابة فئة <strong><bdi dir="ltr" class="odt-ltr-term">Action</bdi></strong> التي ستستقبل بيانات النموذج في كائن <strong><bdi dir="ltr" class="odt-ltr-term">FormBean</bdi></strong>.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
+        </a>
+        <br>
+        هذا البرنامج التعليمي الذي كتبه <strong>Serge Tahé</strong> متاح للجمهور وفقًا لشروط
+<em>Creative Commons Attribution – Non-Commercial –
+ShareAlike 3.0 Unported</em>.
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>
