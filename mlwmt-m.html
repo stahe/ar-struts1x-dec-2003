@@ -721,7 +721,7 @@
 <p>في هذه المقالة، سوف نستكشف إطار عمل تطويري يُسمى <strong><bdi dir="ltr" class="odt-ltr-term">Struts</bdi></strong>. <bdi dir="ltr" class="odt-ltr-term">Jakarta Struts</bdi> هو مشروع تابع لمؤسسة <bdi dir="ltr" class="odt-ltr-term">Apache Software Foundation</bdi> (<bdi dir="ltr" class="odt-ltr-term">www.apache.org</bdi>) مصمم لتوفير إطار عمل قياسي لتطوير تطبيقات الويب بلغة <bdi dir="ltr" class="odt-ltr-term">Java</bdi> استنادًا إلى بنية <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> (<bdi dir="ltr" class="odt-ltr-term">Model-View-Controller</bdi>). </p>
 <h2 id="12-mvc">1.2. <span style="color: #4f81bd">نموذج <bdi dir="ltr" class="odt-ltr-term">MVC</bdi></span></h2>
 <p>يسعى نموذج <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> إلى فصل طبقات العرض والمعالجة والوصول إلى البيانات. سيتم تنظيم تطبيق الويب الذي يتبع هذا النموذج على النحو التالي:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000363000000855375987C.png" width="434" height="67" style="display:inline-block; margin:4px;width:11.471cm;height:1.76cm;" class="odt-zoomable" data-zoom-src="images/1000000000000363000000855375987C.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000363000000855375987C.png" width="434" height="67" style="display:inline-block; margin:4px;width:11.471cm;height:1.76cm;" class="odt-zoomable" data-zoom-src="images/1000000000000363000000855375987C.png" /></td></tr></table>
 
 <p>تُسمى هذه البنية بنية ثلاثية الطبقات أو ثلاثية المستويات:</p>
 <ul>
@@ -731,7 +731,7 @@
 </ul>
 <p>غالبًا ما تكون <strong>واجهة المستخدم</strong> عبارة عن متصفح ويب، ولكنها قد تكون أيضًا تطبيقًا مستقلًا يرسل طلبات <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> إلى خدمة الويب عبر الشبكة ويقوم بتنسيق النتائج التي يتلقاها. تتكون <strong>منطقية التطبيق</strong> من نصوص برمجية تعالج طلبات المستخدم. غالبًا ما يكون <strong>مصدر البيانات</strong> قاعدة بيانات، ولكنه قد يكون أيضًا ملفات مسطحة بسيطة، أو دليل <bdi dir="ltr" class="odt-ltr-term">LDAP</bdi>، أو خدمة ويب عن بُعد، وما إلى ذلك. من مصلحة المطور الحفاظ على درجة عالية من الاستقلالية بين هذه الكيانات الثلاثة بحيث إذا تغير أحدها، لا يتعين على الاثنين الآخرين التغيير، أو يتغيران بشكل طفيف فقط. </p>
 <p>عند تطبيق هذا النموذج مع السيرفلتات وصفحات <bdi dir="ltr" class="odt-ltr-term">JSP</bdi>، تنتج البنية التالية:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E200000213F96D6913.png" width="625" height="265" style="display:inline-block; margin:4px;width:16.536cm;height:7.024cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E200000213F96D6913.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000004E200000213F96D6913.png" width="625" height="265" style="display:inline-block; margin:4px;width:16.536cm;height:7.024cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E200000213F96D6913.png" /></td></tr></table>
 
 <p>في كتلة [منطق التطبيق]، نميز</p>
 <ul>
@@ -772,7 +772,7 @@
   </li>
 </ol>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002EC0000006DC9254038.png" width="374" height="55" style="display:inline-block; margin:4px;width:9.895cm;height:1.443cm;" class="odt-zoomable" data-zoom-src="images/10000000000002EC0000006DC9254038.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000002EC0000006DC9254038.png" width="374" height="55" style="display:inline-block; margin:4px;width:9.895cm;height:1.443cm;" class="odt-zoomable" data-zoom-src="images/10000000000002EC0000006DC9254038.png" /></td></tr></table>
 
 <ol>
     <ul>
@@ -890,7 +890,7 @@
 </ul>
 <h3 id="141">1.4.1. <span style="color: #4f81bd">طريقة التطوير</span></h3>
 <p>تتمثل بنية <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> التي يستخدمها <bdi dir="ltr" class="odt-ltr-term">STRUTS</bdi> فيما يلي:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000565000002389752E5C0.png" width="643" height="264" style="display:inline-block; margin:4px;width:17cm;height:6.992cm;" class="odt-zoomable" data-zoom-src="images/1000000000000565000002389752E5C0.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000565000002389752E5C0.png" width="643" height="264" style="display:inline-block; margin:4px;width:17cm;height:6.992cm;" class="odt-zoomable" data-zoom-src="images/1000000000000565000002389752E5C0.png" /></td></tr></table>
 
 <ul>
   <li>تعد وحدة التحكم (<bdi dir="ltr" class="odt-ltr-term">Controller</bdi>) قلب التطبيق. تمر جميع طلبات العميل من خلالها. وهي عبارة عن سيرفلت عام يوفره <bdi dir="ltr" class="odt-ltr-term">STRUTS.</bdi> في بعض الحالات، قد تحتاج إلى توسيعها. أما في الحالات البسيطة، فهذا ليس ضروريًا. يسترد هذا السيرفلت العام المعلومات التي يحتاجها من ملف يُسمى غالبًا <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></b>.
@@ -946,7 +946,7 @@
 <p><img src="images/10000000000003B7000000BD16CDB975.png" width="680" height="135" style="width:17.988cm;height:3.575cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003B7000000BD16CDB975.png" /></p>
 <p>هنا أيضًا، يُنصح بقراءة الصفحة الرئيسية. لتنزيل مكتبات <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> لـ <bdi dir="ltr" class="odt-ltr-term">Java</bdi>، اتبع رابط &quot;<strong><bdi dir="ltr" class="odt-ltr-term">Binaries</bdi>&quot;</strong> أعلاه:</p>
 <p><img src="images/10000000000001280000009E44DCBC46.png" width="296" height="158" style="width:7.83cm;height:4.18cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001280000009E44DCBC46.png" /></p>
-<p>بالنسبة لمستخدمي <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، استخدم الرابط 1.1.zip؛ وبالنسبة لمستخدمي <bdi dir="ltr" class="odt-ltr-term">Unix</bdi>، استخدم الرابط 1.1.<bdi dir="ltr" class="odt-ltr-term">tar.gz</bdi> (نوفمبر 2003). بمجرد فك ضغط ملف 1.1.zip، سترى بنية الدليل التالية:</p>
+<p>بالنسبة لمستخدمي <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، استخدم الرابط <bdi dir="ltr" class="odt-ltr-term">1.1.zip</bdi>؛ وبالنسبة لمستخدمي <bdi dir="ltr" class="odt-ltr-term">Unix</bdi>، استخدم الرابط <bdi dir="ltr" class="odt-ltr-term">1.1.tar.gz</bdi> (نوفمبر 2003). بمجرد فك ضغط ملف <bdi dir="ltr" class="odt-ltr-term">1.1.zip</bdi>، سترى بنية الدليل التالية:</p>
 <p><img src="images/10000000000001210000009C6783922C.png" width="289" height="156" style="width:7.645cm;height:4.128cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001210000009C6783922C.png" /></p>
 <p>تحتوي بنية الدليل هذه على مكتبات فئات <bdi dir="ltr" class="odt-ltr-term">Java</bdi> المطلوبة لتطوير <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> يتم تخزينها في ملفات .jar أو .war، وهي تشبه ملفات .<bdi dir="ltr" class="odt-ltr-term">zip.</bdi> يمكن فتحها باستخدام نفس الأدوات المساعدة. توجد معظم المكتبات الضرورية في المجلد <strong>lib</strong> أعلاه:</p>
 <p><img src="images/1000000000000155000001C6FB537612.png" width="341" height="454" style="width:9.021cm;height:12.01cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000155000001C6FB537612.png" /></p>
