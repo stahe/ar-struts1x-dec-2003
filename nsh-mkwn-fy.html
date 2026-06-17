@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://stahe.github.io/ar-struts1x-dec-2003/nsh-mkwn-fy.html">
       
       
-        <link rel="prev" href="-tbyq-quiest.html">
+        <link rel="prev" href="-ltbyq-quiest.html">
       
       
-        <link rel="next" href="lml-m-mdr-lbynt.html">
+        <link rel="next" href="stll-mdr-lbynt.html">
       
       
         
@@ -440,14 +440,14 @@
   
   
     <li class="md-nav__item">
-      <a href="nmdhj-html.html" class="md-nav__link">
+      <a href="lnmdhj-html.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. نماذج HTML
+    6. النماذج HTML
   
 
     
@@ -467,14 +467,14 @@
   
   
     <li class="md-nav__item">
-      <a href="-tbyq-quiest.html" class="md-nav__link">
+      <a href="-ltbyq-quiest.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    7.  تطبيق QuiEst
+    7.  التطبيق QuiEst
   
 
     
@@ -579,7 +579,7 @@
   <a href="#83-infosjsp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.3. كود عرض infos.jsp
+        8.3. رمز العرض infos.jsp
       
     </span>
   </a>
@@ -601,7 +601,7 @@
   <a href="#85" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.5. الاختبار
+        8.5. الاختبارات
       
     </span>
   </a>
@@ -634,14 +634,14 @@
   
   
     <li class="md-nav__item">
-      <a href="lml-m-mdr-lbynt.html" class="md-nav__link">
+      <a href="stll-mdr-lbynt.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    9. العمل مع مصدر البيانات
+    9. استغلال مصدر البيانات
   
 
     
@@ -661,14 +661,14 @@
   
   
     <li class="md-nav__item">
-      <a href="lmlq.html" class="md-nav__link">
+      <a href="lmrfqt.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. الملاحق
+    10. المرفقات
   
 
     
@@ -699,7 +699,7 @@
 
 
 <h1 id="8">8. <span style="color: #365f91">إنشاء مكون إضافي</span></h1>
-<p>من الممكن إنشاء تطبيقات تسمى المكونات الإضافية (<bdi dir="ltr" class="odt-ltr-term">plugins</bdi>) يتم تحميلها عند بدء تشغيل تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> وإلغاء تحميلها عند إيقاف تشغيله. وهذا يسمح عادةً بالتهيئة عند بدء تشغيل التطبيق وتحرير الموارد عند إيقاف تشغيله. يمكن أيضًا تنفيذ هذه العمليات عن طريق توسيع فئة <strong><bdi dir="ltr" class="odt-ltr-term">ActionServlet</bdi></strong> الخاصة بوحدة التحكم، وهو ما تم في التطبيق السابق. المكون الإضافي هو بديل لهذا الحل. يمكن أن يكون المكون الإضافي تطبيقًا أكثر تعقيدًا من مجرد تهيئة بيئة بسيطة. لقد رأينا مثالاً على ذلك في الدرس الذي تم فيه تقديم قواعد التحقق من الصحة التصريحية. يتم إعلان المكون الإضافي في ملف تكوين <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> تم إعلان <strong><bdi dir="ltr" class="odt-ltr-term">ValidatorPlugIn</bdi></strong> في ملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> الخاص بالتطبيق الذي استخدمه على النحو التالي:</p>
+<p>من الممكن إنشاء تطبيقات تُسمى <strong>المكونات الإضافية (<bdi dir="ltr" class="odt-ltr-term">plugins</bdi>)</strong> والتي يتم تحميلها عند بدء تشغيل تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> وإلغاء تحميلها عند إيقافه. وهذا يسمح عادةً بإجراء عمليات التهيئة عند بدء تشغيل التطبيق وتحرير الموارد عند إيقافه. يمكن أيضًا إجراء هذه العمليات عن طريق اشتقاق الفئة <strong><bdi dir="ltr" class="odt-ltr-term">ActionServlet</bdi></strong> من وحدة التحكم، وهذا ما تم في التطبيق السابق. يُعد المكون الإضافي بديلاً عن هذا الحل. وقد يكون المكون الإضافي تطبيقًا أكثر تعقيدًا من مجرد تهيئة البيئة. وقد رأينا مثالاً على ذلك في الدرس الذي تم فيه تقديم مفاهيم قواعد التحقق التصريحية. يتم إعلان المكون الإضافي في ملف تكوين <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> وهكذا تم إعلان المكون الإضافي <strong><bdi dir="ltr" class="odt-ltr-term">ValidatorPlugIn</bdi></strong> في الملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> الخاص بالتطبيق الذي كان يستخدمه:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">    </span><span class="nt">&lt;plug-in</span><span class="w"> </span><span class="na">className=</span><span class="s">&quot;org.apache.struts.validator.ValidatorPlugIn&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">        </span><span class="nt">&lt;set-property</span><span class="w"> </span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="na">property=</span><span class="s">&quot;pathnames&quot;</span><span class="w"> </span>
@@ -707,10 +707,10 @@
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">/&gt;</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">&lt;/plug-in&gt;</span>
 </code></pre></div>
-<p>سنقوم الآن بوصف تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> باستخدام مكون إضافي.</p>
+<p>نصف الآن تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> يستخدم مكونًا إضافيًا.</p>
 <h2 id="81-struts-plugin1">8.1. <span style="color: #4f81bd">تكوين تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts /plugin1</bdi></span></h2>
 <p>نقترح إنشاء تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">plugin1</bdi></strong> المُهيأ على النحو التالي:</p>
-<p><mark style="background-color: #fff5ce"><bdi dir="ltr" class="odt-ltr-term">web.</bdi></mark><mark style="background-color: #c0c0c0">xml</mark></p>
+<p><mark style="background-color: #fff5ce"><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi></mark></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="cp">&lt;!DOCTYPE web-app</span>
@@ -743,7 +743,7 @@
 <a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>
 <a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="nt">&lt;/web-app&gt;</span>
 </code></pre></div>
-<p>لن نتطرق إلى هذا الملف بالتفصيل، لأنه ملف قياسي.</p>
+<p>لن نتطرق إلى هذا الملف لأنه ملف قياسي.</p>
 <p><mark style="background-color: #fff5ce"><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></mark></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot; ?&gt;</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
@@ -760,18 +760,18 @@
 <a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
 <a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="nt">&lt;/struts-config&gt;</span>
 </code></pre></div>
-<p>لقد أضفنا قسمًا واحدًا فقط، وهو القسم الخاص بالمكوّن الإضافي. فيما يلي سمات العلامة <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">plug-in</bdi>&gt;</strong> المستخدمة هنا:</p>
+<p>لم ندرج سوى قسم واحد، وهو القسم الخاص بالمكوّن الإضافي. فيما يلي سمات العلامة <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">plug-in</bdi>&gt;</strong> المستخدمة هنا:</p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>className
 </code></pre></div>
 </div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">اسم فئة المكون الإضافي</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>&lt;set-property&gt;
 </code></pre></div>
-</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يسمح بتهيئة المكون الإضافي باستخدام أزواج (المفتاح، القيمة)</div></td></tr></table>
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يسمح بتهيئة المكون الإضافي باستخدام أزواج (مفتاح، قيمة)</div></td></tr></table>
 
-<p>الغرض من هذا التطبيق هو توضيح كيفية قيام المكون الإضافي باسترداد معلمات التهيئة الخاصة به وإتاحتها للكائنات الأخرى التي تشترك في نفس سياق التطبيق. سنستخدم عرض <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> بسيط لعرض قيم تهيئة المكون الإضافي، وهو ما يفسر عدم وجود إجراء في ملف التكوين.</p>
+<p>الهدف من هذا التطبيق هو توضيح كيفية قيام المكون الإضافي باسترداد معلمات التهيئة الخاصة به وإتاحتها للكائنات الأخرى التي تشترك في نفس سياق التطبيق. سنستخدم عرضًا بسيطًا <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> لعرض قيم تهيئة المكون الإضافي، وهو ما يفسر عدم وجود أي إجراء في ملف التكوين.</p>
 <h2 id="82-java">8.2. <span style="color: #4f81bd">فئة <bdi dir="ltr" class="odt-ltr-term">Java</bdi> الخاصة بالمكوّن الإضافي</span></h2>
-<p>يجب أن تنفذ فئة <bdi dir="ltr" class="odt-ltr-term">Java</bdi> التي تعمل كمكوّن إضافي لتطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> واجهة <strong><bdi dir="ltr" class="odt-ltr-term">org.apache.struts.action.PlugIn</bdi></strong>. يتضمن هذا التنفيذ كتابة طريقتين:</p>
+<p>يجب أن تقوم فئة <bdi dir="ltr" class="odt-ltr-term">Java</bdi> تُستخدم كمكوّن إضافي لتطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> بتنفيذ الواجهة <strong><bdi dir="ltr" class="odt-ltr-term">org.apache.struts.action.PlugIn</bdi></strong>. ويتمثل هذا التنفيذ في كتابة طريقتين:</p>
 <ul>
   <li><bdi dir="ltr" class="odt-ltr-term">public void init</bdi>(<bdi dir="ltr" class="odt-ltr-term">ActionServlet servlet, ModuleConfig conf</bdi>)
   </li>
@@ -779,7 +779,7 @@
   </li>
 </ul>
 
-<p>عند تحميل تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi>، سيقوم وحدة التحكم الخاصة به بإنشاء مثيلات لجميع المكونات الإضافية المعلنة في ملف <em><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></em>. ثم سيقوم بتنفيذ طريقة <strong><bdi dir="ltr" class="odt-ltr-term">init</bdi></strong> لكل منها. ويقوم المكون الإضافي بإجراء التهيئة ضمن هذه الطريقة. هنا، سنقوم ببساطة بقراءة معلمات تهيئة المكون الإضافي ووضعها في سياق التطبيق بحيث تكون متاحة لجميع الكائنات الأخرى في التطبيق. عند إلغاء تحميل التطبيق، سيقوم وحدة التحكم بتنفيذ طريقة <strong><bdi dir="ltr" class="odt-ltr-term">destroy</bdi></strong> لكل مكون إضافي تم تحميله. هذا هو الوقت المناسب لتحرير الموارد التي لم تعد مطلوبة. هنا، لن يكون لدينا ما نفعله.</p>
+<p>عند تحميل تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi>، سيقوم وحدة التحكم الخاصة به بإنشاء مثيلات لجميع المكونات الإضافية المُعلنة في الملف <em><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></em>. ثم سيقوم بتنفيذ طريقة <strong><bdi dir="ltr" class="odt-ltr-term">init</bdi></strong> لكل منها. وفي هذه الطريقة يقوم المكون الإضافي بإجراء عمليات التهيئة الخاصة به. هنا، سنكتفي بقراءة معلمات التهيئة الخاصة بالمكوّن الإضافي ووضعها في سياق التطبيق حتى تكون متاحة لجميع الكائنات الأخرى فيه. وعندما يتم إلغاء تحميل التطبيق، سيقوم وحدة التحكم بتنفيذ طريقة <strong><bdi dir="ltr" class="odt-ltr-term">destroy</bdi></strong> لكل مكوّن إضافي تم تحميله. وهذا هو الوقت المناسب لتحرير الموارد التي أصبحت غير ضرورية. هنا، لن يكون لدينا ما نفعله.</p>
 <p>فيما يلي كود الفئة:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">istia.st.struts.plugins</span><span class="p">;</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
@@ -791,61 +791,61 @@
 <a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
 <a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MyPlugin</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">PlugIn</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
-<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="c1">// method called when application context is deleted</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="c1">// الطريقة التي يتم استدعاؤها عند حذف سياق التطبيق</span>
 <a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">destroy</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
-<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">     </span><span class="c1">// method called on initial creation of application context</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">     </span><span class="c1">// تم استدعاء الطريقة عند الإنشاء الأولي لسياق التطبيق</span>
 <a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">init</span><span class="p">(</span><span class="n">ActionServlet</span><span class="w"> </span><span class="n">servlet</span><span class="p">,</span><span class="w"> </span><span class="n">ModuleConfig</span><span class="w"> </span><span class="n">conf</span><span class="p">)</span>
 <a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="w">        </span><span class="kd">throws</span><span class="w"> </span><span class="n">ServletException</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="w">         </span><span class="c1">// class name of this object</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="w">         </span><span class="c1">// اسم فئة هذا الكائن</span>
 <a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">className</span><span class="o">=</span><span class="k">this</span><span class="p">.</span><span class="na">getClass</span><span class="p">().</span><span class="na">getName</span><span class="p">();</span>
-<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="w">        </span><span class="c1">// plug-in list</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="w">        </span><span class="c1">// قائمة المكونات الإضافية</span>
 <a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="w">        </span><span class="n">PlugInConfig</span><span class="o">[]</span><span class="w"> </span><span class="n">pluginConfigs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">conf</span><span class="p">.</span><span class="na">findPlugInConfigs</span><span class="p">();</span>
-<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="w">         </span><span class="c1">// explore plugins to find the right one</span>
-<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="w">         </span><span class="c1">// which is named after this class</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="w">         </span><span class="c1">// البحث في المكونات الإضافية للعثور على المكون الإضافي</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="w">         </span><span class="c1">// الذي يحمل اسم هذه الفئة</span>
 <a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="w">        </span><span class="kt">boolean</span><span class="w"> </span><span class="n">trouvé</span><span class="o">=</span><span class="kc">false</span><span class="p">;</span>
 <a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="n">trouvé</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">pluginConfigs</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="w">            </span><span class="c1">// plugin name</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="w">            </span><span class="c1">// اسم المكون الإضافي</span>
 <a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="w">            </span><span class="n">String</span><span class="w"> </span><span class="n">pluginClassName</span><span class="o">=</span><span class="n">pluginConfigs</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">.</span><span class="na">getClassName</span><span class="p">();</span>
-<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="w">             </span><span class="c1">// if it&#39;s not the right plugin, continue</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="w">             </span><span class="c1">// إذا لم يكن هذا هو المكون الإضافي الصحيح، نواصل البحث</span>
 <a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="w"> </span><span class="n">pluginClassName</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">className</span><span class="p">))</span><span class="w"> </span><span class="k">continue</span><span class="p">;</span>
-<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="w">            </span><span class="c1">// it&#39;s the right one - you memorize its properties in context</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="w">            </span><span class="c1">// إنه المكون الإضافي الصحيح - نقوم بتخزين خصائصه في السياق</span>
 <a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a><span class="w">            </span><span class="n">servlet</span><span class="p">.</span><span class="na">getServletContext</span><span class="p">().</span><span class="na">setAttribute</span><span class="p">(</span><span class="s">&quot;initialisations&quot;</span><span class="p">,</span><span class="n">pluginConfigs</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">.</span><span class="na">getProperties</span><span class="p">());</span>
 <a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a><span class="w">            </span><span class="n">trouvé</span><span class="o">=</span><span class="kc">true</span><span class="p">;</span>
 <a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="w">        </span><span class="p">}</span><span class="c1">//for i</span>
-<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="c1">//init</span>
-<a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a><span class="p">}</span><span class="w"> </span><span class="c1">//class</span>
+<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="c1">//التهيئة</span>
+<a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a><span class="p">}</span><span class="w"> </span><span class="c1">//فئة</span>
 </code></pre></div>
 <p>يرجى ملاحظة النقاط التالية:</p>
 <ul>
-  <li>تأخذ طريقة <b><bdi dir="ltr" class="odt-ltr-term">init</bdi> </b>معلمة تسمى <b><bdi dir="ltr" class="odt-ltr-term">conf</bdi> </b>(من النوع <b><bdi dir="ltr" class="odt-ltr-term">ModuleConfig</bdi>) </b>توفر الوصول إلى محتويات ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></b>. 
+  <li>تستقبل الطريقة <b><bdi dir="ltr" class="odt-ltr-term">init</bdi> </b>معلمة تُسمى هنا <b><bdi dir="ltr" class="odt-ltr-term">conf</bdi> </b>من النوع <b><bdi dir="ltr" class="odt-ltr-term">ModuleConfig</bdi> </b>والتي تتيح الوصول إلى محتوى الملف <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></b>. 
   </li>
-  <li>تسترد طريقة<b> [<bdi dir="ltr" class="odt-ltr-term">ModuleConfig</bdi>].<bdi dir="ltr" class="odt-ltr-term">findPlugInConfigs</bdi>() </b>جميع أقسام<b> &lt;<bdi dir="ltr" class="odt-ltr-term">plug-in</bdi>&gt; </b>من ملف تكوين <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> في شكل مصفوفة من كائنات <b><bdi dir="ltr" class="odt-ltr-term">PlugInConfig</bdi></b>.
+  <li>تسمح الطريقة <b>[<bdi dir="ltr" class="odt-ltr-term">ModuleConfig</bdi>].<bdi dir="ltr" class="odt-ltr-term">findPlugInConfigs</bdi>() </b>باسترداد جميع أقسام <b>&lt;<bdi dir="ltr" class="odt-ltr-term">plug-in</bdi>&gt; </b>من ملف تكوين <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> في شكل مصفوفة من كائنات <b><bdi dir="ltr" class="odt-ltr-term">PlugInConfig</bdi></b>.
   </li>
-  <li>تمثل فئة <b><bdi dir="ltr" class="odt-ltr-term">PluginConfig</bdi> </b>قسم<b> &lt;<bdi dir="ltr" class="odt-ltr-term">plug-in</bdi>&gt; </b>من ملف التكوين. تسمح لنا طريقة<b> [<bdi dir="ltr" class="odt-ltr-term">PlugInConfig</bdi>].<bdi dir="ltr" class="odt-ltr-term">getProperties</bdi> </b>بالوصول إلى عناصر<b> &lt;<bdi dir="ltr" class="odt-ltr-term">set-property</bdi>&gt; </b>في القسم في شكل قاموس<b> <bdi dir="ltr" class="odt-ltr-term">java.util.Map</bdi></b>.
+  <li>تمثل الفئة <b><bdi dir="ltr" class="odt-ltr-term">PluginConfig</bdi> </b>قسم <b>&lt;<bdi dir="ltr" class="odt-ltr-term">plug-in</bdi>&gt; </b>من ملف التكوين. تتيح لنا الطريقة <b>[<bdi dir="ltr" class="odt-ltr-term">PlugInConfig</bdi>].<bdi dir="ltr" class="odt-ltr-term">getProperties</bdi> </b>الوصول إلى عناصر <b>&lt;<bdi dir="ltr" class="odt-ltr-term">set-property</bdi>&gt; </b>في القسم في شكل قاموس <b><bdi dir="ltr" class="odt-ltr-term">java.util.Map</bdi></b>.
   </li>
   <li>يتم وضع قاموس خصائص المكون الإضافي في سياق التطبيق.
   </li>
-  <li>نظرًا لوجود عدة مكونات إضافية، نحتاج إلى العثور على المكون الذي يهمنا. وهو المكون الذي يحمل نفس اسم الفئة التي يتم تنفيذها.
+  <li>ونظرًا لإمكانية وجود عدة مكونات إضافية، يتعين علينا تحديد المكون الذي يهمنا. وهو المكون الذي يحمل نفس اسم الفئة التي يتم تنفيذها.
   </li>
 </ul>
 
-<p>هنا، اخترنا وضع القاموس بأكمله في السياق. كان بإمكاننا اختيار استخدامه. يوضح مقتطف الشفرة التالي إحدى طرق القيام بذلك:</p>
+<p>وقد فضلنا هنا وضع القاموس بالكامل في السياق. كان بإمكاننا الاستفادة من هذا القاموس. توضح سلسلة التعليمات البرمجية التالية إحدى طرق القيام بذلك:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="w">            </span><span class="n">Map</span><span class="w"> </span><span class="n">initialisations</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pluginConfigs</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">.</span><span class="na">getProperties</span><span class="p">();</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">             </span><span class="c1">// iterate over dictionary entries</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">             </span><span class="c1">// التكرار على إدخالات القاموس</span>
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">            </span><span class="n">Iterator</span><span class="w"> </span><span class="n">entrées</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">initialisations</span><span class="p">.</span><span class="na">entrySet</span><span class="p">().</span><span class="na">iterator</span><span class="p">();</span>
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">            </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">entrées</span><span class="p">.</span><span class="na">hasNext</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">                 </span><span class="c1">// retrieve current input (key,value)</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">                 </span><span class="c1">// استرداد المدخل (المفتاح، القيمة) الحالي</span>
 <a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">                </span><span class="n">Map</span><span class="p">.</span><span class="na">Entry</span><span class="w"> </span><span class="n">entrée</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Map</span><span class="p">.</span><span class="na">Entry</span><span class="p">)</span><span class="w"> </span><span class="n">entrées</span><span class="p">.</span><span class="na">next</span><span class="p">();</span>
 <a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">                </span><span class="n">String</span><span class="w"> </span><span class="n">clé</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="p">)</span><span class="w"> </span><span class="n">entrée</span><span class="p">.</span><span class="na">getKey</span><span class="p">();</span>
 <a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">                </span><span class="n">String</span><span class="w"> </span><span class="n">valeur</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="p">)</span><span class="w"> </span><span class="n">entrée</span><span class="p">.</span><span class="na">getValue</span><span class="p">();</span>
-<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">                </span><span class="c1">// exploit (key,value)</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">                </span><span class="c1">// معالجة (المفتاح، القيمة)</span>
 <a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">                </span><span class="c1">//...</span>
 <a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">            </span><span class="p">}</span>
 </code></pre></div>
-<h2 id="83-infosjsp">8.3. <span style="color: #4f81bd">كود عرض <bdi dir="ltr" class="odt-ltr-term">infos.jsp</bdi></span></h2>
-<p>عرض <strong><bdi dir="ltr" class="odt-ltr-term">infos.jsp</bdi></strong> مسؤول عن عرض محتويات قاموس خصائص المكون الإضافي، الذي تم وضعه في سياق التطبيق. وبما أن عرض <strong><bdi dir="ltr" class="odt-ltr-term">infos.jsp</bdi></strong> جزء من هذا السياق، فإنه يمكنه الوصول إليه. وفيما يلي الكود الخاص به:</p>
+<h2 id="83-infosjsp">8.3. <span style="color: #4f81bd">رمز العرض <bdi dir="ltr" class="odt-ltr-term">infos.jsp</bdi></span></h2>
+<p>تتولى طريقة العرض <strong><bdi dir="ltr" class="odt-ltr-term">infos.jsp</bdi></strong> عرض محتوى قاموس خصائص المكون الإضافي الذي تم وضعه في سياق التطبيق. وبما أن طريقة العرض <strong><bdi dir="ltr" class="odt-ltr-term">infos.jsp</bdi></strong> جزء من هذا السياق، فإنها تتمتع بإمكانية الوصول إليه. وفيما يلي كودها:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="err">&lt;</span>%@ taglib uri=&quot;/WEB-INF/struts-bean.tld&quot; prefix=&quot;bean&quot; %&gt;
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="err">&lt;</span>%@ taglib uri=&quot;/WEB-INF/struts-logic.tld&quot; prefix=&quot;logic&quot; %&gt;
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
@@ -873,24 +873,24 @@
 <ul>
   <li>نستخدم مكتبات العلامات <b><bdi dir="ltr" class="odt-ltr-term">struts-logic</bdi> </b>و <b><bdi dir="ltr" class="odt-ltr-term">struts-bean</bdi></b>
   </li>
-  <li>تسمح لنا علامة<b> &lt;<bdi dir="ltr" class="odt-ltr-term">logic:iterate</bdi>&gt; </b>بعرض قاموس <b>التهيئة </b>الذي تم وضعه في السياق بواسطة طريقة <b><bdi dir="ltr" class="odt-ltr-term">init</bdi></b> الخاصة بالمكوّن الإضافي. تحدد السمة <b><bdi dir="ltr" class="odt-ltr-term">name</bdi> </b>الكائن الذي سيتم تكراره. يجب أن يكون هذا شيئًا مثل مجموعة أو مكرر أو ما شابه. يتم البحث عن الكائن في جميع النطاقات (الصفحة، الطلب، الجلسة، السياق). هنا، سيتم العثور عليه في نطاق <b>السياق</b>. تُستخدم المعلمة <b>id </b>لتسمية العنصر الحالي للمجموعة مع تقدم عملية التكرار. هنا، داخل نص العلامة<b> &lt;<bdi dir="ltr" class="odt-ltr-term">logic:iterate</bdi>&gt;</b>، سيمثل<b> العنصر </b>العنصر الحالي في القاموس. ويمثل هذا كائن<b> <bdi dir="ltr" class="odt-ltr-term">java.util.Map.</bdi></b><bdi dir="ltr" class="odt-ltr-term">Entry</bdi>، وهو في الأساس زوج (مفتاح، قيمة) من القاموس.
+  <li>تسمح لنا العلامة <b>&lt;<bdi dir="ltr" class="odt-ltr-term">logic:iterate</bdi>&gt; </b>بعرض قاموس <b>التهيئة </b>الذي تم وضعه في السياق بواسطة طريقة <b><bdi dir="ltr" class="odt-ltr-term">init</bdi> </b>الخاصة بالمكوّن الإضافي. يشير السمة <b><bdi dir="ltr" class="odt-ltr-term">name</bdi> </b>إلى الكائن الذي يجب التكرار عليه. يجب أن يكون هذا الكائن شبيهاً بمجموعة أو متكرر أو ما شابه. يتم البحث عن الكائن في جميع نطاقات (الصفحة، الطلب، الجلسة، السياق). وهنا سيتم العثور عليه في نطاق <b>السياق</b>. تُستخدم المعلمة <b>id </b>لتسمية العنصر الحالي في المجموعة خلال عمليات التكرار. هنا، في نص العلامة <b>&lt;<bdi dir="ltr" class="odt-ltr-term">logic:iterate</bdi>&gt;</b>، سيمثل <b><bdi dir="ltr" class="odt-ltr-term">element</bdi> </b>العنصر الحالي في قاموس. ويمثل هذا العنصر كائن <b><bdi dir="ltr" class="odt-ltr-term">java.util.Map.Entry</bdi> </b>الذي يُعد بشكل عام زوجًا (مفتاح، قيمة) من القاموس.
   </li>
-  <li>في نص العلامة<b> &lt;<bdi dir="ltr" class="odt-ltr-term">logic:iterate</bdi>&gt;</b>، نعرض (<b>&lt;<bdi dir="ltr" class="odt-ltr-term">bean:write</bdi>&gt;</b>) محتويات العنصر الحالي <b><bdi dir="ltr" class="odt-ltr-term">element</bdi></b>. يتم التعامل مع هذا ككائن له <b>خاصيتان</b>: <b>المفتاح والقيمة</b>. يتم عرض هاتين الخاصيتين.
+  <li>في جسم العلامة <b>&lt;<bdi dir="ltr" class="odt-ltr-term">logic:iterate</bdi>&gt;</b>، يتم عرض (<b>&lt;<bdi dir="ltr" class="odt-ltr-term">bean:write</bdi>&gt;</b>) محتوى العنصر الحالي <b><bdi dir="ltr" class="odt-ltr-term">element</bdi></b>. ويُعتبر هذا العنصر كائنًا له خاصيتان (<b><bdi dir="ltr" class="odt-ltr-term">property</bdi></b>): المفتاح <b>key </b>والقيمة <b><bdi dir="ltr" class="odt-ltr-term">value</bdi></b>. ويتم عرض هاتين الخاصيتين.
   </li>
 </ul>
 
 <h2 id="84">8.4. <span style="color: #4f81bd">النشر</span></h2>
 <p>يتم تعريف سياق التطبيق في ملف التكوين <strong><bdi dir="ltr" class="odt-ltr-term">server.xml</bdi></strong> الخاص بـ <bdi dir="ltr" class="odt-ltr-term">Tomcat:</bdi></p>
 <p><strong>&lt;<bdi dir="ltr" class="odt-ltr-term">Context path</bdi>=&quot;/<bdi dir="ltr" class="odt-ltr-term">plugin11</bdi>&quot; <bdi dir="ltr" class="odt-ltr-term">reloadable</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">true</bdi>&quot; <bdi dir="ltr" class="odt-ltr-term">docBase</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">E:</bdi>\<bdi dir="ltr" class="odt-ltr-term">data</bdi>\<bdi dir="ltr" class="odt-ltr-term">serge</bdi>\web\<bdi dir="ltr" class="odt-ltr-term">struts</bdi>\<bdi dir="ltr" class="odt-ltr-term">plugins</bdi>\1&quot; /&gt;</strong></p>
-<p>هيكل دليل التطبيق هو كما يلي:</p>
-<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000001300000008FE31A6D61.png" width="304" height="143" style="display:inline-block; margin:4px;width:8.042cm;height:3.784cm;" class="odt-zoomable" data-zoom-src="images/10000000000001300000008FE31A6D61.png" /><img src="images/1000000000000160000000D371853205.png" width="352" height="211" style="display:inline-block; margin:4px;width:9.312cm;height:5.583cm;" class="odt-zoomable" data-zoom-src="images/1000000000000160000000D371853205.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000015F0000018256CF5DE2.png" width="351" height="386" style="display:inline-block; margin:4px;width:9.285cm;height:10.211cm;" class="odt-zoomable" data-zoom-src="images/100000000000015F0000018256CF5DE2.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;" colspan="2"><img src="images/10000000000001DF0000006C6244F965.png" width="479" height="108" style="display:inline-block; margin:4px;width:12.672cm;height:2.858cm;" class="odt-zoomable" data-zoom-src="images/10000000000001DF0000006C6244F965.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
+<p>هيكل التطبيق كالتالي:</p>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000001300000008FE31A6D61.png" width="304" height="143" style="display:inline-block; margin:4px;width:8.042cm;height:3.784cm;" class="odt-zoomable" data-zoom-src="images/10000000000001300000008FE31A6D61.png" /><img src="images/1000000000000160000000D371853205.png" width="352" height="211" style="display:inline-block; margin:4px;width:9.312cm;height:5.583cm;" class="odt-zoomable" data-zoom-src="images/1000000000000160000000D371853205.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000015F0000018256CF5DE2.png" width="351" height="386" style="display:inline-block; margin:4px;width:9.285cm;height:10.211cm;" class="odt-zoomable" data-zoom-src="images/100000000000015F0000018256CF5DE2.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;" colspan="2"><img src="images/10000000000001DF0000006C6244F965.png" width="479" height="108" style="display:inline-block; margin:4px;width:12.672cm;height:2.858cm;" class="odt-zoomable" data-zoom-src="images/10000000000001DF0000006C6244F965.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
-<h2 id="85">8.5. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">الاختبار</span></strong></span></h2>
-<p>نقوم بتشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> ونطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/plugin1/infos.jsp</bdi></strong>:</p>
-<p><img src="images/10000000000001C2000000D919CB97E0.png" width="450" height="217" style="width:11.904cm;height:5.74cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001C2000000D919CB97E0.png" /></p>
-<p>نلاحظ أن عرض <strong><bdi dir="ltr" class="odt-ltr-term">infos.jsp</bdi></strong> قد نجح في الوصول إلى المعلومات المخزنة في سياق التطبيق عبر المكون الإضافي.</p>
+<h2 id="85">8.5. <span style="color: #4f81bd">الاختبارات</span></h2>
+<p>نقوم بتشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> ونطلب <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/plugin1/infos.jsp</bdi></strong>:</p>
+<p><img src="images/10000000000001C2000000D919CB97E0.png" width="450" height="217" style="width:11.904cm;height:5.741cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001C2000000D919CB97E0.png" /></p>
+<p>نلاحظ أن العرض <strong><bdi dir="ltr" class="odt-ltr-term">infos.jsp</bdi></strong> قد تمكن بالفعل من الوصول إلى المعلومات المخزنة في سياق التطبيق بواسطة المكون الإضافي.</p>
 <h2 id="86">8.6. <span style="color: #4f81bd">الخلاصة</span></h2>
-<p>لقد أثبتنا أنه يمكن تهيئة تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> باستخدام مكون إضافي. ويمكن أن يكون هذا بديلاً عن اشتقاق فئة <strong><bdi dir="ltr" class="odt-ltr-term">ActionServlet</bdi></strong> لتحقيق نفس النتيجة.</p>
+<p>لقد أظهرنا أنه يمكن تهيئة تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> باستخدام مكون إضافي. وقد يكون هذا حلاً بديلاً عن اشتقاق الفئة <strong><bdi dir="ltr" class="odt-ltr-term">ActionServlet</bdi></strong> للقيام بنفس المهمة.</p>
 
 
 

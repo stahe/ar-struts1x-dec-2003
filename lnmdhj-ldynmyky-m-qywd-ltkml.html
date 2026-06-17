@@ -18,7 +18,7 @@
         <link rel="prev" href="stkhdm-lnmdhj-ldynmyky.html">
       
       
-        <link rel="next" href="nmdhj-html.html">
+        <link rel="next" href="lnmdhj-html.html">
       
       
         
@@ -476,7 +476,7 @@
   <a href="#51" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.1. إعلان قيود التكامل
+        5.1. إعلان قيود السلامة
       
     </span>
   </a>
@@ -543,7 +543,7 @@
   <a href="#543-web-inf" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.4.3. مجلد WEB-INF
+        5.4.3. المجلد WEB-INF
       
     </span>
   </a>
@@ -592,14 +592,14 @@
   
   
     <li class="md-nav__item">
-      <a href="nmdhj-html.html" class="md-nav__link">
+      <a href="lnmdhj-html.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. نماذج HTML
+    6. النماذج HTML
   
 
     
@@ -619,14 +619,14 @@
   
   
     <li class="md-nav__item">
-      <a href="-tbyq-quiest.html" class="md-nav__link">
+      <a href="-ltbyq-quiest.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    7.  تطبيق QuiEst
+    7.  التطبيق QuiEst
   
 
     
@@ -673,14 +673,14 @@
   
   
     <li class="md-nav__item">
-      <a href="lml-m-mdr-lbynt.html" class="md-nav__link">
+      <a href="stll-mdr-lbynt.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    9. العمل مع مصدر البيانات
+    9. استغلال مصدر البيانات
   
 
     
@@ -700,14 +700,14 @@
   
   
     <li class="md-nav__item">
-      <a href="lmlq.html" class="md-nav__link">
+      <a href="lmrfqt.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. الملاحق
+    10. المرفقات
   
 
     
@@ -738,16 +738,16 @@
 
 
 <h1 id="5">5. <span style="color: #365f91">النماذج الديناميكية مع قيود التكامل</span></h1>
-<p>سنقوم الآن بتطوير تطبيق جديد يسمى <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne2</bdi></strong> باستخدام </p>
+<p>سنقوم الآن بتطوير تطبيق جديد يسمى <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne2</bdi></strong> يستخدم </p>
 <ul>
-  <li>نموذج ديناميكي مثل <b><bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></b>
+  <li>نموذجًا ديناميكيًا كما في <b><bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></b>
   </li>
-  <li>ملف يعلن قيود التكامل التي يجب التحقق منها بواسطة حقول هذا النموذج الديناميكي
+  <li>ملفًا لإعلان قيود التكامل التي يجب التحقق منها عبر حقول هذا النموذج الديناميكي
   </li>
 </ul>
 
-<h2 id="51">5.1. <span style="color: #4f81bd">إعلان قيود التكامل</span></h2>
-<p>تم إعلان الفئة المستخدمة لتخزين قيم الاسم والعمر في تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></strong> على النحو التالي:</p>
+<h2 id="51">5.1. <span style="color: #4f81bd">إعلان قيود السلامة</span></h2>
+<p>كانت الفئة المستخدمة لتخزين قيم الاسم والعمر في تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></strong> مُعلنة على النحو التالي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    <span class="p">&lt;</span><span class="nt">form-beans</span><span class="p">&gt;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>        <span class="p">&lt;</span><span class="nt">form-bean</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;frmPersonne&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;istia.st.struts.personne.PersonneDynaForm&quot;</span><span class="p">&gt;</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>            <span class="p">&lt;</span><span class="nt">form-property</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nom&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;java.lang.String&quot;</span> <span class="na">initial</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">/&gt;</span>
@@ -755,16 +755,16 @@
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="p">&lt;/</span><span class="nt">form-bean</span><span class="p">&gt;</span>            
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">&lt;/</span><span class="nt">form-beans</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>كان علينا كتابة فئة <strong><bdi dir="ltr" class="odt-ltr-term">PersonneDynaForm</bdi></strong> لتوفير طريقة <bdi dir="ltr" class="odt-ltr-term">validate</bdi> قادرة على التحقق من صحة قيم الاسم والعمر في النموذج الديناميكي. كان هناك نوعان من الفحوصات التي يجب إجراؤها:</p>
+<p>اضطررنا إلى كتابة الفئة <strong><bdi dir="ltr" class="odt-ltr-term">PersonneDynaForm</bdi></strong> لتوفير طريقة التحقق (<bdi dir="ltr" class="odt-ltr-term">validate</bdi>) قادرة على التأكد من صحة قيمتي «الاسم» و«العمر» في النموذج الديناميكي. وكانت عمليات التحقق المطلوبة من نوعين:</p>
 <ul>
   <li>يجب ألا يكون أي من الحقلين فارغًا
   </li>
-  <li>يجب أن يتطابق حقل العمر مع القناع (التعبير العادي) <b>\s*\<bdi dir="ltr" class="odt-ltr-term">d+</bdi>\s*</b>
+  <li>يجب أن يتوافق حقل «العمر» مع القالب (التعبير العادي) <b>\s*\<bdi dir="ltr" class="odt-ltr-term">d+</bdi>\s*</b>
   </li>
 </ul>
 
-<p>هذان النوعان من عمليات التحقق من الصحة هما من بين العمليات التي يمكن لبيئة <strong><bdi dir="ltr" class="odt-ltr-term">StrutsValidator</bdi></strong> تنفيذها. تأتي هذه البيئة مرفقة مع <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> وتشمل عددًا من الفئات الموجودة في <strong>ملفات <bdi dir="ltr" class="odt-ltr-term">commons-validator.jar</bdi></strong> و <strong><bdi dir="ltr" class="odt-ltr-term">jakarta-oro.jar</bdi></strong>. إذا اتبعت الإجراء الموضح في بداية هذا المستند لتثبيت مكتبات <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> داخل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi>، فستكون هذه المكتبات متوفرة بالفعل في <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> تأكد من توفرها أيضًا في <bdi dir="ltr" class="odt-ltr-term">JBuilder.</bdi> وقد تم شرح ذلك أيضًا في بداية هذا المستند.</p>
-<p>يصبح إعلان النموذج الجديد في <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> كما يلي:</p>
+<p>هذان الاختباران هما جزء من عمليات التحقق التي يمكن لبيئة <strong><bdi dir="ltr" class="odt-ltr-term">StrutsValidator</bdi></strong> إجراؤها. تأتي هذه البيئة مع <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> وتحتوي على عدد من الفئات الموجودة في <strong><bdi dir="ltr" class="odt-ltr-term">commons-validator.jar</bdi></strong> و <strong><bdi dir="ltr" class="odt-ltr-term">jakarta-oro.jar</bdi></strong>. إذا كنت قد اتبعت الإجراء الموضح في بداية هذا المستند لتثبيت مكتبات <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> داخل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi>، فإن هذه المكتبات متوفرة بالفعل في <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> تأكد من توفرها أيضًا في <bdi dir="ltr" class="odt-ltr-term">JBuilder.</bdi> وقد تم شرح ذلك أيضًا في بداية هذا المستند.</p>
+<p>يصبح الإعلان الجديد للنموذج في <strong>ملف <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> كما يلي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>    <span class="p">&lt;</span><span class="nt">form-beans</span><span class="p">&gt;</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>        <span class="p">&lt;</span><span class="nt">form-bean</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;frmPersonne&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;org.apache.struts.validator.DynaValidatorForm&quot;</span><span class="p">&gt;</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>            <span class="p">&lt;</span><span class="nt">form-property</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nom&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;java.lang.String&quot;</span> <span class="na">initial</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">/&gt;</span>
@@ -772,7 +772,7 @@
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>        <span class="p">&lt;/</span><span class="nt">form-bean</span><span class="p">&gt;</span>            
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="p">&lt;/</span><span class="nt">form-beans</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>وبالتالي، لا يوجد فرق يذكر. أصبحت الفئة المرتبطة بالنموذج الديناميكي الآن فئة <bdi dir="ltr" class="odt-ltr-term">StrutsValidator</bdi> محددة مسبقًا: <strong><bdi dir="ltr" class="odt-ltr-term">org.apache.struts.validator.DynaValidatorForm</bdi></strong>. لم يعد المطور بحاجة إلى كتابة فئة. بدلاً من ذلك، يحدد قيود التكامل التي يجب أن يتحقق منها النموذج في ملف <bdi dir="ltr" class="odt-ltr-term">XML</bdi> منفصل. يجب أن يعرف وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> اسم هذا الملف. لتحقيق ذلك، يظهر قسم تكوين جديد في ملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong>:</p>
+<p>وبالتالي، فإن الفرق ضئيل للغاية. أصبحت الفئة المرتبطة بالنموذج الديناميكي الآن فئة محددة مسبقًا من <bdi dir="ltr" class="odt-ltr-term">StrutsValidator:</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">org.apache.struts.validator.DynaValidatorForm</bdi></strong>. لم يعد المطور بحاجة إلى كتابة أي فئة. فهو يحدد قيود التكامل التي يجب أن يتحقق منها النموذج في ملف منفصل باسم <bdi dir="ltr" class="odt-ltr-term">XML.</bdi> يجب أن يعرف وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> اسم هذا الملف. ولهذا الغرض، يظهر قسم تكوين جديد في الملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong>:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="w">    </span><span class="nt">&lt;plug-in</span><span class="w"> </span><span class="na">className=</span><span class="s">&quot;org.apache.struts.validator.ValidatorPlugIn&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">        </span><span class="nt">&lt;set-property</span><span class="w"> </span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">        </span><span class="na">property=</span><span class="s">&quot;pathnames&quot;</span><span class="w"> </span>
@@ -780,7 +780,7 @@
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nt">/&gt;</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nt">&lt;/plug-in&gt;</span>
 </code></pre></div>
-<p>يُستخدم قسم <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">plug-in</bdi>&gt;</strong> لتحميل فئة خارجية عن <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> السمة الرئيسية له هي <strong><bdi dir="ltr" class="odt-ltr-term">classname</bdi>،</strong> والتي تحدد اسم الفئة المراد إنشاء مثيل لها. قد يحتاج الكائن الذي تم إنشاء مثيل له إلى التهيئة. ويتم ذلك باستخدام علامة <bdi dir="ltr" class="odt-ltr-term">set-property</bdi>، التي تحتوي على سمتين:</p>
+<p>يُستخدم القسم <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">plug-in</bdi>&gt;</strong> لتحميل فئة خارجية إلى <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> السمة الرئيسية له هي <strong><bdi dir="ltr" class="odt-ltr-term">classname</bdi></strong> التي تشير إلى اسم الفئة المراد إنشاء مثيل لها. قد يحتاج الكائن الذي تم إنشاء مثيل له إلى التهيئة. ويتم ذلك باستخدام علامات <strong><bdi dir="ltr" class="odt-ltr-term">set-property</bdi></strong> التي تحتوي على سمتين:</p>
 <ul>
   <li><b><bdi dir="ltr" class="odt-ltr-term">property</bdi></b>: اسم الخاصية المراد تهيئتها
   </li>
@@ -788,30 +788,30 @@
   </li>
 </ul>
 
-<p>هنا، تحتاج فئة <strong><bdi dir="ltr" class="odt-ltr-term">DynaValidatorForm</bdi></strong> إلى معرفتين:</p>
+<p>هنا، تحتاج الفئة <strong><bdi dir="ltr" class="odt-ltr-term">DynaValidatorForm</bdi></strong> إلى معرفتين:</p>
 <ul>
-  <li>ملف <bdi dir="ltr" class="odt-ltr-term">XML</bdi> الذي يحدد قيود التكامل القياسية التي يمكن للفئة التحقق من صحتها.
+  <li>الملف <bdi dir="ltr" class="odt-ltr-term">XML</bdi> الذي يحدد قيود التكامل القياسية التي تستطيع الفئة التحقق منها.
   </li>
-  <li>ملف <bdi dir="ltr" class="odt-ltr-term">XML</bdi> الذي يحدد قيود التكامل لمختلف النماذج الديناميكية للتطبيق
+  <li>الملف <bdi dir="ltr" class="odt-ltr-term">XML</bdi> الذي يحدد قيود السلامة الخاصة بالنماذج الديناميكية المختلفة للتطبيق
   </li>
 </ul>
 
-<p>يتم توفير هذه المعلومات هنا بواسطة خاصية <strong><bdi dir="ltr" class="odt-ltr-term">pathnames</bdi></strong>. قيمة هذه الخاصية هي قائمة بملفات <bdi dir="ltr" class="odt-ltr-term">XML</bdi> التي سيقوم أداة التحقق من الصحة بتحميلها:</p>
+<p>يتم توفير هاتين المعلومتين هنا من خلال الخاصية <strong><bdi dir="ltr" class="odt-ltr-term">pathnames</bdi></strong>. قيمة هذه الخاصية هي قائمة بالملفات <bdi dir="ltr" class="odt-ltr-term">XML</bdi> التي سيقوم أداة التحقق بتحميلها:</p>
 <ul>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">validator-rules.xml</bdi> </b>هو الملف الذي يحدد قيود التكامل القياسية. وهو مضمن في <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> ويمكن العثور عليه في <b>&lt;<bdi dir="ltr" class="odt-ltr-term">struts</bdi>&gt;\lib </b>جنبًا إلى جنب مع ملف تعريف <bdi dir="ltr" class="odt-ltr-term">DTD</bdi> الخاص به:
+  <li><b><bdi dir="ltr" class="odt-ltr-term">validator-rules.xml</bdi> </b>هو الملف الذي يحدد قيود التكامل القياسية. ويأتي مرفقًا مع <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> ويمكن العثور عليه في <b>&lt;<bdi dir="ltr" class="odt-ltr-term">struts</bdi>&gt;\lib </b>مصحوبًا بملف التعريف الخاص به <bdi dir="ltr" class="odt-ltr-term">DTD:</bdi>
   </li>
 </ul>
 
 <p><img src="images/100000000000014B00000021AEFAEF63.png" width="331" height="33" style="width:8.756cm;height:0.873cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000014B00000021AEFAEF63.png" /></p>
 <ul>
-  <li>يحدد<b> ملف <bdi dir="ltr" class="odt-ltr-term">validation.xml</bdi> </b>قيود التكامل لمختلف النماذج الديناميكية للتطبيق. يتم إنشاؤه بواسطة المطور. واسمه تعسفي.
+  <li><b><bdi dir="ltr" class="odt-ltr-term">validation.xml</bdi> </b>هو الملف الذي يحدد قيود السلامة للنماذج الديناميكية المختلفة للتطبيق. يتم إنشاؤه بواسطة المطور. ويمكن تسميته بأي اسم.
   </li>
 </ul>
 
-<p>يمكن وضع هذين الملفين في أي مكان ضمن <bdi dir="ltr" class="odt-ltr-term">WEB-INF.</bdi> في مثالنا، سيتم وضعهما مباشرةً ضمن <bdi dir="ltr" class="odt-ltr-term">WEB-INF:</bdi></p>
-<p><img src="images/100000000000015D000000950E1C4A7E.png" width="349" height="149" style="width:9.232cm;height:3.941cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000015D000000950E1C4A7E.png" /></p>
+<p>يمكن وضع هذين الملفين في أي مكان تحت <bdi dir="ltr" class="odt-ltr-term">WEB-INF.</bdi> في مثالنا، سيتم وضعهما مباشرةً تحت <bdi dir="ltr" class="odt-ltr-term">WEB-INF:</bdi></p>
+<p><img src="images/100000000000015D000000950E1C4A7E.png" width="349" height="149" style="width:9.232cm;height:3.942cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000015D000000950E1C4A7E.png" /></p>
 <h2 id="52">5.2. <span style="color: #4f81bd">كتابة قيود التكامل للنماذج الديناميكية</span></h2>
-<p>سيحتوي ملف <strong><bdi dir="ltr" class="odt-ltr-term">validation.xml</bdi></strong> على قيود التكامل الخاصة بحقول الاسم والعمر في النموذج <strong><bdi dir="ltr" class="odt-ltr-term">frmPersonne</bdi></strong> من النوع <strong><bdi dir="ltr" class="odt-ltr-term">org.apache.struts.validator.DynaValidatorForm</bdi></strong>. ومحتواه كما يلي:</p>
+<p>سيحتوي الملف <strong><bdi dir="ltr" class="odt-ltr-term">validation.xml</bdi></strong> على قيود السلامة الخاصة بنا لحقول «الاسم» و«العمر» في النموذج <strong><bdi dir="ltr" class="odt-ltr-term">frmPersonne</bdi></strong> من النوع <strong><bdi dir="ltr" class="odt-ltr-term">org.apache.struts.validator.DynaValidatorForm</bdi></strong>. ومحتواه كما يلي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">form-validation</span><span class="p">&gt;</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="p">&lt;</span><span class="nt">global</span><span class="p">&gt;</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>      <span class="p">&lt;</span><span class="nt">constant</span><span class="p">&gt;</span>
@@ -835,15 +835,15 @@
 <a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>    <span class="p">&lt;/</span><span class="nt">formset</span><span class="p">&gt;</span>
 <a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="p">&lt;/</span><span class="nt">form-validation</span><span class="p">&gt;</span>    
 </code></pre></div>
-<p>يجب اتباع قواعد الكتابة التالية:</p>
+<p>قواعد الكتابة التي يجب الالتزام بها هي التالية:</p>
 <ul>
   <li>توجد جميع القواعد داخل علامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">form-validation</bdi></b>&gt;
   </li>
-  <li>تُستخدم علامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">global</bdi></b>&gt; لتعريف المعلومات ذات النطاق العام، أي الصالحة لجميع النماذج في حالة وجود نماذج متعددة. هنا، وضعنا الثوابت داخل &lt;<b><bdi dir="ltr" class="odt-ltr-term">global</bdi></b>&gt;. يتم تعريف الثابت من خلال اسمه (علامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">constant-name</bdi></b>&gt;) وقيمته (علامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">constant-value</bdi></b>&gt;). نحدد الثابت <b>`<bdi dir="ltr" class="odt-ltr-term">entierpositif</bdi>` </b>باستخدام التعبير العادي الذي يجب التحقق منه للتأكد من أنه عدد صحيح موجب: <b>`_^\s*\<bdi dir="ltr" class="odt-ltr-term">d+</bdi>\s*$` </b>(تسلسل من الأرقام قد يسبقه و/أو يتبعه مسافات).
+  <li>تُستخدم العلامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">global</bdi></b>&gt; لتعريف المعلومات ذات النطاق العام، <bdi dir="ltr" class="odt-ltr-term">c.a.d.</bdi> وهي سارية على جميع النماذج في حالة وجود أكثر من نموذج واحد. وقد أدرجنا هنا ثوابت داخل العلامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">global</bdi></b>&gt;. تُعرَّف الثابتة باسمها (العلامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">constant-name</bdi></b>&gt;) وقيمتها (العلامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">constant-value</bdi></b>&gt;). نحدد الثابت <b>«<bdi dir="ltr" class="odt-ltr-term">entierpositif</bdi>» </b>بقيمة التعبير النمطي الذي يجب أن يستوفيه أي عدد صحيح موجب: <b>^\s*\<bdi dir="ltr" class="odt-ltr-term">d+</bdi>\s*$ </b>(سلسلة من الأرقام قد تسبقها و/أو تتبعها مسافات).
   </li>
-  <li>تحدد علامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">formset</bdi></b>&gt; مجموعة النماذج التي توجد لها قيود تكامل يجب التحقق منها
+  <li>تحدد العلامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">formset</bdi></b>&gt; مجموعة النماذج التي يجب التحقق من قيود سلامة البيانات الخاصة بها
   </li>
-  <li>تُستخدم علامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">form name</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">unFormulaire</bdi>&quot;</b>&gt; لتعريف قيود التكامل لنموذج معين، وهو النموذج الذي يحدد اسمه بواسطة سمة <bdi dir="ltr" class="odt-ltr-term">name.</bdi> يجب أن يكون هذا الاسم موجودًا في قائمة النماذج المحددة في <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></b>. هنا، يتم تعريف النموذج <b><bdi dir="ltr" class="odt-ltr-term">frmPersonne</bdi> </b>المستخدم في <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>بواسطة القسم التالي:
+  <li>تُستخدم العلامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">form name</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">unFormulaire</bdi>&quot;</b>&gt; لتعريف قيود السلامة الخاصة بنموذج معين، وهو النموذج الذي يُحدد اسمه بواسطة السمة <bdi dir="ltr" class="odt-ltr-term">name.</bdi> يجب أن يكون هذا الاسم موجودًا في قائمة النماذج المُعرَّفة في <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></b>. وهنا، فإن النموذج <b><bdi dir="ltr" class="odt-ltr-term">frmPersonne</bdi> </b>المستخدم محدد في <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>من خلال القسم التالي:
   </li>
 </ul>
 
@@ -854,19 +854,19 @@
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="p">&lt;/</span><span class="nt">form-bean</span><span class="p">&gt;</span>            
 </code></pre></div>
 <ul>
-  <li>تحتوي علامة النموذج على عدد من علامات &lt;<b><bdi dir="ltr" class="odt-ltr-term">field</bdi></b>&gt; يساوي عدد قيود التكامل التي يجب التحقق منها في النموذج. تحتوي علامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">field</bdi></b>&gt; على السمات التالية:
+  <li>تحتوي علامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">form</bdi></b>&gt; على عدد من علامات &lt;<b><bdi dir="ltr" class="odt-ltr-term">field</bdi></b>&gt; يساوي عدد قيود التكامل التي يجب التحقق منها في النموذج. تحتوي علامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">field</bdi></b>&gt; على السمات التالية:
     <ul>
-      <li><b><bdi dir="ltr" class="odt-ltr-term">property</bdi></b>: اسم حقل النموذج الذي تم تعريف قيود التكامل له
+      <li><b><bdi dir="ltr" class="odt-ltr-term">property</bdi></b>: اسم حقل النموذج الذي يتم تحديد قيود التكامل الخاصة به
       </li>
-      <li><b><bdi dir="ltr" class="odt-ltr-term">depends</bdi></b>: قائمة بقيود التكامل التي يجب التحقق منها. 
+      <li><b><bdi dir="ltr" class="odt-ltr-term">depends</bdi></b>: قائمة قيود التكامل التي يجب التحقق منها. 
         <ul>
-          <li>القيود المحتملة هي كما يلي: <b>مطلوب </b>(يجب ألا يكون الحقل فارغًا)، <b>قناع </b>(يجب أن تتطابق قيمة الحقل مع تعبير عادي محدد بواسطة متغير <b>القناع</b>)، <b>عدد صحيح</b>: يجب أن تكون قيمة الحقل عددًا صحيحًا، <b>بايت </b>(بايت)، <b>لونج </b>(عدد صحيح طويل)، <b>عائم </b>(عدد عائم بدقة مفردة)، <b>مزدوج </b>(عدد عائم بدقة مزدوجة)، <b>قصير </b>(عدد صحيح قصير)، <b>تاريخ </b>(يجب أن تكون قيمة الحقل تاريخًا صالحًا)، <b>نطاق </b>(يجب أن تكون قيمة الحقل ضمن نطاق معين)، <b>بريد إلكتروني</b>: (يجب أن تكون قيمة الحقل عنوان بريد إلكتروني صالحًا)، ...
+          <li>القيود الممكنة هي التالية: <b><bdi dir="ltr" class="odt-ltr-term">required</bdi> </b>(يجب ألا يكون الحقل فارغًا)، <b><bdi dir="ltr" class="odt-ltr-term">mask</bdi> </b>(يجب أن تتطابق قيمة الحقل مع تعبير منتظم محدد بواسطة المتغير <b><bdi dir="ltr" class="odt-ltr-term">mask</bdi></b>)، <b><bdi dir="ltr" class="odt-ltr-term">integer</bdi></b>: يجب أن تكون قيمة الحقل عددًا صحيحًا، <b><bdi dir="ltr" class="odt-ltr-term">byte</bdi> </b>(بايت)، <b><bdi dir="ltr" class="odt-ltr-term">long</bdi> </b>(عدد صحيح طويل)، <b><bdi dir="ltr" class="odt-ltr-term">float</bdi> </b>(عدد حقيقي بسيط)، <b><bdi dir="ltr" class="odt-ltr-term">double</bdi> </b>(عدد حقيقي مزدوج)، <b><bdi dir="ltr" class="odt-ltr-term">short</bdi> </b>(عدد صحيح قصير)، <b><bdi dir="ltr" class="odt-ltr-term">date</bdi> </b>(يجب أن تكون قيمة الحقل تاريخًا صالحًا)، <b><bdi dir="ltr" class="odt-ltr-term">range</bdi> </b>(يجب أن تكون قيمة الحقل ضمن نطاق معين)، <b><bdi dir="ltr" class="odt-ltr-term">email</bdi></b>: (يجب أن تكون قيمة الحقل عنوان بريد إلكتروني صالحًا)، ...
           </li>
-          <li>يتم فحص قيود التكامل بالترتيب المحدد بواسطة السمة <b><bdi dir="ltr" class="odt-ltr-term">depends</bdi></b>. إذا فشل أحد القيود، فلن يتم اختبار القيود اللاحقة.
+          <li>يتم التحقق من قيود السلامة بالترتيب المحدد في السمة <b><bdi dir="ltr" class="odt-ltr-term">depends</bdi></b>. إذا لم يتم التحقق من أحد القيود، فلن يتم اختبار القيود التالية.
           </li>
-          <li>يرتبط كل قيد برسالة خطأ محددة بواسطة مفتاح. فيما يلي بعض الأمثلة بتنسيق القيد (المفتاح): <bdi dir="ltr" class="odt-ltr-term">required</bdi> (<bdi dir="ltr" class="odt-ltr-term">errors.required</bdi>)، <bdi dir="ltr" class="odt-ltr-term">mask</bdi> (<bdi dir="ltr" class="odt-ltr-term">errors.invalid</bdi>)، <bdi dir="ltr" class="odt-ltr-term">integer</bdi> (<bdi dir="ltr" class="odt-ltr-term">errors.integer</bdi>)، <bdi dir="ltr" class="odt-ltr-term">byte</bdi> (<bdi dir="ltr" class="odt-ltr-term">errors.byte</bdi>)، <bdi dir="ltr" class="odt-ltr-term">long</bdi> (<bdi dir="ltr" class="odt-ltr-term">errors.long</bdi>)، ...
+          <li>يرتبط كل قيد برسالة خطأ محددة بمفتاح. وفيما يلي بعض الأمثلة على شكل «القيد (المفتاح)»: <bdi dir="ltr" class="odt-ltr-term">required</bdi> (<bdi dir="ltr" class="odt-ltr-term">errors.required</bdi>)، <bdi dir="ltr" class="odt-ltr-term">mask</bdi> (<bdi dir="ltr" class="odt-ltr-term">errors.invalid</bdi>)، <bdi dir="ltr" class="odt-ltr-term">integer</bdi> (<bdi dir="ltr" class="odt-ltr-term">errors.integer</bdi>)، <bdi dir="ltr" class="odt-ltr-term">byte</bdi> (<bdi dir="ltr" class="odt-ltr-term">errors.byte</bdi>)، <bdi dir="ltr" class="odt-ltr-term">long</bdi> (<bdi dir="ltr" class="odt-ltr-term">errors.long</bdi>)، ...
           </li>
-          <li>يتم تعريف رسائل الخطأ المرتبطة بالمفاتيح السابقة في ملف<b> <bdi dir="ltr" class="odt-ltr-term">validator-rules.xml</bdi></b>:
+          <li>يتم تعريف رسائل الأخطاء المرتبطة بالمفاتيح السابقة في الملف <b><bdi dir="ltr" class="odt-ltr-term">validator-rules.xml</bdi></b>:
           </li>
         </ul>
       </li>
@@ -874,7 +874,7 @@
   </li>
 </ul>
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="x">   # Struts Validator Error Messages</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="x">   # رسائل خطأ Struts Validator</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="x">   errors.required={0} is required.</span>
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="x">   errors.minlength={0} can not be less than {1} characters.</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="x">   errors.maxlength={0} can not be greater than {1} characters.</span>
@@ -893,7 +893,7 @@
 <a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="x">   errors.email={0} is an invalid e-mail address.</span>
 </code></pre></div>
 <ul>
-  <li>كما نرى أعلاه، الرسائل باللغة الإنجليزية. علاوة على ذلك، تم تضمينها كتعليقات في الملف، مما يحدد أنه يجب وضعها في ملف رسائل التطبيق. تذكر أن هذا محدد في قسم من ملف <bdi dir="ltr" class="odt-ltr-term">struts-config.xml:</bdi>
+  <li>نرى أعلاه أن الرسائل مكتوبة باللغة الإنجليزية. علاوة على ذلك، فهي موجودة في شكل تعليقات في الملف الذي يشير إلى ضرورة وضعها في ملف رسائل التطبيق. تجدر الإشارة إلى أن هذا الملف محدد في قسم من الملف <bdi dir="ltr" class="odt-ltr-term">struts-config.xml:</bdi>
   </li>
 </ul>
 
@@ -902,41 +902,41 @@
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="na">null=</span><span class="s">&quot;false&quot;</span>
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="nt">/&gt;</span><span class="w">    </span>
 </code></pre></div>
-<p>تشير سمة <strong>المعلمة</strong> إلى أن رسائل التطبيق موجودة في الملف</p>
-<p><strong><bdi dir="ltr" class="odt-ltr-term">WEB-INF/classes/resources/personneressources.properties</bdi></strong>.</p>
-<p>لذلك يجب وضع رسائل الخطأ في هذا الملف. وتُضاف إلى الرسائل الموجودة:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">personne</span><span class="o">.</span><span class="n">formulaire</span><span class="o">.</span><span class="n">nom</span><span class="o">.</span><span class="n">vide</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Vous</span> <span class="n">devez</span> <span class="n">indiquer</span> <span class="n">un</span> <span class="n">nom</span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">personne</span><span class="o">.</span><span class="n">formulaire</span><span class="o">.</span><span class="n">age</span><span class="o">.</span><span class="n">vide</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Vous</span> <span class="n">devez</span> <span class="n">indiquer</span> <span class="n">un</span> <span class="n">age</span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">personne</span><span class="o">.</span><span class="n">formulaire</span><span class="o">.</span><span class="n">age</span><span class="o">.</span><span class="n">incorrect</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">L</span><span class="s1">&#39;âge est incorrect&lt;/li&gt;</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">errors</span><span class="o">.</span><span class="n">header</span><span class="o">=&lt;</span><span class="n">ul</span><span class="o">&gt;</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">errors</span><span class="o">.</span><span class="n">footer</span><span class="o">=&lt;/</span><span class="n">ul</span><span class="o">&gt;</span>
+<p>تشير السمة <strong><bdi dir="ltr" class="odt-ltr-term">parameter</bdi></strong> إلى أن رسائل التطبيق موجودة في الملف</p>
+<p><strong><bdi dir="ltr" class="odt-ltr-term">WEB-INF/classes/ressources/personneressources.properties</bdi></strong>.</p>
+<p>لذلك، يجب وضع رسائل الأخطاء في هذا الملف. وتُضاف إلى الرسائل الموجودة بالفعل:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="x">personne.formulaire.nom.vide=&lt;li&gt;Vous devez indiquer un nom&lt;/li&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="x">personne.formulaire.age.vide=&lt;li&gt;Vous devez indiquer un age&lt;/li&gt;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="x">personne.formulaire.age.incorrect=&lt;li&gt;L&#39;âge est incorrect&lt;/li&gt;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="x">errors.header=&lt;ul&gt;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="x">errors.footer=&lt;/ul&gt;</span>
 <a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>   <span class="c1"># Struts Validator error messages</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>    <span class="c1"># the key is predefined and must not be changed</span>
-<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    <span class="c1"># the associated error msg is free</span>
-<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="c1"># the msg can have up to 4 parameters {0} to {3}</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="x">   # رسائل خطأ Struts Validator</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="x">    # المفتاح محدد مسبقًا ولا يجب تغييره</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="x">    # رسالة الخطأ المرتبطة بها غير محددة</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="x">    # يمكن أن تحتوي الرسالة على ما يصل إلى 4 معلمات من {0} إلى {3}</span>
 <a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
-<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">required</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Le</span> <span class="n">champ</span> <span class="p">[{</span><span class="mi">0</span><span class="p">}]</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">renseigné</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">minlength</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Le</span> <span class="n">champ</span> <span class="p">[{</span><span class="mi">0</span><span class="p">}]</span> <span class="n">foit</span> <span class="n">avoir</span> <span class="n">au</span> <span class="n">moins</span> <span class="p">{</span><span class="mi">1</span><span class="p">}</span> <span class="n">caractère</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">maxlength</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Le</span> <span class="n">champ</span> <span class="p">[{</span><span class="mi">0</span><span class="p">}]</span> <span class="n">ne</span> <span class="n">peut</span> <span class="n">avoir</span> <span class="n">plus</span> <span class="n">de</span> <span class="p">{</span><span class="mi">1</span><span class="p">}</span> <span class="n">caractères</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">invalid</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Le</span> <span class="n">champ</span> <span class="p">[{</span><span class="mi">0</span><span class="p">}]</span> <span class="n">est</span> <span class="n">incorrect</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="x">   errors.required=&lt;li&gt;Le champ [{0}] doit être renseigné.&lt;/li&gt;</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="x">   errors.minlength=&lt;li&gt;Le champ [{0}] foit avoir au moins {1} caractère.&lt;/li&gt;</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="x">   errors.maxlength=&lt;li&gt;Le champ [{0}] ne peut avoir plus de {1} caractères.&lt;/li&gt;</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="x">   errors.invalid=&lt;li&gt;Le champ [{0}] est incorrect.&lt;/li&gt;</span>
 <a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>
-<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">byte</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">un</span> <span class="n">octet</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">short</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">un</span> <span class="n">entier</span> <span class="n">court</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">integer</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">un</span> <span class="n">entier</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">long</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">un</span> <span class="n">entier</span> <span class="n">long</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">float</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">un</span> <span class="n">réel</span> <span class="n">simple</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">double</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">un</span> <span class="n">réel</span> <span class="n">double</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="x">   errors.byte=&lt;li&gt;{0} doit être un octet.&lt;/li&gt;</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="x">   errors.short=&lt;li&gt;{0} doit être un entier court.&lt;/li&gt;</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="x">   errors.integer=&lt;li&gt;{0} doit être un entier.&lt;/li&gt;</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="x">   errors.long=&lt;li&gt;{0} doit être un entier long.&lt;/li&gt;</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="x">   errors.float=&lt;li&gt;{0} doit être un réel simple.&lt;/li&gt;</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="x">   errors.double=&lt;li&gt;{0} doit être un réel double.&lt;/li&gt;</span>
 <a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>
-<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">date</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">n</span><span class="s1">&#39;est pas une date valide.&lt;/li&gt;</span>
-<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">range</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">dans</span> <span class="n">l</span><span class="s1">&#39;intervalle </span><span class="si">{1}</span><span class="s1"> à </span><span class="si">{2}</span><span class="s1">.&lt;/li&gt;</span>
-<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">creditcard</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">n</span><span class="s1">&#39;est pas un numéro de carte valide.&lt;/li&gt;</span>
-<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">email</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">n</span><span class="s1">&#39;est pas une adresse électronique valide.&lt;/li&gt;</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="x">   errors.date=&lt;li&gt;{0} n&#39;est pas une date valide.&lt;/li&gt;</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="x">   errors.range=&lt;li&gt;{0} doit être dans l&#39;intervalle {1} à {2}.&lt;/li&gt;</span>
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="x">   errors.creditcard=&lt;li&gt;{0} n&#39;est pas un numéro de carte valide.&lt;/li&gt;</span>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="x">   errors.email=&lt;li&gt;{0} n&#39;est pas une adresse électronique valide.&lt;/li&gt;</span>
 <a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a>
-<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a>   <span class="n">personne</span><span class="o">.</span><span class="n">nom</span><span class="o">=</span><span class="n">nom</span>
-<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a>     <span class="n">personne</span><span class="o">.</span><span class="n">age</span><span class="o">=</span><span class="n">age</span>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="x">   personne.nom=nom</span>
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a><span class="x">     personne.age=age</span>
 </code></pre></div>
-<p>دعونا نستعرض قيود التكامل في ملف <strong><bdi dir="ltr" class="odt-ltr-term">validation.xml</bdi></strong> واحدة تلو الأخرى لشرحها:</p>
+<p>لنأخذ قيود سلامة الملف <strong><bdi dir="ltr" class="odt-ltr-term">validation.xml</bdi></strong> واحدة تلو الأخرى لشرحها:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>    <span class="p">&lt;</span><span class="nt">formset</span><span class="p">&gt;</span>
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>        <span class="p">&lt;</span><span class="nt">form</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;frmPersonne&quot;</span><span class="p">&gt;</span>
 <a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>          <span class="p">&lt;</span><span class="nt">field</span> <span class="na">property</span><span class="o">=</span><span class="s">&quot;nom&quot;</span> <span class="na">depends</span><span class="o">=</span><span class="s">&quot;required&quot;</span><span class="p">&gt;</span>
@@ -946,25 +946,25 @@
 <a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 <a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>    <span class="p">&lt;/</span><span class="nt">formset</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>لاحظ أن قيود التكامل هذه تنطبق على حقول الاسم والعمر في نموذج ديناميكي محدد في <bdi dir="ltr" class="odt-ltr-term">struts-config.xml:</bdi></p>
+<p>تجدر الإشارة إلى أن قيود السلامة هذه تنطبق على الحقلين «الاسم» و«العمر» في نموذج ديناميكي محدد في <bdi dir="ltr" class="odt-ltr-term">struts-config.xml:</bdi></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>        <span class="p">&lt;</span><span class="nt">form-bean</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;frmPersonne&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;org.apache.struts.validator.DynaValidatorForm&quot;</span><span class="p">&gt;</span>
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>            <span class="p">&lt;</span><span class="nt">form-property</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nom&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;java.lang.String&quot;</span> <span class="na">initial</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">/&gt;</span>
 <a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>            <span class="p">&lt;</span><span class="nt">form-property</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;age&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;java.lang.String&quot;</span> <span class="na">initial</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">/&gt;</span>
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>        <span class="p">&lt;/</span><span class="nt">form-bean</span><span class="p">&gt;</span>            
 </code></pre></div>
-<p>من المهم أن تكون أسماء النموذج وحقوله متطابقة في كلا الملفين. يحدد قيد التكامل على حقل الاسم (<strong><bdi dir="ltr" class="odt-ltr-term">property</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">name</bdi>&quot;</strong>) أنه يجب ألا يكون الحقل فارغًا (<strong><bdi dir="ltr" class="odt-ltr-term">depends</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">required</bdi>&quot;</strong>). إذا لم يكن الأمر كذلك، فسيتم إنشاء كائن <strong><bdi dir="ltr" class="odt-ltr-term">ActionError</bdi></strong> بمفتاح <strong><bdi dir="ltr" class="odt-ltr-term">errors.required</bdi></strong>. توجد الرسالة المرتبطة بهذا المفتاح في ملف <strong><bdi dir="ltr" class="odt-ltr-term">person.resources.properties</bdi></strong>:</p>
+<p>من المهم أن تكون أسماء النموذج وحقوله متطابقة في كلا الملفين. تنص قيد التكامل على حقل «الاسم» (<strong><bdi dir="ltr" class="odt-ltr-term">property</bdi>=&quot;nom&quot;</strong>) على أن الحقل يجب ألا يكون فارغًا (<strong><bdi dir="ltr" class="odt-ltr-term">depends</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">required</bdi>&quot;</strong>). وإذا لم يكن الأمر كذلك، فسيتم إنشاء كائن <strong><bdi dir="ltr" class="odt-ltr-term">ActionError</bdi></strong> بمفتاح <strong><bdi dir="ltr" class="odt-ltr-term">errors.required</bdi></strong>. وتوجد الرسالة المرتبطة بهذا المفتاح في الملف <strong><bdi dir="ltr" class="odt-ltr-term">personne.ressources.properties</bdi></strong>:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="x">   errors.required=&lt;li&gt;Le champ [{0}] doit être renseigné.&lt;/li&gt;</span>
 </code></pre></div>
-<p>يمكننا أن نرى أن هذه الرسالة تستخدم معلمة <strong>{0}</strong>. يتم تعيين قيمتها بواسطة العلامة &lt;<strong><bdi dir="ltr" class="odt-ltr-term">arg0</bdi></strong>&gt; في قيد التكامل:</p>
+<p>نلاحظ أن هذه الرسالة تستخدم المعلمة <strong>{0}</strong>. ويتم تحديد قيمتها بواسطة العلامة &lt;<strong><bdi dir="ltr" class="odt-ltr-term">arg0</bdi></strong>&gt; في قيد التكامل:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>             &lt;arg0 key=&quot;personne.nom&quot;/&gt;      
 </code></pre></div>
-<p>هنا أيضًا، يتم تعيين <strong><bdi dir="ltr" class="odt-ltr-term">arg0</bdi></strong> بواسطة مفتاح موجود أيضًا في ملف الرسائل: </p>
+<p>وهنا أيضًا، يُشار إلى <strong><bdi dir="ltr" class="odt-ltr-term">arg0</bdi></strong> بواسطة مفتاح موجود أيضًا في ملف الرسائل: </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>   personne.nom=nom
 </code></pre></div>
-<p>وبجمع كل ذلك معًا، فإن رسالة الخطأ التي يتم إنشاؤها في حالة عدم ملء حقل <strong>الاسم</strong> هي: </p>
+<p>إذا جمعنا كل ذلك معًا، فإن رسالة الخطأ التي يتم إنشاؤها في حالة عدم ملء الحقل <strong>«الاسم»</strong> هي: </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>&lt;li&gt;Le champ [nom] doit être renseigné.&lt;/li&gt;
 </code></pre></div>
-<p>دعونا نحلل الآن القيد الثاني، وهو القيد المفروض على حقل <strong>العمر</strong>:</p>
+<p>لنحلل الآن القيد الثاني، وهو القيد المتعلق بحقل <strong>«العمر</strong>»:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>    <span class="p">&lt;</span><span class="nt">global</span><span class="p">&gt;</span>
 <a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>      <span class="p">&lt;</span><span class="nt">constant</span><span class="p">&gt;</span>
 <a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>        <span class="p">&lt;</span><span class="nt">constant-name</span><span class="p">&gt;</span>entierpositif<span class="p">&lt;/</span><span class="nt">constant-name</span><span class="p">&gt;</span>
@@ -984,23 +984,23 @@
 <a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 <a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a>    <span class="p">&lt;/</span><span class="nt">formset</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>هناك قيدان لحقل <strong>العمر</strong>: <strong><bdi dir="ltr" class="odt-ltr-term">required</bdi></strong> و <strong><bdi dir="ltr" class="odt-ltr-term">mask</bdi></strong>. يمكننا تكرار الشرح السابق الخاص بقيد <strong><bdi dir="ltr" class="odt-ltr-term">required</bdi></strong>. وهذا يعني أن رسالة الخطأ المرتبطة بهذا القيد ستكون:</p>
+<p>هناك قيدان لحقل <strong>«العمر</strong>»: <strong><bdi dir="ltr" class="odt-ltr-term">required</bdi></strong> و <strong><bdi dir="ltr" class="odt-ltr-term">mask</bdi></strong>. يمكن تكرار الشرح السابق بالنسبة لقيد <strong><bdi dir="ltr" class="odt-ltr-term">required</bdi></strong>. ونصل إلى أن رسالة الخطأ المرتبطة بهذا القيد ستكون:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>&lt;li&gt;Le champ [age] doit être renseigné.&lt;/li&gt;
 </code></pre></div>
-<p>القيد الثاني هو <strong>القناع</strong>. وهذا يعني أن محتوى الحقل يجب أن يتطابق مع نمط يتم التعبير عنه بواسطة تعبير عادي. يتم تعريف قيمة هذا القيد في علامة &lt;<strong>var</strong>&gt; التي تحدد متغيرًا باسم <strong><bdi dir="ltr" class="odt-ltr-term">mask</bdi></strong> (&lt;<strong><bdi dir="ltr" class="odt-ltr-term">var-name</bdi></strong>&gt;) بقيمة <strong>${<bdi dir="ltr" class="odt-ltr-term">positiveInteger</bdi>}</strong> (&lt;<strong><bdi dir="ltr" class="odt-ltr-term">var-value</bdi></strong>&gt;). <strong><bdi dir="ltr" class="odt-ltr-term">positiveInteger</bdi></strong> هو ثابت محدد في قسم &lt;<strong><bdi dir="ltr" class="odt-ltr-term">global</bdi></strong>&gt; من الملف بقيمة التعبير العادي <strong>^\s*\<bdi dir="ltr" class="odt-ltr-term">d+</bdi>\s*</strong>$.  وبالتالي، فإن قيد التكامل هو أن العمر يجب أن يكون تسلسلاً من رقم واحد أو أكثر، يسبقه أو يتبعه مسافات اختيارياً. إذا لم يتم استيفاء هذا القيد، فسيتم إنشاء كائن <strong><bdi dir="ltr" class="odt-ltr-term">ActionError</bdi></strong> بالمفتاح <strong><bdi dir="ltr" class="odt-ltr-term">errors.invalid</bdi></strong>. في ملف الرسائل، يرتبط هذا المفتاح بالرسالة التالية:</p>
+<p>القيد الثاني هو <strong><bdi dir="ltr" class="odt-ltr-term">mask</bdi></strong>. وهذا يعني أن محتوى الحقل يجب أن يتطابق مع نمط يتم التعبير عنه بواسطة تعبير منتظم. يتم تعريف قيمة هذا التعبير في علامة &lt;<strong>var</strong>&gt; التي تحدد متغيرًا باسم <strong><bdi dir="ltr" class="odt-ltr-term">mask</bdi></strong> (&lt;<strong><bdi dir="ltr" class="odt-ltr-term">var-name</bdi></strong>&gt;) وقيمته <strong>${<bdi dir="ltr" class="odt-ltr-term">entierpositif</bdi>}</strong> (&lt;<strong><bdi dir="ltr" class="odt-ltr-term">var-value</bdi></strong>&gt;). <strong><bdi dir="ltr" class="odt-ltr-term">entierpositif</bdi></strong> هو ثابت محدد في قسم &lt;<strong><bdi dir="ltr" class="odt-ltr-term">global</bdi></strong>&gt; من الملف وقيمته هي التعبير النمطي <strong>^\s*\<bdi dir="ltr" class="odt-ltr-term">d+</bdi>\s*</strong>$.  وبالتالي، فإن شرط التكامل هو أن يكون العمر عبارة عن سلسلة من رقم واحد أو أكثر، قد تسبقها أو تتبعها مسافات. إذا لم يتم التحقق من هذا الشرط، فسيتم إنشاء كائن <strong><bdi dir="ltr" class="odt-ltr-term">ActionError</bdi></strong> بمفتاح <strong><bdi dir="ltr" class="odt-ltr-term">errors.invalid</bdi></strong>. في ملف الرسائل، يرتبط هذا المفتاح بالرسالة التالية:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>   errors.invalid=&lt;li&gt;Le champ [{0}] est incorrect.&lt;/li&gt;
 </code></pre></div>
-<p>يجب أن يحدد القيد قيمة للمعلمة {0}. ويتم ذلك باستخدام العلامة &lt;<bdi dir="ltr" class="odt-ltr-term">arg0</bdi>&gt;:</p>
+<p>يجب أن يحدد الشرط قيمة للمعلمة {0}. ويتم ذلك باستخدام العلامة &lt;<bdi dir="ltr" class="odt-ltr-term">arg0</bdi>&gt;:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>             &lt;arg0 key=&quot;personne.age&quot;/&gt;      
 </code></pre></div>
-<p>في ملف الرسائل، يرتبط المفتاح <strong><bdi dir="ltr" class="odt-ltr-term">person.age</bdi></strong> بالرسالة التالية:</p>
+<p>في ملف الرسائل، يرتبط المفتاح <strong><bdi dir="ltr" class="odt-ltr-term">personne.age</bdi></strong> بالرسالة التالية:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>     personne.age=age
 </code></pre></div>
-<p>وبالتالي، فإن رسالة الخطأ التي سيتم إنشاؤها في حالة عدم  التحقق من قيد <strong>القناع</strong> هي:</p>
+<p>وبالتالي، فإن رسالة الخطأ التي سيتم إنشاؤها في حالة عدم استيفاء شرط <strong><bdi dir="ltr" class="odt-ltr-term">mask</bdi></strong> هي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>&lt;li&gt;Le champ [age] est incorrect.&lt;/li&gt;
 </code></pre></div>
 <h2 id="53">5.3. <span style="color: #4f81bd">فئات التطبيق</span></h2>
-<p>في تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi>، الفئات التي يجب كتابتها هي تلك الخاصة بالنماذج (<strong><bdi dir="ltr" class="odt-ltr-term">ActionForm</bdi></strong> أو مشتقاتها) وتلك الخاصة بالإجراءات (<strong><bdi dir="ltr" class="odt-ltr-term">Action</bdi></strong> أو مشتقاتها). في تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne2</bdi></strong> الجديد، لم يعد هناك فئة للنموذج. يتم تعريف محتوى النموذج في <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> والقيود المتعلقة بالسلامة في <strong><bdi dir="ltr" class="odt-ltr-term">WEB-INF/validation.xml</bdi></strong>. في تطبيق <bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi>، كانت فئة <strong><bdi dir="ltr" class="odt-ltr-term">FormulaireAction</bdi></strong> لمعالجة النموذج كما يلي:</p>
+<p>في تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi>، الفئات التي يجب كتابتها هي فئات النماذج (<strong><bdi dir="ltr" class="odt-ltr-term">ActionForm</bdi></strong> أو مشتقاتها) وفئات الإجراءات (<strong><bdi dir="ltr" class="odt-ltr-term">Action</bdi></strong> أو مشتقاتها). في التطبيق الجديد <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne2</bdi>،</strong> لم تعد هناك فئة للنموذج. يتم تعريف محتوى النموذج في <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong>، بينما يتم تعريف قيود التكامل المرتبطة به في <strong><bdi dir="ltr" class="odt-ltr-term">WEB-INF/validation.xml</bdi></strong>. في تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></strong>، كانت فئة <strong><bdi dir="ltr" class="odt-ltr-term">FormulaireAction</bdi></strong>  المخصصة لمعالجة النموذج كما يلي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">istia.st.struts.personne</span><span class="p">;</span>
 <a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
 <a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="p">....</span>
@@ -1010,34 +1010,34 @@
 <a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="n">ActionForward</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="n">ActionMapping</span><span class="w"> </span><span class="n">mapping</span><span class="p">,</span><span class="w"> </span><span class="n">ActionForm</span><span class="w"> </span><span class="n">form</span><span class="p">,</span>
 <a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="w">                               </span><span class="n">HttpServletRequest</span><span class="w"> </span><span class="n">request</span><span class="p">,</span><span class="w"> </span><span class="n">HttpServletResponse</span><span class="w"> </span><span class="n">response</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">IOException</span><span class="p">,</span>
 <a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="w">    </span><span class="n">ServletException</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="w">     </span><span class="c1">// we have a valid form, otherwise we wouldn&#39;t have got here</span>
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="w">     </span><span class="c1">// لدينا نموذج صالح، وإلا لما وصلنا إلى هذه المرحلة</span>
 <a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="w">    </span><span class="n">DynaActionForm</span><span class="w"> </span><span class="n">formulaire</span><span class="o">=</span><span class="p">(</span><span class="n">DynaActionForm</span><span class="p">)</span><span class="n">form</span><span class="p">;</span>
 <a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="w">    </span><span class="n">request</span><span class="p">.</span><span class="na">setAttribute</span><span class="p">(</span><span class="s">&quot;nom&quot;</span><span class="p">,</span><span class="n">formulaire</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="s">&quot;nom&quot;</span><span class="p">));</span>
 <a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="w">    </span><span class="n">request</span><span class="p">.</span><span class="na">setAttribute</span><span class="p">(</span><span class="s">&quot;age&quot;</span><span class="p">,</span><span class="n">formulaire</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="s">&quot;age&quot;</span><span class="p">));</span>
 <a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">mapping</span><span class="p">.</span><span class="na">findForward</span><span class="p">(</span><span class="s">&quot;reponse&quot;</span><span class="p">);</span>
-<a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="w">  </span><span class="p">}</span><span class="c1">//execute</span>
+<a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="w">  </span><span class="p">}</span><span class="c1">//تنفيذ</span>
 <a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a><span class="p">}</span>
 </code></pre></div>
-<p>تتوقع فئة <strong><bdi dir="ltr" class="odt-ltr-term">FormAction</bdi></strong> استلام نموذج على شكل كائن <strong><bdi dir="ltr" class="odt-ltr-term">DynaActionForm</bdi></strong> (كود محاط بإطار). ومع ذلك، في ملف <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi>، يتم تعريف فئة النموذج على النحو التالي:</p>
+<p>كانت الفئة <strong><bdi dir="ltr" class="odt-ltr-term">FormulaireAction</bdi></strong> تتوقع استلام نموذج على شكل كائن <strong><bdi dir="ltr" class="odt-ltr-term">DynaActionForm</bdi></strong> (الرمز الموضح في الإطار). لكن في الملف <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi>، تم تعريف فئة النموذج على النحو التالي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>        <span class="p">&lt;</span><span class="nt">form-bean</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;frmPersonne&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;org.apache.struts.validator.DynaValidatorForm&quot;</span><span class="p">&gt;</span>
 <a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>...
 <a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>        <span class="p">&lt;/</span><span class="nt">form-bean</span><span class="p">&gt;</span>            
 </code></pre></div>
-<p>وبالتالي، سيتم وضع النموذج في كائن <strong><bdi dir="ltr" class="odt-ltr-term">DynaValidatorForm</bdi></strong>. وتبين أن هذه الفئة مشتقة من فئة <strong><bdi dir="ltr" class="odt-ltr-term">DynaActionForm</bdi></strong>. وبالتالي، تظل طريقة <strong><bdi dir="ltr" class="odt-ltr-term">execute</bdi></strong> الخاصة بفئة <strong><bdi dir="ltr" class="odt-ltr-term">FormulaireAction</bdi></strong> صالحة. ولا داعي لإعادة كتابتها.</p>
+<p>وبالتالي، سيتم وضع النموذج في كائن من النوع <strong><bdi dir="ltr" class="odt-ltr-term">DynaValidatorForm</bdi></strong>. وتبين أن هذه الفئة مشتقة من الفئة <strong><bdi dir="ltr" class="odt-ltr-term">DynaActionForm</bdi></strong>. لذا، تظل الطريقة <strong><bdi dir="ltr" class="odt-ltr-term">execute</bdi></strong> الخاصة بفئتنا <strong><bdi dir="ltr" class="odt-ltr-term">FormulaireAction</bdi></strong> صالحة. ولا داعي لإعادة كتابتها.</p>
 <h2 id="54-strutspersonne2">5.4. <span style="color: #4f81bd">نشر واختبار تطبيق <bdi dir="ltr" class="odt-ltr-term">strutspersonne2</bdi></span></h2>
 <h3 id="541">5.4.1. <span style="color: #4f81bd">إنشاء السياق</span></h3>
 <p>لقد أطلقنا على هذا التطبيق الجديد اسم <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne2</bdi></strong>. نقوم بإنشاء تعريف جديد في ملف <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">tomcat</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">conf</bdi>\<bdi dir="ltr" class="odt-ltr-term">serveur.xml</bdi></strong> الخاص بـ <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> 4.<bdi dir="ltr" class="odt-ltr-term">x:</bdi></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="w">                </span><span class="nt">&lt;Context</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;/strutspersonne2&quot;</span><span class="w"> </span><span class="na">docBase=</span><span class="s">&quot;e:/data/serge/web/struts/personne2&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 </code></pre></div>
-<p>بمجرد الانتهاء من ذلك، يجب إعادة تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> يمكنك التحقق من صحة السياق عن طريق طلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL:</bdi></p>
+<p>بعد الانتهاء من ذلك، يجب إعادة تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> يمكن التحقق من صحة السياق عن طريق طلب <bdi dir="ltr" class="odt-ltr-term">URL:</bdi></p>
 <p><strong><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne2/</bdi></strong></p>
 <p><img src="images/10000000000001BA000000F35CCC5F66.png" width="442" height="243" style="width:11.693cm;height:6.429cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001BA000000F35CCC5F66.png" /></p>
 <h3 id="542">5.4.2. <span style="color: #4f81bd">طرق العرض</span></h3>
-<p>انسخ مجلد <strong><bdi dir="ltr" class="odt-ltr-term">views</bdi></strong> من تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></strong> إلى مجلد تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne2</bdi></strong>. لم تتغير طرق العرض.</p>
+<p>سنقوم بنسخ مجلد <strong>«<bdi dir="ltr" class="odt-ltr-term">vues</bdi>»</strong> الخاص بالتطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></strong> إلى مجلد التطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne2</bdi></strong>. ذلك أن العروض لم تتغير.</p>
 <p><img src="images/100000000000016D00000077947A0537.png" width="365" height="119" style="width:9.656cm;height:3.149cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000016D00000077947A0537.png" /></p>
-<h3 id="543-web-inf">5.4.3. <span style="color: #4f81bd">مجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi></span></h3>
-<p>انسخ مجلد <strong><bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi></strong> من تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></strong> إلى مجلد تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne2</bdi></strong>. وقد تغيرت بعض الملفات:</p>
-<p><img src="images/1000000000000166000000B80F3A355B.png" width="358" height="184" style="width:9.47cm;height:4.867cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000166000000B80F3A355B.png" /></p>
+<h3 id="543-web-inf">5.4.3. <span style="color: #4f81bd">المجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi></span></h3>
+<p>سنقوم بنسخ المجلد <strong><bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi></strong> من تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></strong> إلى مجلد تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne2</bdi></strong>. وقد تغيرت بعض الملفات:</p>
+<p><img src="images/1000000000000166000000B80F3A355B.png" width="358" height="184" style="width:9.47cm;height:4.868cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000166000000B80F3A355B.png" /></p>
 <p>يصبح ملف التكوين <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> كما يلي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot; ?&gt;</span>
 <a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>
@@ -1099,8 +1099,8 @@
 <a id="__codelineno-23-58" name="__codelineno-23-58" href="#__codelineno-23-58"></a>
 <a id="__codelineno-23-59" name="__codelineno-23-59" href="#__codelineno-23-59"></a><span class="nt">&lt;/struts-config&gt;</span>
 </code></pre></div>
-<p>هذا الملف مطابق للملف الموجود في تطبيق <bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi>، باستثناء التعريف الديناميكي للنموذج وإدراج المكون الإضافي للتحقق من الصحة (الأقسام الموضوعة في مربعات).</p>
-<p>أضف ملف <strong><bdi dir="ltr" class="odt-ltr-term">validation.xml</bdi></strong> التالي إلى <strong><bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi></strong>:</p>
+<p>هذا الملف مطابق لملف تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></strong> باستثناء التعريف الديناميكي للنموذج وإدراج المكون الإضافي للتحقق من الصحة (الأجزاء المحاطة بإطار).</p>
+<p>يتم إضافة ملف التحقق <strong><bdi dir="ltr" class="odt-ltr-term">validation.xml</bdi></strong> التالي إلى <strong><bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi></strong>:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="p">&lt;</span><span class="nt">form-validation</span><span class="p">&gt;</span>
 <a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>    <span class="p">&lt;</span><span class="nt">global</span><span class="p">&gt;</span>
 <a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>      <span class="p">&lt;</span><span class="nt">constant</span><span class="p">&gt;</span>
@@ -1124,59 +1124,59 @@
 <a id="__codelineno-24-21" name="__codelineno-24-21" href="#__codelineno-24-21"></a>    <span class="p">&lt;/</span><span class="nt">formset</span><span class="p">&gt;</span>
 <a id="__codelineno-24-22" name="__codelineno-24-22" href="#__codelineno-24-22"></a><span class="p">&lt;/</span><span class="nt">form-validation</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>أضف الملفين <strong><bdi dir="ltr" class="odt-ltr-term">validator-rules.xml</bdi></strong> و <strong><bdi dir="ltr" class="odt-ltr-term">validator-rules</bdi>_1_1.dtd</strong>، الموجودين في <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">struts</bdi>&gt;\lib</strong>، إلى <strong><bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi></strong>:</p>
-<p><img src="images/1000000000000166000000B80F3A355B.png" width="358" height="184" style="width:9.47cm;height:4.867cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000166000000B80F3A355B.png" /></p>
-<p>في مجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF/classes</bdi>، يوجد الآن فئة واحدة فقط:</p>
+<p>نضيف إلى <strong><bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi></strong> الملفات <strong><bdi dir="ltr" class="odt-ltr-term">validator-rules.xml</bdi></strong> و <strong><bdi dir="ltr" class="odt-ltr-term">validator-rules</bdi>_1_1.dtd</strong> الموجودة في <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">struts</bdi>&gt;\lib</strong>:</p>
+<p><img src="images/1000000000000166000000B80F3A355B.png" width="358" height="184" style="width:9.47cm;height:4.868cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000166000000B80F3A355B.png" /></p>
+<p>في المجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi>/<bdi dir="ltr" class="odt-ltr-term">classes</bdi>، لم يعد هناك سوى فئة واحدة:</p>
 <p><img src="images/10000000000001F5000000691874FF34.png" width="501" height="105" style="width:13.254cm;height:2.778cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F5000000691874FF34.png" /></p>
-<p>في المجلد <strong><bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi>\<bdi dir="ltr" class="odt-ltr-term">classes</bdi>\</strong><bdi dir="ltr" class="odt-ltr-term">resources</bdi>، ستجد ملف الرسائل التالي، <strong><bdi dir="ltr" class="odt-ltr-term">personneressources.properties</bdi></strong>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">personne</span><span class="o">.</span><span class="n">formulaire</span><span class="o">.</span><span class="n">nom</span><span class="o">.</span><span class="n">vide</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Vous</span> <span class="n">devez</span> <span class="n">indiquer</span> <span class="n">un</span> <span class="n">nom</span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="n">personne</span><span class="o">.</span><span class="n">formulaire</span><span class="o">.</span><span class="n">age</span><span class="o">.</span><span class="n">vide</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Vous</span> <span class="n">devez</span> <span class="n">indiquer</span> <span class="n">un</span> <span class="n">age</span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="n">personne</span><span class="o">.</span><span class="n">formulaire</span><span class="o">.</span><span class="n">age</span><span class="o">.</span><span class="n">incorrect</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">L</span><span class="s1">&#39;âge est incorrect&lt;/li&gt;</span>
-<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="n">errors</span><span class="o">.</span><span class="n">header</span><span class="o">=&lt;</span><span class="n">ul</span><span class="o">&gt;</span>
-<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="n">errors</span><span class="o">.</span><span class="n">footer</span><span class="o">=&lt;/</span><span class="n">ul</span><span class="o">&gt;</span>
+<p>في المجلد <strong><bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi>\<bdi dir="ltr" class="odt-ltr-term">classes</bdi>\</strong><bdi dir="ltr" class="odt-ltr-term">ressources</bdi>، نجد ملف الرسائل <strong><bdi dir="ltr" class="odt-ltr-term">personneressources.properties</bdi></strong> التالي:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="x">personne.formulaire.nom.vide=&lt;li&gt;Vous devez indiquer un nom&lt;/li&gt;</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="x">personne.formulaire.age.vide=&lt;li&gt;Vous devez indiquer un age&lt;/li&gt;</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="x">personne.formulaire.age.incorrect=&lt;li&gt;L&#39;âge est incorrect&lt;/li&gt;</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="x">errors.header=&lt;ul&gt;</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="x">errors.footer=&lt;/ul&gt;</span>
 <a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>
-<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>   <span class="c1"># Struts Validator error messages</span>
-<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>    <span class="c1"># the key is predefined and must not be changed</span>
-<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>    <span class="c1"># the associated error msg is free</span>
-<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>    <span class="c1"># the msg can have up to 4 parameters {0} to {3}</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="x">   # رسائل خطأ من Struts Validator</span>
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="x">    # المفتاح محدد مسبقًا ولا يجب تغييره</span>
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="x">    # رسالة الخطأ المرتبطة بها حرة</span>
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a><span class="x">    # يمكن أن تحتوي الرسالة على ما يصل إلى 4 معلمات من {0} إلى {3}</span>
 <a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>
-<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">required</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Le</span> <span class="n">champ</span> <span class="p">[{</span><span class="mi">0</span><span class="p">}]</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">renseigné</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">minlength</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Le</span> <span class="n">champ</span> <span class="p">[{</span><span class="mi">0</span><span class="p">}]</span> <span class="n">foit</span> <span class="n">avoir</span> <span class="n">au</span> <span class="n">moins</span> <span class="p">{</span><span class="mi">1</span><span class="p">}</span> <span class="n">caractère</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">maxlength</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Le</span> <span class="n">champ</span> <span class="p">[{</span><span class="mi">0</span><span class="p">}]</span> <span class="n">ne</span> <span class="n">peut</span> <span class="n">avoir</span> <span class="n">plus</span> <span class="n">de</span> <span class="p">{</span><span class="mi">1</span><span class="p">}</span> <span class="n">caractères</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">invalid</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Le</span> <span class="n">champ</span> <span class="p">[{</span><span class="mi">0</span><span class="p">}]</span> <span class="n">est</span> <span class="n">incorrect</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a><span class="x">   errors.required=&lt;li&gt;Le champ [{0}] doit être renseigné.&lt;/li&gt;</span>
+<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a><span class="x">   errors.minlength=&lt;li&gt;Le champ [{0}] foit avoir au moins {1} caractère.&lt;/li&gt;</span>
+<a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a><span class="x">   errors.maxlength=&lt;li&gt;Le champ [{0}] ne peut avoir plus de {1} caractères.&lt;/li&gt;</span>
+<a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a><span class="x">   errors.invalid=&lt;li&gt;Le champ [{0}] est incorrect.&lt;/li&gt;</span>
 <a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a>
-<a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">byte</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">un</span> <span class="n">octet</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-25-18" name="__codelineno-25-18" href="#__codelineno-25-18"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">short</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">un</span> <span class="n">entier</span> <span class="n">court</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-25-19" name="__codelineno-25-19" href="#__codelineno-25-19"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">integer</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">un</span> <span class="n">entier</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-25-20" name="__codelineno-25-20" href="#__codelineno-25-20"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">long</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">un</span> <span class="n">entier</span> <span class="n">long</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-25-21" name="__codelineno-25-21" href="#__codelineno-25-21"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">float</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">un</span> <span class="n">réel</span> <span class="n">simple</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-<a id="__codelineno-25-22" name="__codelineno-25-22" href="#__codelineno-25-22"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">double</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">un</span> <span class="n">réel</span> <span class="n">double</span><span class="o">.&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+<a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a><span class="x">   errors.byte=&lt;li&gt;{0} doit être un octet.&lt;/li&gt;</span>
+<a id="__codelineno-25-18" name="__codelineno-25-18" href="#__codelineno-25-18"></a><span class="x">   errors.short=&lt;li&gt;{0} doit être un entier court.&lt;/li&gt;</span>
+<a id="__codelineno-25-19" name="__codelineno-25-19" href="#__codelineno-25-19"></a><span class="x">   errors.integer=&lt;li&gt;{0} doit être un entier.&lt;/li&gt;</span>
+<a id="__codelineno-25-20" name="__codelineno-25-20" href="#__codelineno-25-20"></a><span class="x">   errors.long=&lt;li&gt;{0} doit être un entier long.&lt;/li&gt;</span>
+<a id="__codelineno-25-21" name="__codelineno-25-21" href="#__codelineno-25-21"></a><span class="x">   errors.float=&lt;li&gt;{0} doit être un réel simple.&lt;/li&gt;</span>
+<a id="__codelineno-25-22" name="__codelineno-25-22" href="#__codelineno-25-22"></a><span class="x">   errors.double=&lt;li&gt;{0} doit être un réel double.&lt;/li&gt;</span>
 <a id="__codelineno-25-23" name="__codelineno-25-23" href="#__codelineno-25-23"></a>
-<a id="__codelineno-25-24" name="__codelineno-25-24" href="#__codelineno-25-24"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">date</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">n</span><span class="s1">&#39;est pas une date valide.&lt;/li&gt;</span>
-<a id="__codelineno-25-25" name="__codelineno-25-25" href="#__codelineno-25-25"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">range</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">doit</span> <span class="n">être</span> <span class="n">dans</span> <span class="n">l</span><span class="s1">&#39;intervalle </span><span class="si">{1}</span><span class="s1"> à </span><span class="si">{2}</span><span class="s1">.&lt;/li&gt;</span>
-<a id="__codelineno-25-26" name="__codelineno-25-26" href="#__codelineno-25-26"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">creditcard</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">n</span><span class="s1">&#39;est pas un numéro de carte valide.&lt;/li&gt;</span>
-<a id="__codelineno-25-27" name="__codelineno-25-27" href="#__codelineno-25-27"></a>   <span class="n">errors</span><span class="o">.</span><span class="n">email</span><span class="o">=&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="n">n</span><span class="s1">&#39;est pas une adresse électronique valide.&lt;/li&gt;</span>
+<a id="__codelineno-25-24" name="__codelineno-25-24" href="#__codelineno-25-24"></a><span class="x">   errors.date=&lt;li&gt;{0} n&#39;est pas une date valide.&lt;/li&gt;</span>
+<a id="__codelineno-25-25" name="__codelineno-25-25" href="#__codelineno-25-25"></a><span class="x">   errors.range=&lt;li&gt;{0} doit être dans l&#39;intervalle {1} à {2}.&lt;/li&gt;</span>
+<a id="__codelineno-25-26" name="__codelineno-25-26" href="#__codelineno-25-26"></a><span class="x">   errors.creditcard=&lt;li&gt;{0} n&#39;est pas un numéro de carte valide.&lt;/li&gt;</span>
+<a id="__codelineno-25-27" name="__codelineno-25-27" href="#__codelineno-25-27"></a><span class="x">   errors.email=&lt;li&gt;{0} n&#39;est pas une adresse électronique valide.&lt;/li&gt;</span>
 <a id="__codelineno-25-28" name="__codelineno-25-28" href="#__codelineno-25-28"></a>
-<a id="__codelineno-25-29" name="__codelineno-25-29" href="#__codelineno-25-29"></a>   <span class="n">personne</span><span class="o">.</span><span class="n">nom</span><span class="o">=</span><span class="n">nom</span>
-<a id="__codelineno-25-30" name="__codelineno-25-30" href="#__codelineno-25-30"></a>  <span class="n">personne</span><span class="o">.</span><span class="n">age</span><span class="o">=</span><span class="n">age</span>
+<a id="__codelineno-25-29" name="__codelineno-25-29" href="#__codelineno-25-29"></a><span class="x">   personne.nom=nom</span>
+<a id="__codelineno-25-30" name="__codelineno-25-30" href="#__codelineno-25-30"></a><span class="x">  personne.age=age</span>
 </code></pre></div>
 <p><img src="images/100000000000019F0000004E5467208F.png" width="415" height="78" style="width:10.978cm;height:2.064cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000019F0000004E5467208F.png" /></p>
 <h2 id="55">5.5. <span style="color: #4f81bd">الاختبارات</span></h2>
-<p>نحن جاهزون لإجراء الاختبارات. فيما يلي بعض لقطات الشاشة التي ندعو القارئ إلى إعادة إنتاجها.</p>
-<p>نطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne2/formulaire.do</bdi></strong>:</p>
-<p><img src="images/100000000000019A000000FB05D04EC0.png" width="410" height="251" style="width:10.846cm;height:6.639cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000019A000000FB05D04EC0.png" /></p>
-<p>نضغط على زر [إرسال] دون ملء الحقول:</p>
+<p>نحن جاهزون لإجراء الاختبارات. فيما يلي بعض لقطات الشاشة التي يُطلب من القارئ محاكاتها.</p>
+<p>نطلب من القارئ إعادة إنتاج <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne2/formulaire.do</bdi></strong>:</p>
+<p><img src="images/100000000000019A000000FB05D04EC0.png" width="410" height="251" style="width:10.846cm;height:6.641cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000019A000000FB05D04EC0.png" /></p>
+<p>نستخدم الزر [<bdi dir="ltr" class="odt-ltr-term">Envoyer</bdi>] دون ملء الحقول:</p>
 <p><img src="images/10000000000001F9000000D20064CC36.png" width="505" height="210" style="width:13.36cm;height:5.556cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F9000000D20064CC36.png" /></p>
-<p>نحاول مرة أخرى مع وجود خطأ في حقل العمر:</p>
-<p><img src="images/100000000000019E00000104B5B71988.png" width="414" height="260" style="width:10.952cm;height:6.877cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000019E00000104B5B71988.png" /></p>
-<p>نتلقى الرد التالي:</p>
-<p><img src="images/10000000000001F2000000C51910A476.png" width="498" height="197" style="width:13.174cm;height:5.211cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F2000000C51910A476.png" /></p>
-<p>حاول مرة أخرى، مع إدخال القيم الصحيحة هذه المرة:</p>
-<p><img src="images/100000000000018F000000FCCFDEBBB0.png" width="399" height="252" style="width:10.555cm;height:6.666cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000018F000000FCCFDEBBB0.png" /></p>
+<p>نكرر المحاولة مع وجود خطأ في حقل «العمر»:</p>
+<p><img src="images/100000000000019E00000104B5B71988.png" width="414" height="260" style="width:10.952cm;height:6.879cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000019E00000104B5B71988.png" /></p>
 <p>نحصل على الرد التالي:</p>
-<p><img src="images/10000000000001F1000000EA40EEF3E0.png" width="497" height="234" style="width:13.148cm;height:6.189cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F1000000EA40EEF3E0.png" /></p>
+<p><img src="images/10000000000001F2000000C51910A476.png" width="498" height="197" style="width:13.174cm;height:5.212cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F2000000C51910A476.png" /></p>
+<p>نحاول مرة أخرى، هذه المرة بإدخال القيم الصحيحة:</p>
+<p><img src="images/100000000000018F000000FCCFDEBBB0.png" width="399" height="252" style="width:10.555cm;height:6.668cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000018F000000FCCFDEBBB0.png" /></p>
+<p>نحصل على الإجابة التالية:</p>
+<p><img src="images/10000000000001F1000000EA40EEF3E0.png" width="497" height="234" style="width:13.148cm;height:6.191cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F1000000EA40EEF3E0.png" /></p>
 <h2 id="56">5.6. <span style="color: #4f81bd">الخلاصة</span></h2>
-<p>لقد أظهرنا أن استخدام النماذج الديناميكية مع قيود التكامل &quot;القياسية&quot; يغني عن الحاجة إلى إنشاء فئات لتمثيلها. إذا انحرفت قيود التكامل عن المعيار، فسنضطر مرة أخرى إلى إنشاء فئات للتحقق من هذه القيود الجديدة.</p>
+<p>لقد أوضحنا أن استخدام النماذج الديناميكية التي تكون فيها قيود التكامل «قياسية» يتجنب الحاجة إلى إنشاء فئات لتمثيلها. أما إذا كانت قيود التكامل خارجة عن المعيار، فإننا نضطر مرة أخرى إلى إنشاء فئات للتحقق من هذه القيود الجديدة.</p>
 
 
 

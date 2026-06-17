@@ -390,7 +390,7 @@
   <a href="#13-mvc-jsp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.3. نهج تطوير MVC باستخدام السيرفلت وصفحات JSP
+        1.3. نهج تطوير MVC باستخدام السيرفلتات والصفحات JSP
       
     </span>
   </a>
@@ -401,12 +401,12 @@
   <a href="#14-struts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.4. نهج تطوير STRUTS
+        1.4. نهج التطوير STRUTS
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1.4. نهج تطوير STRUTS">
+    <nav class="md-nav" aria-label="1.4. نهج التطوير STRUTS">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -424,7 +424,7 @@
   <a href="#142-struts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.4.2. أدوات تطوير STRUTS
+        1.4.2. أدوات التطوير STRUTS
       
     </span>
   </a>
@@ -570,14 +570,14 @@
   
   
     <li class="md-nav__item">
-      <a href="nmdhj-html.html" class="md-nav__link">
+      <a href="lnmdhj-html.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. نماذج HTML
+    6. النماذج HTML
   
 
     
@@ -597,14 +597,14 @@
   
   
     <li class="md-nav__item">
-      <a href="-tbyq-quiest.html" class="md-nav__link">
+      <a href="-ltbyq-quiest.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    7.  تطبيق QuiEst
+    7.  التطبيق QuiEst
   
 
     
@@ -651,14 +651,14 @@
   
   
     <li class="md-nav__item">
-      <a href="lml-m-mdr-lbynt.html" class="md-nav__link">
+      <a href="stll-mdr-lbynt.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    9. العمل مع مصدر البيانات
+    9. استغلال مصدر البيانات
   
 
     
@@ -678,14 +678,14 @@
   
   
     <li class="md-nav__item">
-      <a href="lmlq.html" class="md-nav__link">
+      <a href="lmrfqt.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. الملاحق
+    10. المرفقات
   
 
     
@@ -716,50 +716,50 @@
 
 
 <h1 id="1">1. <span style="color: #365f91">معلومات عامة</span></h1>
-<p>ملف <bdi dir="ltr" class="odt-ltr-term">PDF</bdi> للوثيقة متاح |<a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQBu9K9uZ8VJQYRyNn1Xl5-gASZwVF9r6bw9W_Ts6R6BRMo?e=y3tJ1o">هنا</a>|.</p>
+<p>ملف <bdi dir="ltr" class="odt-ltr-term">PDF</bdi> الخاص بالوثيقة متاح |<a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQBu9K9uZ8VJQYRyNn1Xl5-gASZwVF9r6bw9W_Ts6R6BRMo?e=UjpMBc"><bdi dir="ltr" class="odt-ltr-term">HERE</bdi></a>|.</p>
 <h2 id="11">1.1. <span style="color: #4f81bd">الأهداف</span></h2>
-<p>في هذه المقالة، سوف نستكشف إطار عمل تطويري يُسمى <strong><bdi dir="ltr" class="odt-ltr-term">Struts</bdi></strong>. <bdi dir="ltr" class="odt-ltr-term">Jakarta Struts</bdi> هو مشروع تابع لمؤسسة <bdi dir="ltr" class="odt-ltr-term">Apache Software Foundation</bdi> (<bdi dir="ltr" class="odt-ltr-term">www.apache.org</bdi>) مصمم لتوفير إطار عمل قياسي لتطوير تطبيقات الويب بلغة <bdi dir="ltr" class="odt-ltr-term">Java</bdi> استنادًا إلى بنية <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> (<bdi dir="ltr" class="odt-ltr-term">Model-View-Controller</bdi>). </p>
+<p>نهدف هنا إلى اكتشاف طريقة تطوير تسمى <strong><bdi dir="ltr" class="odt-ltr-term">STRUTS</bdi></strong>. <bdi dir="ltr" class="odt-ltr-term">Jakarta Struts</bdi> هو مشروع تابع لمؤسسة <bdi dir="ltr" class="odt-ltr-term">Apache Software Foundation</bdi> (<bdi dir="ltr" class="odt-ltr-term">www.apache.org</bdi>) يهدف إلى توفير إطار عمل قياسي لتطوير تطبيقات الويب بلغة <bdi dir="ltr" class="odt-ltr-term">Java</bdi> يتوافق مع البنية المعروفة باسم <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> (النموذج-العرض-المتحكم). </p>
 <h2 id="12-mvc">1.2. <span style="color: #4f81bd">نموذج <bdi dir="ltr" class="odt-ltr-term">MVC</bdi></span></h2>
-<p>يسعى نموذج <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> إلى فصل طبقات العرض والمعالجة والوصول إلى البيانات. سيتم تنظيم تطبيق الويب الذي يتبع هذا النموذج على النحو التالي:</p>
+<p>يسعى نموذج <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> إلى الفصل بين طبقات العرض والمعالجة والوصول إلى البيانات. وسيتم تصميم أي تطبيق ويب يتوافق مع هذا النموذج على النحو التالي:</p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000363000000855375987C.png" width="434" height="67" style="display:inline-block; margin:4px;width:11.471cm;height:1.76cm;" class="odt-zoomable" data-zoom-src="images/1000000000000363000000855375987C.png" /></td></tr></table>
 
-<p>تُسمى هذه البنية بنية ثلاثية الطبقات أو ثلاثية المستويات:</p>
+<p>تُسمى هذه البنية بنية ثلاثية الأطراف أو ذات المستويات الثلاثة:</p>
 <ul>
 <li>واجهة المستخدم هي <bdi dir="ltr" class="odt-ltr-term">V</bdi> (العرض)</li>
 <li>منطق التطبيق هو <bdi dir="ltr" class="odt-ltr-term">C</bdi> (وحدة التحكم)</li>
 <li>مصادر البيانات هي <bdi dir="ltr" class="odt-ltr-term">M</bdi> (النموذج)</li>
 </ul>
-<p>غالبًا ما تكون <strong>واجهة المستخدم</strong> عبارة عن متصفح ويب، ولكنها قد تكون أيضًا تطبيقًا مستقلًا يرسل طلبات <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> إلى خدمة الويب عبر الشبكة ويقوم بتنسيق النتائج التي يتلقاها. تتكون <strong>منطقية التطبيق</strong> من نصوص برمجية تعالج طلبات المستخدم. غالبًا ما يكون <strong>مصدر البيانات</strong> قاعدة بيانات، ولكنه قد يكون أيضًا ملفات مسطحة بسيطة، أو دليل <bdi dir="ltr" class="odt-ltr-term">LDAP</bdi>، أو خدمة ويب عن بُعد، وما إلى ذلك. من مصلحة المطور الحفاظ على درجة عالية من الاستقلالية بين هذه الكيانات الثلاثة بحيث إذا تغير أحدها، لا يتعين على الاثنين الآخرين التغيير، أو يتغيران بشكل طفيف فقط. </p>
-<p>عند تطبيق هذا النموذج مع السيرفلتات وصفحات <bdi dir="ltr" class="odt-ltr-term">JSP</bdi>، تنتج البنية التالية:</p>
-<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000004E200000213F96D6913.png" width="625" height="265" style="display:inline-block; margin:4px;width:16.536cm;height:7.024cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E200000213F96D6913.png" /></td></tr></table>
+<p>غالبًا ما تكون <strong>واجهة المستخدم</strong> عبارة عن متصفح ويب، ولكنها قد تكون أيضًا تطبيقًا مستقلًا يرسل عبر الشبكة طلبات <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> إلى خدمة الويب ويقوم بتنسيق النتائج التي ترسلها إليه. تتكون <strong>منطقية التطبيق</strong> من البرامج النصية التي تعالج طلبات المستخدم. غالبًا ما يكون <strong>مصدر البيانات</strong> قاعدة بيانات، ولكنه قد يكون أيضًا ملفات نصية بسيطة، أو دليلًا <bdi dir="ltr" class="odt-ltr-term">LDAP</bdi>، أو خدمة ويب بعيدة،... ومن مصلحة المطور الحفاظ على استقلالية كبيرة بين هذه الكيانات الثلاثة بحيث إذا تغير أحدها، فلا يتعين على الاثنين الآخرين التغيير أو يتغيران قليلاً فقط. </p>
+<p>وعند محاولة تطبيق هذا النموذج باستخدام السيرفلتات وصفحات <bdi dir="ltr" class="odt-ltr-term">JSP</bdi>، نحصل على البنية التالية:</p>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000004E200000213F96D6913.png" width="625" height="266" style="display:inline-block; margin:4px;width:16.536cm;height:7.026cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E200000213F96D6913.png" /></td></tr></table>
 
-<p>في كتلة [منطق التطبيق]، نميز</p>
+<p>في الكتلة [<bdi dir="ltr" class="odt-ltr-term">Logique Applicative</bdi>]، نتميّز</p>
 <ul>
-<li>بين السيرفلت، وهو نقطة دخول التطبيق ويُسمى أيضًا <strong>وحدة التحكم</strong></li>
-<li>كتلة [فئات الأعمال]، التي تحتوي على فئات <bdi dir="ltr" class="odt-ltr-term">Java</bdi> الضرورية لمنطق التطبيق</li>
-<li>كتلة [<bdi dir="ltr" class="odt-ltr-term">Data Access Classes</bdi>]، التي تحتوي على فئات <bdi dir="ltr" class="odt-ltr-term">Java</bdi> اللازمة لاسترداد البيانات المطلوبة من قبل السيرفلت، وغالبًا ما تكون بيانات ثابتة (قاعدة بيانات، ملفات، خدمة ويب، إلخ)</li>
-<li>كتلة صفحات <bdi dir="ltr" class="odt-ltr-term">JSP</bdi>، التي تشكل طرق عرض التطبيق. </li>
+<li>الخادم (<bdi dir="ltr" class="odt-ltr-term">servlet</bdi>) الذي يمثل بوابة الدخول إلى التطبيق، ويُسمى أيضًا <strong>«وحدة التحكم»</strong></li>
+<li>الكتلة [<bdi dir="ltr" class="odt-ltr-term">Classes métier</bdi>] التي تضم فئات <bdi dir="ltr" class="odt-ltr-term">Java</bdi> اللازمة لمنطق التطبيق.</li>
+<li>الكتلة [<bdi dir="ltr" class="odt-ltr-term">Classes d</bdi>&#x27;<bdi dir="ltr" class="odt-ltr-term">accès aux données</bdi>] التي تضم فئات <bdi dir="ltr" class="odt-ltr-term">Java</bdi> اللازمة للحصول على البيانات المطلوبة للـ<bdi dir="ltr" class="odt-ltr-term">servlet</bdi>، وغالبًا ما تكون بيانات دائمة (<bdi dir="ltr" class="odt-ltr-term">BD</bdi>، الملفات، الخدمة <bdi dir="ltr" class="odt-ltr-term">WEB</bdi>، ...)</li>
+<li>كتلة الصفحات <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> التي تشكل طرق عرض التطبيق. </li>
 </ul>
-<h2 id="13-mvc-jsp">1.3. <span style="color: #4f81bd">نهج تطوير <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> باستخدام السيرفلت وصفحات <bdi dir="ltr" class="odt-ltr-term">JSP</bdi></span></h2>
-<p>لقد حددنا نهجًا لتطوير تطبيقات الويب <bdi dir="ltr" class="odt-ltr-term">Java</bdi> يتبع نموذج <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> الموصوف أعلاه. سنستعرضه هنا.</p>
+<h2 id="13-mvc-jsp">1.3. <span style="color: #4f81bd">نهج تطوير <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> باستخدام السيرفلتات والصفحات <bdi dir="ltr" class="odt-ltr-term">JSP</bdi></span></h2>
+<p>لقد حددنا منهجية لتطوير تطبيقات الويب التي تعمل بلغة جافا تتوافق مع النموذج <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> السابق. ونستعرضها هنا.</p>
 <ol>
-<li>سنبدأ بتحديد جميع طرق عرض التطبيق. هذه هي صفحات الويب التي يتم عرضها للمستخدم. لذلك سنعتمد منظور المستخدم عند تصميم طرق العرض. هناك ثلاثة أنواع من طرق العرض:<ul>
-<li>نموذج الإدخال، الذي يُستخدم للحصول على معلومات من المستخدم. يتضمن هذا النموذج عادةً زرًا لإرسال المعلومات المدخلة إلى الخادم.</li>
-<li>صفحة الاستجابة، التي تخدم فقط لتوفير المعلومات للمستخدم. غالبًا ما تتضمن رابطًا يسمح للمستخدم بمواصلة استخدام التطبيق على صفحة أخرى.</li>
-<li>الصفحة المختلطة: أرسلت السيرفلت إلى العميل صفحة تحتوي على معلومات قامت بتوليدها. سيستخدم العميل هذه الصفحة نفسها لتزويد السيرفلت بمعلومات إضافية.</li>
+<li>سنبدأ بتحديد جميع واجهات التطبيق. وهذه الواجهات هي صفحات الويب التي تُعرض على المستخدم. لذا سنضع أنفسنا في مكان المستخدم لرسم هذه الواجهات. ونميز بين ثلاثة أنواع من الواجهات:<ul>
+<li>نموذج الإدخال الذي يهدف إلى الحصول على معلومات من المستخدم. ويحتوي هذا النموذج عادةً على زر لإرسال المعلومات المدخلة إلى الخادم.</li>
+<li>صفحة الرد التي لا تخدم سوى تقديم المعلومات للمستخدم. وغالبًا ما تحتوي هذه الصفحة على رابط يتيح للمستخدم متابعة التطبيق بصفحة أخرى.</li>
+<li>الصفحة المختلطة: أرسلت السيرفلت إلى العميل صفحة تحتوي على معلومات قامت بتوليدها. وستستخدم هذه الصفحة نفسها من قبل العميل لتزويد السيرفلت بمعلومات أخرى.</li>
 </ul>
 </li>
 </ol>
 <ol start="2">
-  <li>ستنشئ كل طريقة عرض صفحة <bdi dir="ltr" class="odt-ltr-term">JSP.</bdi> بالنسبة لكل منها:
+  <li>سيؤدي كل عرض إلى إنشاء صفحة <bdi dir="ltr" class="odt-ltr-term">JSP.</bdi> وبالنسبة لكل منها:
     <ul>
-      <li>سنقوم بتصميم تخطيط الصفحة
+      <li>سنقوم بتصميم مظهر الصفحة
       </li>
-      <li>سنحدد أي أجزاء منها ديناميكية:
+      <li>سنحدد الأجزاء الديناميكية فيها:
         <ul>
-          <li>المعلومات الموجهة للمستخدم، والتي يجب أن يقدمها السيرفلت كمعلمات إلى عرض <bdi dir="ltr" class="odt-ltr-term">JSP</bdi>
+          <li>المعلومات الموجهة للمستخدم والتي يجب أن توفرها السيرفلت كمعلمات للعرض <bdi dir="ltr" class="odt-ltr-term">JSP</bdi>
           </li>
-          <li>بيانات الإدخال التي يجب إرسالها إلى السيرفلت للمعالجة. يجب أن تكون هذه البيانات جزءًا من نموذج <bdi dir="ltr" class="odt-ltr-term">HTML.</bdi>
+          <li>بيانات الإدخال التي يجب إرسالها إلى السيرفلت للمعالجة. ويجب أن تكون هذه البيانات جزءًا من نموذج <bdi dir="ltr" class="odt-ltr-term">HTML.</bdi>
           </li>
         </ul>
       </li>
@@ -768,7 +768,7 @@
 </ol>
 
 <ol start="3">
-  <li>يمكننا رسم مخطط بياني لعمليات الإدخال/الإخراج لكل عرض 
+  <li>يمكننا تمثيل عمليات الإدخال/الإخراج لكل عرض بشكل تخطيطي 
   </li>
 </ol>
 
@@ -776,77 +776,77 @@
 
 <ol>
     <ul>
-      <li>المدخلات هي البيانات التي يجب أن يوفرها السيرفلت لصفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi>، سواء في الطلب أو في الجلسة. 
+      <li>المدخلات هي البيانات التي يجب أن توفرها الخدمة (<bdi dir="ltr" class="odt-ltr-term">servlet</bdi>) للصفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> إما في الطلب (<bdi dir="ltr" class="odt-ltr-term">request</bdi>) أو في الجلسة (<bdi dir="ltr" class="odt-ltr-term">session</bdi>). 
       </li>
-      <li>المخرجات هي البيانات التي يجب أن توفرها صفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> إلى السيرفلت. وهي جزء من نموذج <bdi dir="ltr" class="odt-ltr-term">HTML</bdi>، وسيقوم السيرفلت باستردادها باستخدام عملية مثل <b><bdi dir="ltr" class="odt-ltr-term">request.getParameter</bdi>(...)</b>.
+      <li>المخرجات هي البيانات التي يجب أن تزودها الصفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> إلى السيرفلت. وهي جزء من نموذج <bdi dir="ltr" class="odt-ltr-term">HTML</bdi>، وسيقوم السيرفلت باستردادها من خلال عملية من النوع <b><bdi dir="ltr" class="odt-ltr-term">request.getparameter</bdi>(...)</b>.
       </li>
     </ul>
 </ol>
 
-<ol>
+<ol start="4">
   <li>سنكتب كود <bdi dir="ltr" class="odt-ltr-term">Java/JSP</bdi> لكل عرض. وسيكون في الغالب بالشكل التالي:
   </li>
 </ol>
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="err">&lt;</span>%@ page ... %&gt;    // importations de classes le plus souvent
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="err">&lt;</span>%@ page ... %&gt;    // استيرادات الفئات الأكثر شيوعًا
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="err">&lt;</span>%!
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    // variables d&#39;instance de la page JSP (=globales)
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    // nécessaire que si la page JSP a des méthodes partageant des variables (rare)    
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>     // متغيرات مثيل الصفحة JSP (=عامة)
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>     // لا يلزم إلا إذا كانت الصفحة JSP تحتوي على طرق تشترك في المتغيرات (نادر)     
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    ...    
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>%&gt;
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="err">&lt;</span>%
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    // récupération des données envoyées par la servlet
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    // soit dans la requête (request) soit dans la session (session)
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>     // استرداد البيانات المرسلة من قبل السيرفلت
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>     // سواء في الطلب (request) أو في الجلسة (session)
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    ...
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>%&gt;
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
 <a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>...
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        // on cherchera ici à minimiser le code java
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>         // سنحاول هنا تقليل كود جافا إلى الحد الأدنى
 <a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <ol start="5">
-  <li>يمكننا بعد ذلك الانتقال إلى الاختبارات الأولية. طريقة النشر الموضحة أدناه خاصة بخادم <bdi dir="ltr" class="odt-ltr-term">Tomcat:</bdi>
+  <li>يمكننا الآن الانتقال إلى الاختبارات الأولية. طريقة النشر الموضحة أدناه خاصة بخادم <bdi dir="ltr" class="odt-ltr-term">Tomcat:</bdi>
   </li>
 </ol>
 
 <ol>
     <ul>
-      <li>يجب إنشاء سياق التطبيق في ملف<b> <bdi dir="ltr" class="odt-ltr-term">server.xml</bdi> </b>الخاص بـ <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> يمكننا البدء باختبار هذا السياق. لنفترض أن <b><bdi dir="ltr" class="odt-ltr-term">C</bdi> </b>هو هذا السياق و <b><bdi dir="ltr" class="odt-ltr-term">DC</bdi> </b>هو المجلد المرتبط به. سننشئ ملفًا ثابتًا <b>باسم <bdi dir="ltr" class="odt-ltr-term">test.html</bdi> </b>ونضعه في مجلد <b><bdi dir="ltr" class="odt-ltr-term">DC</bdi></b>. بعد تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi>، سنطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi><b> <bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/DC/test.html</bdi> </b>في متصفح.
+      <li>يجب إنشاء سياق التطبيق في ملف <b><bdi dir="ltr" class="odt-ltr-term">server.xml</bdi> </b>الخاص بـ <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> يمكننا البدء باختبار هذا السياق. لنفترض أن <b><bdi dir="ltr" class="odt-ltr-term">C</bdi> </b>هو هذا السياق <b>و<bdi dir="ltr" class="odt-ltr-term">DC</bdi> </b>هو المجلد المرتبط به. سننشئ ملفًا ثابتًا <b>باسم <bdi dir="ltr" class="odt-ltr-term">test.html</bdi> </b>ونضعه في المجلد <b><bdi dir="ltr" class="odt-ltr-term">DC</bdi></b>. بعد تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi>، سنطلب عبر متصفح الوصول إلى<b> <bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/DC/test.html</bdi> في المجلد </b><bdi dir="ltr" class="odt-ltr-term">URL.</bdi>
       </li>
-      <li>يمكن اختبار كل صفحة <bdi dir="ltr" class="odt-ltr-term">JSP.</bdi> إذا كانت صفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> تسمى <b><bdi dir="ltr" class="odt-ltr-term">formulaire.</bdi></b>jsp، فسنطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi><b> <bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/DC/formulaire.jsp</bdi> </b>في متصفح. تتوقع صفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> قيمًا من السيرفلت الذي يستدعيها. هنا، نستدعيها مباشرةً، لذا لن تتلقى المعلمات المتوقعة. لضمان إمكانية إجراء الاختبار، سنقوم يدويًا بتهيئة المعلمات المتوقعة في صفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> باستخدام الثوابت. تتحقق هذه الاختبارات الأولية من صحة بناء جمل صفحات <bdi dir="ltr" class="odt-ltr-term">JSP.</bdi>
+      <li>يمكن اختبار كل صفحة <bdi dir="ltr" class="odt-ltr-term">JSP.</bdi> إذا كانت إحدى الصفحات <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> تُسمى <bdi dir="ltr" class="odt-ltr-term">formulaire.jsp</bdi>، فسيتم طلب الصفحة <bdi dir="ltr" class="odt-ltr-term">URL</bdi><b> <bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/DC/formulaire.jsp</bdi></b> باستخدام متصفح. تتوقع الصفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> قيمًا من السيرفلت الذي يستدعيها. وهنا يتم استدعاؤها مباشرةً، لذا لن تتلقى المعلمات المتوقعة. ولتمكين إجراء الاختبارات مع ذلك، سنقوم بأنفسنا في الصفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> بتهيئة المعلمات المتوقعة باستخدام ثوابت. تسمح هذه الاختبارات الأولية بالتحقق من صحة بناء جمل الصفحات <bdi dir="ltr" class="odt-ltr-term">JSP.</bdi>
       </li>
     </ul>
 </ol>
 
 <ol start="6">
-  <li>بعد ذلك، نكتب كود السيرفلت. يحتوي على طريقتين متميزتين:
+  <li>ثم نكتب كود السيرفلت. تحتوي هذه السيرفلت على طريقتين متميزتين تمامًا:
   </li>
 </ol>
 
 <ol>
     <ul>
-      <li>طريقة <b><bdi dir="ltr" class="odt-ltr-term">init</bdi></b>، التي تُستخدم من أجل:
+      <li>طريقة <b><bdi dir="ltr" class="odt-ltr-term">init</bdi> </b>التي تُستخدم من أجل:
         <ul>
-          <li>استرداد معلمات تكوين التطبيق من ملف<b> <bdi dir="ltr" class="odt-ltr-term">web.xml</bdi> </b>الخاص به
+          <li>استرداد معلمات تكوين التطبيق من ملف <b><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi> </b>الخاص به
           </li>
-          <li>إنشاء مثيلات محتملة لفئات الأعمال التي سيحتاج إلى استخدامها لاحقًا
+          <li>إنشاء مثيلات لفئات الأعمال التي ستستخدمها لاحقًا، إذا لزم الأمر
           </li>
-          <li>معالجة أي قائمة بأخطاء التهيئة التي سيتم إرجاعها إلى مستخدمي التطبيق في المستقبل. قد تتضمن معالجة الأخطاء هذه إرسال بريد إلكتروني إلى مسؤول التطبيق لإخطاره بوجود خلل
+          <li>إدارة قائمة محتملة بأخطاء التهيئة التي سيتم إرجاعها إلى مستخدمي التطبيق في المستقبل. وقد تصل إدارة الأخطاء هذه إلى حد إرسال بريد إلكتروني إلى مسؤول التطبيق لإخطاره بوجود خلل
           </li>
         </ul>
       </li>
-      <li>طريقة <b><bdi dir="ltr" class="odt-ltr-term">doGet</bdi> </b>أو <b><bdi dir="ltr" class="odt-ltr-term">doPost</bdi></b>، اعتمادًا على كيفية استلام السيرفلت للمعلمات من عملائه. إذا كان السيرفلت يتعامل مع نماذج متعددة، فمن الأفضل أن يرسل كل نموذج معلومات تحدد هويته بشكل فريد. يمكن القيام بذلك باستخدام سمة مخفية في النموذج من النوع <b>&lt;<bdi dir="ltr" class="odt-ltr-term">input type</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">hidden</bdi>&quot; <bdi dir="ltr" class="odt-ltr-term">name</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">action</bdi>&quot; <bdi dir="ltr" class="odt-ltr-term">value</bdi>=&quot;...&quot;&gt;</b>. يمكن أن يبدأ السيرفلت بقراءة قيمة هذه المعلمة ثم يفوض معالجة الطلب إلى طريقة داخلية خاصة مسؤولة عن معالجة هذا النوع من الطلبات.
+      <li>الطريقة <b><bdi dir="ltr" class="odt-ltr-term">doGet</bdi> </b>أو <b><bdi dir="ltr" class="odt-ltr-term">doPost</bdi> </b>وفقًا للطريقة التي تتلقى بها السيرفلت معلماتها من العملاء. إذا كانت السيرفلت تدير عدة نماذج، فمن المستحسن أن يرسل كل منها معلومة تحدد هويته بشكل فريد. ويمكن تحقيق ذلك عن طريق سمة مخفية في النموذج من النوع <b>&lt;<bdi dir="ltr" class="odt-ltr-term">input type</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">hidden</bdi>&quot; <bdi dir="ltr" class="odt-ltr-term">name</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">action</bdi>&quot; <bdi dir="ltr" class="odt-ltr-term">value</bdi>=&quot;...&quot;&gt;</b>. يمكن أن تبدأ الخدمة (<bdi dir="ltr" class="odt-ltr-term">servlet</bdi>) بقراءة قيمة هذا المعامل ثم تفويض معالجة الطلب إلى طريقة داخلية خاصة مكلفة بمعالجة هذا النوع من الطلبات.
       </li>
-      <li>يجب تجنب وضع منطق الأعمال في السيرفلت قدر الإمكان. فهذا ليس الغرض الذي صُمم من أجله. يعمل السيرفلت كنوع من قائد الفريق (وحدة التحكم) الذي يتلقى الطلبات من عملائه (عملاء الويب) ويقوم بتنفيذها بواسطة الكيانات الأكثر ملاءمة (فئات الأعمال). عند كتابة السيرفلت، ستقوم بتعريف واجهة فئات الأعمال المراد إنشاؤها (المنشئات، الطرق). ينطبق هذا إذا كانت فئات الأعمال هذه بحاجة إلى الإنشاء. إذا كانت موجودة بالفعل، فيجب أن يتكيف السيرفلت مع الواجهة الموجودة.
+      <li>يجب تجنب وضع كود الأعمال داخل السيرفلت قدر الإمكان. فهي ليست مصممة لهذا الغرض. السيرفلت هي بمثابة قائد فريق (وحدة تحكم) تتلقى الطلبات من عملائها (عملاء الويب) وتكلف الأشخاص الأكثر ملاءمة (فئات الأعمال) بتنفيذها. عند كتابة السيرفلت، يتم تحديد واجهة الفئات الخاصة بالأعمال التي سيتم كتابتها (منشئات، طرق). وذلك في حالة الحاجة إلى إنشاء هذه الفئات. أما إذا كانت موجودة بالفعل، فيجب أن تتكيف السيرفلت مع الواجهة الموجودة.
       </li>
       <li>سيتم ترجمة كود السيرفلت.
       </li>
     </ul>
 </ol>
 
-<ol start="7">
-  <li>سنكتب الهيكل الأساسي لفئات الأعمال التي يتطلبها السيرفلت. على سبيل المثال، إذا كان السيرفلت يستخدم كائنًا من نوع <b><bdi dir="ltr" class="odt-ltr-term">proxyArticles</bdi> </b>ويجب أن تحتوي هذه الفئة على طريقة <b><bdi dir="ltr" class="odt-ltr-term">getCodes</bdi> </b>تُرجع قائمة (<bdi dir="ltr" class="odt-ltr-term">ArrayList</bdi>) من سلاسل الأحرف، فيمكننا في البداية كتابة ما يلي ببساطة:
+<ol>
+  <li>سنقوم بكتابة الهيكل الأساسي للفئات المهنية اللازمة للـ <bdi dir="ltr" class="odt-ltr-term">servlet.</bdi> على سبيل المثال، إذا كانت السيرفلت تستخدم كائنًا من النوع <bdi dir="ltr" class="odt-ltr-term">proxyArticles</bdi>، وكان على هذه الفئة أن تحتوي على طريقة <b><bdi dir="ltr" class="odt-ltr-term">getCodes</bdi> </b>تُرجع قائمة (<bdi dir="ltr" class="odt-ltr-term">ArrayList</bdi>) من سلاسل الأحرف، فيمكننا الاكتفاء في البداية بكتابة:
   </li>
 </ol>
 
@@ -860,114 +860,115 @@
 <a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">}</span>
 </code></pre></div>
 <ol>
-  <li>يمكننا الآن المضي قدماً في اختبار السيرفلت.
+  <li>يمكننا الآن الانتقال إلى اختبارات السيرفلت.
   </li>
 </ol>
 
 <ol>
     <ul>
-      <li>يجب إنشاء ملف تكوين<b> <bdi dir="ltr" class="odt-ltr-term">web.xml</bdi> </b>الخاص بالتطبيق. يجب أن يحتوي على جميع المعلومات التي تتوقعها طريقة <b><bdi dir="ltr" class="odt-ltr-term">init</bdi></b> الخاصة بالبرنامج الخادم (&lt;<bdi dir="ltr" class="odt-ltr-term">init-param</bdi>&gt;). بالإضافة إلى ذلك، نقوم بتعيين عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي سيتم من خلاله الوصول إلى البرنامج الخادم الرئيسي (&lt;<bdi dir="ltr" class="odt-ltr-term">servlet-mapping</bdi>&gt;).
+      <li>يجب إنشاء ملف التكوين <b><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi> </b>الخاص بالتطبيق. يجب أن يحتوي على جميع المعلومات التي تتوقعها طريقة <b><bdi dir="ltr" class="odt-ltr-term">init</bdi></b> الخاصة بالسيرفلت (&lt;<bdi dir="ltr" class="odt-ltr-term">init-param</bdi>&gt;). علاوة على ذلك، يتم تعيين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي سيتم من خلاله الوصول إلى السيرفلت الرئيسي (&lt;<bdi dir="ltr" class="odt-ltr-term">servlet-mapping</bdi>&gt;).
       </li>
-      <li>يتم وضع جميع الفئات الضرورية (البرنامج الخادم، وفئات الأعمال) في <b><bdi dir="ltr" class="odt-ltr-term">WEB-INF/classes</bdi></b>.
+      <li>يتم وضع جميع الفئات الضرورية (الخادم الصغير، فئات الأعمال) في <b><bdi dir="ltr" class="odt-ltr-term">WEB-INF/classes</bdi></b>.
       </li>
-      <li>يتم وضع جميع مكتبات الفئات الضرورية (.jar) في <b><bdi dir="ltr" class="odt-ltr-term">WEB-INF/lib.</bdi> </b>قد تحتوي هذه المكتبات على فئات الأعمال وبرامج تشغيل <bdi dir="ltr" class="odt-ltr-term">JDBC</bdi> وما إلى ذلك.
+      <li>يتم وضع جميع مكتبات الفئات (.jar) الضرورية في <b><bdi dir="ltr" class="odt-ltr-term">WEB-INF/lib.</bdi> </b>قد تحتوي هذه المكتبات على فئات متخصصة، وبرامج تشغيل <bdi dir="ltr" class="odt-ltr-term">JDBC</bdi>، ...
       </li>
-      <li>يتم وضع طرق عرض <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> في جذر التطبيق أو في مجلد مخصص. وينطبق الأمر نفسه على الموارد الأخرى (<bdi dir="ltr" class="odt-ltr-term">HTML</bdi>، الصور، الصوت، مقاطع الفيديو، إلخ).
+      <li>يتم وضع طرق العرض (<bdi dir="ltr" class="odt-ltr-term">JSP</bdi>) في جذر التطبيق أو في مجلد خاص بها. ونفعل الشيء نفسه بالنسبة للموارد الأخرى (ملفات <bdi dir="ltr" class="odt-ltr-term">HTML</bdi>، الصور، الصوت، مقاطع الفيديو، ...)
       </li>
-      <li>بمجرد الانتهاء من ذلك، يتم اختبار التطبيق وتصحيح الأخطاء الأولية. في نهاية هذه المرحلة، تصبح بنية التطبيق جاهزة للعمل. قد تكون مرحلة الاختبار هذه صعبة نظرًا لعدم توفر أداة تصحيح أخطاء مع <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> ولهذا، سيحتاج <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> إلى أن يتم دمجه في أداة تطوير (<bdi dir="ltr" class="odt-ltr-term">JBuilder Developer</bdi>، <bdi dir="ltr" class="odt-ltr-term">Sun One Studio</bdi>، إلخ). يمكنك استخدام عبارات<b> <bdi dir="ltr" class="odt-ltr-term">System.out.println</bdi>(&quot;....&quot;)</b>، التي تكتب إلى وحدة تحكم <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> أول شيء يجب التحقق منه هو أن طريقة <b><bdi dir="ltr" class="odt-ltr-term">init</bdi> </b>تسترد بنجاح جميع البيانات من ملف<b> <bdi dir="ltr" class="odt-ltr-term">web.xml</bdi></b>. للقيام بذلك، يمكننا كتابة قيم هذه المعلمات في نافذة <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> وبالمثل، سنتحقق من أن طريقتي <b><bdi dir="ltr" class="odt-ltr-term">doGet</bdi> </b>و <b><bdi dir="ltr" class="odt-ltr-term">doPost</bdi> </b>تستردان المعلمات بشكل صحيح من نماذج <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> المختلفة للتطبيق.
+      <li>وبعد الانتهاء من ذلك، يتم اختبار التطبيق وتصحيح الأخطاء الأولية. في نهاية هذه المرحلة، تصبح بنية التطبيق جاهزة للعمل. قد تكون مرحلة الاختبار هذه صعبة نظرًا لعدم توفر أداة تصحيح أخطاء مع <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> ولهذا الغرض، يجب أن يكون <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> نفسه مدمجًا في أداة تطوير (<bdi dir="ltr" class="odt-ltr-term">Jbuilder Developer</bdi>، <bdi dir="ltr" class="odt-ltr-term">Sun One Studio</bdi>، ...). يمكن الاستعانة بالتعليمات <b><bdi dir="ltr" class="odt-ltr-term">System.out.println</bdi>(&quot;....&quot;) </b>التي تكتب في نافذة <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> أول ما يجب التحقق منه هو أن الطريقة <b><bdi dir="ltr" class="odt-ltr-term">init</bdi> </b>تسترد بالفعل جميع البيانات الواردة من الملف <b><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi></b>. وللقيام بذلك، يمكن كتابة قيم هذه البيانات في نافذة <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> وبنفس الطريقة، نتحقق من أن الطريقتين <b><bdi dir="ltr" class="odt-ltr-term">doGet</bdi> </b>و <b><bdi dir="ltr" class="odt-ltr-term">doPost</bdi> </b>تستردان بشكل صحيح معلمات النماذج المختلفة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> الخاصة بالتطبيق.
       </li>
     </ul>
 </ol>
 
-<p>نكتب فئات الأعمال التي يتطلبها السيرفلت. يتضمن هذا عمومًا التطوير القياسي لفئة <bdi dir="ltr" class="odt-ltr-term">Java</bdi>، والتي عادةً ما تكون مستقلة عن أي تطبيق ويب. سيتم اختبارها أولاً خارج هذه البيئة، على سبيل المثال باستخدام تطبيق وحدة التحكم. بمجرد كتابة فئة الأعمال، يمكننا دمجها في بنية نشر تطبيق الويب واختبار تكاملها الصحيح داخلها. تتكرر هذه العملية لكل فئة أعمال.</p>
-<h2 id="14-struts">1.4. <span style="color: #4f81bd">نهج تطوير <bdi dir="ltr" class="odt-ltr-term">STRUTS</bdi></span></h2>
-<p>سعى مبتكرو منهجية <bdi dir="ltr" class="odt-ltr-term">STRUTS</bdi> إلى تحديد طريقة تطوير قياسية تتوافق مع بنية <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> لتطبيقات الويب المكتوبة بلغة <bdi dir="ltr" class="odt-ltr-term">Java.</bdi> هناك جانبان لمشروع <bdi dir="ltr" class="odt-ltr-term">STRUTS:</bdi></p>
+<p>يتم كتابة فئات الأعمال التي تحتاجها السيرفلت. ويتضمن ذلك عادةً عملية التطوير التقليدية لفئة جافا، والتي غالبًا ما تكون مستقلة عن أي تطبيق ويب. وسيتم اختبارها أولاً خارج هذه البيئة، باستخدام تطبيق وحدة التحكم على سبيل المثال. وعند الانتهاء من كتابة فئة الأعمال، يمكن دمجها في بنية نشر تطبيق الويب واختبار مدى صحة تكاملها فيه. وسنتبع هذا الإجراء مع كل فئة وظيفية.</p>
+<h2 id="14-struts">1.4. <span style="color: #4f81bd">نهج التطوير <bdi dir="ltr" class="odt-ltr-term">STRUTS</bdi></span></h2>
+<p>سعى مبتكرو منهجية <bdi dir="ltr" class="odt-ltr-term">STRUTS</bdi> إلى تحديد طريقة تطوير قياسية تتوافق مع بنية <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> لتطبيقات الويب المكتوبة بلغة جافا. يتضمن مشروع <bdi dir="ltr" class="odt-ltr-term">STRUTS</bdi> جانبين:</p>
 <ul>
-  <li>طريقة التطوير. سنرى أنها تشبه إلى حد كبير الطريقة الموصوفة أعلاه لـ <bdi dir="ltr" class="odt-ltr-term">servlets</bdi> وصفحات <bdi dir="ltr" class="odt-ltr-term">JSP</bdi>
+  <li>طريقة التطوير. سنرى أنها قريبة إلى حد كبير من تلك الموصوفة أعلاه بالنسبة للسيرفلتات وصفحات الويب <bdi dir="ltr" class="odt-ltr-term">JSP</bdi>
   </li>
-  <li>الأدوات التي تسمح لنا بتطبيق طريقة التطوير هذه. وهي عبارة عن مكتبات فئات <bdi dir="ltr" class="odt-ltr-term">Java</bdi> متوفرة على موقع مؤسسة <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> (<bdi dir="ltr" class="odt-ltr-term">www.apache.org</bdi>).
+  <li>الأدوات التي تسمح لنا بتطبيق طريقة التطوير هذه. وهي عبارة عن مكتبات لفئات <bdi dir="ltr" class="odt-ltr-term">Java</bdi> متوفرة على موقع مؤسسة <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> (<bdi dir="ltr" class="odt-ltr-term">www.apache.org</bdi>).
   </li>
 </ul>
+
 <h3 id="141">1.4.1. <span style="color: #4f81bd">طريقة التطوير</span></h3>
-<p>تتمثل بنية <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> التي يستخدمها <bdi dir="ltr" class="odt-ltr-term">STRUTS</bdi> فيما يلي:</p>
-<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000565000002389752E5C0.png" width="643" height="264" style="display:inline-block; margin:4px;width:17cm;height:6.992cm;" class="odt-zoomable" data-zoom-src="images/1000000000000565000002389752E5C0.png" /></td></tr></table>
+<p>البنية <bdi dir="ltr" class="odt-ltr-term">MVC</bdi> التي يستخدمها <bdi dir="ltr" class="odt-ltr-term">STRUTS</bdi> هي كما يلي:</p>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000565000002389752E5C0.png" width="643" height="264" style="display:inline-block; margin:4px;width:17cm;height:6.99cm;" class="odt-zoomable" data-zoom-src="images/1000000000000565000002389752E5C0.png" /></td></tr></table>
 
 <ul>
-  <li>تعد وحدة التحكم (<bdi dir="ltr" class="odt-ltr-term">Controller</bdi>) قلب التطبيق. تمر جميع طلبات العميل من خلالها. وهي عبارة عن سيرفلت عام يوفره <bdi dir="ltr" class="odt-ltr-term">STRUTS.</bdi> في بعض الحالات، قد تحتاج إلى توسيعها. أما في الحالات البسيطة، فهذا ليس ضروريًا. يسترد هذا السيرفلت العام المعلومات التي يحتاجها من ملف يُسمى غالبًا <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></b>.
+  <li>تعد وحدة التحكم (<bdi dir="ltr" class="odt-ltr-term">Controller</bdi>) قلب التطبيق. تمر جميع طلبات العميل عبرها. وهي عبارة عن سيرفلت عامة مقدمة من <bdi dir="ltr" class="odt-ltr-term">STRUTS.</bdi> قد نضطر في بعض الحالات إلى إنشاء مشتق منها. أما في الحالات البسيطة، فهذا ليس ضروريًا. تستمد هذه السيرفلت العامة المعلومات التي تحتاجها من ملف يُسمى غالبًا <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></b>.
   </li>
-  <li>إذا كان طلب العميل يحتوي على معلمات نموذج، يتم وضعها في كائن <b><bdi dir="ltr" class="odt-ltr-term">Bean</bdi></b>. يُقال إن الفئة من نوع<b> <bdi dir="ltr" class="odt-ltr-term">Bean</bdi> </b>إذا كانت تتبع قواعد الإنشاء التي سنناقشها لاحقًا. يتم تخزين كائنات <b><bdi dir="ltr" class="odt-ltr-term">Bean</bdi></b> التي تم إنشاؤها بمرور الوقت في جلسة عمل العميل أو طلبه. هذا الإعداد قابل للتكوين. لا يلزم إعادة إنشائها إذا كانت قد تم إنشاؤها بالفعل.
+  <li>إذا احتوى طلب العميل على معلمات نموذج، يتم وضعها في كائن <b><bdi dir="ltr" class="odt-ltr-term">Bean</bdi></b>. يُطلق على الفئة اسم <b>«فئة</b> من نوع <b><bdi dir="ltr" class="odt-ltr-term">Bean</bdi>» </b>إذا كانت تتبع قواعد الإنشاء التي سنستعرضها لاحقًا. يتم تخزين كائنات <b><bdi dir="ltr" class="odt-ltr-term">Bean</bdi> </b>التي يتم إنشاؤها بمرور الوقت في جلسة العمل أو في طلب العميل. هذه النقطة قابلة للتكوين. ولا يلزم إعادة إنشائها إذا كانت قد تم إنشاؤها مسبقًا.
   </li>
-  <li>في ملف التكوين<b> <bdi dir="ltr" class="odt-ltr-term">struts-config</bdi></b>.<b><bdi dir="ltr" class="odt-ltr-term">html</bdi></b>، يرتبط كل عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> سيتم معالجته بواسطة البرنامج (وبالتالي لا يتوافق مع عرض <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> يمكن طلبه مباشرة) بمعلومات معينة:
+  <li>في ملف التكوين <bdi dir="ltr" class="odt-ltr-term">struts-config.html</bdi>، يتم ربط معلومات معينة بكل <bdi dir="ltr" class="odt-ltr-term">URL</bdi> يجب معالجته برمجيًا (وبالتالي لا يتطابق مع عرض <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> يمكن طلبه مباشرةً):
     <ul>
-      <li><b>اسم الفئة من نوع <bdi dir="ltr" class="odt-ltr-term">Action</bdi> </b>المسؤولة عن معالجة الطلب. هنا مرة أخرى، يمكن تخزين كائن <b><bdi dir="ltr" class="odt-ltr-term">Action</bdi></b> الذي تم إنشاء مثيل له في الجلسة أو الطلب.
+      <li><b>اسم فئة <bdi dir="ltr" class="odt-ltr-term">Action</bdi> </b>المسؤولة عن معالجة الطلب. وهنا أيضًا، يمكن الاحتفاظ بمثيل كائن <b><bdi dir="ltr" class="odt-ltr-term">Action</bdi> </b>في الجلسة أو في الطلب.
       </li>
-      <li>إذا كان عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المطلوب معلمًا (كما هو الحال عند إرسال نموذج إلى وحدة التحكم)، يتم تحديد اسم <b><bdi dir="ltr" class="odt-ltr-term">bean</bdi> </b>المسؤول عن تخزين بيانات النموذج.
+      <li>إذا كانت <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المطلوبة معدة بمعلمات (كما في حالة إرسال نموذج إلى وحدة التحكم)، يُشار إلى اسم <b>«البيان</b>» (<b><bdi dir="ltr" class="odt-ltr-term">bean</bdi>) </b>المسؤول عن تخزين معلومات النموذج.
       </li>
     </ul>
   </li>
-  <li>مسلحًا بهذه المعلومات المقدمة من ملف التكوين الخاص به، عند تلقي طلب <bdi dir="ltr" class="odt-ltr-term">URL</bdi> من عميل، يمكن لوحدة التحكم تحديد ما إذا كان يلزم إنشاء <bdi dir="ltr" class="odt-ltr-term">bean</bdi> وأي واحد. بمجرد إنشاء مثيل، يمكن لـ <bdi dir="ltr" class="odt-ltr-term">bean</bdi> التحقق مما إذا كانت البيانات التي خزنها — والتي تأتي من النموذج — صالحة أم لا. يتم استدعاء طريقة في الكائن تسمى <b>`<bdi dir="ltr" class="odt-ltr-term">validate</bdi>` </b>تلقائيًا بواسطة وحدة التحكم. يتم إنشاء الكائن بواسطة المطور. لذلك، يضع المطور الكود الذي يتحقق من صحة بيانات النموذج داخل طريقة <b><bdi dir="ltr" class="odt-ltr-term">validate</bdi></b>. إذا تبين أن البيانات غير صالحة، فلن تواصل وحدة التحكم العمل. ستنقل التحكم إلى عرض يجد اسمه في ملف التكوين الخاص به. عندئذٍ يكتمل التفاعل. لاحظ أن المطور يمكنه اختيار عدم التحقق من صحة النموذج. ويتم ذلك أيضًا في ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.html</bdi></b>. في هذه الحالة، لا يستدعي وحدة التحكم طريقة <b><bdi dir="ltr" class="odt-ltr-term">validate</bdi></b> الخاصة بالبيان.
+  <li>وبفضل هذه المعلومات المقدمة من ملف التكوين الخاص به، عند استلام طلب <bdi dir="ltr" class="odt-ltr-term">URL</bdi> من أحد العملاء، يصبح وحدة التحكم قادرة على تحديد ما إذا كان هناك «بين» يجب إنشاؤه، وأي «بين» بالضبط. وبمجرد إنشاء مثيل «البين»، يمكنه التحقق من صحة البيانات التي خزنها والتي تأتي من النموذج. يتم استدعاء طريقة في «البيان» تُسمى <b><bdi dir="ltr" class="odt-ltr-term">validate</bdi> </b>تلقائيًّا بواسطة وحدة التحكم. يتم إنشاء «البيان» بواسطة المطور. لذا، يضع المطور في طريقة <b><bdi dir="ltr" class="odt-ltr-term">validate</bdi> </b>الكود الذي يتحقق من صحة بيانات النموذج. إذا تبين أن البيانات غير صالحة، فلن تواصل وحدة التحكم العملية. بل ستقوم بتمرير زمام الأمور إلى عرض سيجد اسمه في ملف التكوين الخاص به. وبذلك ينتهي التبادل. تجدر الإشارة إلى أنه يمكن للمطور أن يطلب عدم التحقق من صحة النموذج. وقد فعل ذلك أيضًا في الملف <b><bdi dir="ltr" class="odt-ltr-term">struts-config.html</bdi></b>. في هذه الحالة، لا يستدعي وحدة التحكم طريقة <b><bdi dir="ltr" class="odt-ltr-term">validate</bdi> </b>الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">bean.</bdi>
   </li>
-  <li>إذا كانت بيانات الكائن صحيحة، أو إذا لم يكن هناك تحقق من الصحة، أو إذا لم يكن هناك كائن، فإن وحدة التحكم تمرر التحكم إلى كائن <b><bdi dir="ltr" class="odt-ltr-term">Action</bdi> </b>المرتبط بعنوان <bdi dir="ltr" class="odt-ltr-term">URL.</bdi> وتقوم بذلك عن طريق استدعاء طريقة <b><bdi dir="ltr" class="odt-ltr-term">execute</bdi> </b>الخاصة بهذا الكائن، وتمرر له المرجع إلى الكائن الذي ربما يكون قد أنشأه. وهنا يقوم المطور بما يجب القيام به: فقد يحتاج إلى استدعاء فئات الأعمال أو فئات الوصول إلى البيانات. في نهاية المعالجة، يعيد كائن <b><bdi dir="ltr" class="odt-ltr-term">Action</bdi> </b>إلى وحدة التحكم اسم العرض الذي يجب أن ترسله استجابةً للعميل.
+  <li>إذا كانت بيانات الكائن صحيحة، أو في حالة عدم وجود تحقق، أو في حالة عدم وجود كائن، يقوم وحدة التحكم بتمرير زمام الأمور إلى الكائن من نوع <b><bdi dir="ltr" class="odt-ltr-term">Action</bdi> </b>المرتبط بـ <bdi dir="ltr" class="odt-ltr-term">URL.</bdi> ويقوم بذلك عن طريق طلب تنفيذ طريقة <b><bdi dir="ltr" class="odt-ltr-term">execute</bdi></b> الخاصة بهذا الكائن، حيث يمرر إليها مرجع الكائن (<bdi dir="ltr" class="odt-ltr-term">Bean</bdi>) الذي قام بإنشائه إن وجد. وهنا يقوم المطور بما عليه القيام به: فقد يضطر إلى استدعاء فئات الأعمال أو فئات الوصول إلى البيانات. في نهاية المعالجة، يعيد كائن <b><bdi dir="ltr" class="odt-ltr-term">Action</bdi> </b>إلى وحدة التحكم اسم العرض الذي يجب إرساله كاستجابة إلى العميل.
   </li>
-  <li>يرسل وحدة التحكم هذا الرد. وبذلك يكتمل التفاعل مع العميل.
+  <li>يقوم وحدة التحكم بإرسال هذا الرد. وبذلك ينتهي التبادل مع العميل.
   </li>
 </ul>
 
-<p>تبدأ منهجية تطوير <bdi dir="ltr" class="odt-ltr-term">STRUTS</bdi> في التبلور:</p>
+<p>تبدأ منهجية التطوير <bdi dir="ltr" class="odt-ltr-term">STRUTS</bdi> في التبلور:</p>
 <ul>
-  <li>تحديد طرق العرض. نميز بين طرق العرض التي تمثل نماذج وطرق العرض الأخرى. 
+  <li>تعريف العروض. يتم التمييز بين العروض التي تمثل نماذج والعروض الأخرى. 
     <ul>
-      <li>يولد كل عرض نموذج تعريفًا في ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></b>. يتم تعريف المعلومات التالية هناك:
+      <li>كل عرض نموذج يؤدي إلى تعريف في الملف <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></b>. يتم فيه تحديد المعلومات التالية:
         <ul>
-          <li>اسم فئة <b><bdi dir="ltr" class="odt-ltr-term">Bean</bdi> </b>التي ستحتوي على بيانات النموذج، بالإضافة إلى إشارة إلى ما إذا كان يجب التحقق من صحة البيانات أم لا. إذا كان التحقق من الصحة مطلوبًا وتبين أن البيانات غير صالحة، فيجب تحديد العرض الذي سيتم إرساله إلى العميل في هذه الحالة.
+          <li>اسم فئة <b><bdi dir="ltr" class="odt-ltr-term">Bean</bdi> </b>التي ستحتوي على بيانات النموذج، بالإضافة إلى تحديد ما إذا كان يجب التحقق من صحة البيانات أم لا. إذا كان يجب التحقق منها وتبين أنها غير صالحة، فيجب تحديد العرض الذي سيتم إرساله كاستجابة للعميل في هذه الحالة.
           </li>
           <li>اسم فئة <b><bdi dir="ltr" class="odt-ltr-term">Action</bdi> </b>المسؤولة عن معالجة النموذج.
           </li>
-          <li>أسماء جميع طرق العرض التي قد يتم إرسالها إلى العميل بمجرد معالجة الطلب. ستقوم فئة <b><bdi dir="ltr" class="odt-ltr-term">Action</bdi> </b>باختيار إحداها بناءً على نتيجة المعالجة.
+          <li>اسم جميع العروض التي يمكن إرسالها ردًا على العميل بمجرد معالجة الطلب. وستختار فئة <b><bdi dir="ltr" class="odt-ltr-term">Action</bdi> </b>إحداها وفقًا لنتيجة المعالجة.
           </li>
         </ul>
       </li>
-      <li>كل عرض يتوافق مع صفحة <bdi dir="ltr" class="odt-ltr-term">JSP.</bdi> سنرى أنه في العروض — وخاصة عروض النماذج — نستخدم أحيانًا مكتبة من العلامات الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi>
+      <li>كل عرض يمثل صفحة <bdi dir="ltr" class="odt-ltr-term">JSP.</bdi> سنرى أنه في العروض، ولا سيما عروض النماذج، يتم أحيانًا استخدام مكتبة علامات خاصة بـ <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi>
       </li>
     </ul>
   </li>
-  <li>كتابة فئات <bdi dir="ltr" class="odt-ltr-term">JavaBean</bdi> المطابقة لعروض النماذج
+  <li>كتابة فئات <bdi dir="ltr" class="odt-ltr-term">Javabean</bdi> المقابلة لعروض النماذج
   </li>
   <li>كتابة فئات <b><bdi dir="ltr" class="odt-ltr-term">Action</bdi> </b>المسؤولة عن معالجة النماذج
   </li>
-  <li>كتابة أي منطق أعمال أو فئات الوصول إلى البيانات
+  <li>كتابة فئات الأعمال أو فئات الوصول إلى البيانات، إن وجدت
   </li>
 </ul>
 
-<h3 id="142-struts">1.4.2. <span style="color: #4f81bd">أدوات تطوير <bdi dir="ltr" class="odt-ltr-term">STRUTS</bdi></span></h3>
-<p>مشروع <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> هو أحد مشاريع مؤسسة <bdi dir="ltr" class="odt-ltr-term">Apache Software Foundation.</bdi> تم تجميع العديد من هذه المشاريع تحت اسم <strong><bdi dir="ltr" class="odt-ltr-term">Jakarta</bdi></strong> وهي متاحة على الرابط <strong><bdi dir="ltr" class="odt-ltr-term">http://jakarta.apache.org</bdi></strong>:</p>
+<h3 id="142-struts">1.4.2. <span style="color: #4f81bd">أدوات التطوير <bdi dir="ltr" class="odt-ltr-term">STRUTS</bdi></span></h3>
+<p>يُعد مشروع <bdi dir="ltr" class="odt-ltr-term">STRUTS</bdi> أحد مشاريع مؤسسة <bdi dir="ltr" class="odt-ltr-term">Apache Software Foundation.</bdi> وقد تم تجميع العديد من هذه المشاريع تحت اسم <bdi dir="ltr" class="odt-ltr-term">Jakarta</bdi>، وهي متاحة على الموقع <strong><bdi dir="ltr" class="odt-ltr-term">http://jakarta.apache.org</bdi></strong>:</p>
 <p><img src="images/10000000000002C8000000D4911DDA01.png" width="680" height="202" style="width:17.988cm;height:5.355cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002C8000000D4911DDA01.png" /></p>
-<p>يُنصح بقراءة هذه الصفحة. العديد من هذه المشاريع تهم مطوري <bdi dir="ltr" class="odt-ltr-term">Java.</bdi> إذا اتبعنا رابط <strong><bdi dir="ltr" class="odt-ltr-term">Struts</bdi></strong> أعلاه، فسنصل إلى الصفحة الرئيسية للمشروع:</p>
+<p>يُنصح بقراءة هذه الصفحة. هناك العديد من المشاريع التي تهم مطوري <bdi dir="ltr" class="odt-ltr-term">Java.</bdi> إذا اتبعنا الرابط <strong><bdi dir="ltr" class="odt-ltr-term">Struts</bdi></strong> أعلاه، فسنصل إلى الصفحة الرئيسية للمشروع:</p>
 <p><img src="images/10000000000003B7000000BD16CDB975.png" width="680" height="135" style="width:17.988cm;height:3.575cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003B7000000BD16CDB975.png" /></p>
-<p>هنا أيضًا، يُنصح بقراءة الصفحة الرئيسية. لتنزيل مكتبات <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> لـ <bdi dir="ltr" class="odt-ltr-term">Java</bdi>، اتبع رابط &quot;<strong><bdi dir="ltr" class="odt-ltr-term">Binaries</bdi>&quot;</strong> أعلاه:</p>
+<p>هنا أيضًا، يُنصح بقراءة الصفحة الرئيسية. لتنزيل مكتبات جافا الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">Struts</bdi>، نضغط على الرابط <strong>«<bdi dir="ltr" class="odt-ltr-term">Binaries</bdi>»</strong> أعلاه:</p>
 <p><img src="images/10000000000001280000009E44DCBC46.png" width="296" height="158" style="width:7.83cm;height:4.18cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001280000009E44DCBC46.png" /></p>
-<p>بالنسبة لمستخدمي <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، استخدم الرابط <bdi dir="ltr" class="odt-ltr-term">1.1.zip</bdi>؛ وبالنسبة لمستخدمي <bdi dir="ltr" class="odt-ltr-term">Unix</bdi>، استخدم الرابط <bdi dir="ltr" class="odt-ltr-term">1.1.tar.gz</bdi> (نوفمبر 2003). بمجرد فك ضغط ملف <bdi dir="ltr" class="odt-ltr-term">1.1.zip</bdi>، سترى بنية الدليل التالية:</p>
+<p>بالنسبة لمستخدمي نظام <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، سنستخدم الرابط <bdi dir="ltr" class="odt-ltr-term">1.1.zip</bdi>، أما بالنسبة لمستخدمي نظام <bdi dir="ltr" class="odt-ltr-term">Unix</bdi> فسنستخدم الرابط <bdi dir="ltr" class="odt-ltr-term">1.1.tar.gz</bdi> (نوفمبر 2003). بمجرد فك ضغط الملف <bdi dir="ltr" class="odt-ltr-term">1.1.zip</bdi>، نحصل على الهيكل التالي:</p>
 <p><img src="images/10000000000001210000009C6783922C.png" width="289" height="156" style="width:7.645cm;height:4.128cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001210000009C6783922C.png" /></p>
-<p>تحتوي بنية الدليل هذه على مكتبات فئات <bdi dir="ltr" class="odt-ltr-term">Java</bdi> المطلوبة لتطوير <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> يتم تخزينها في ملفات .jar أو .war، وهي تشبه ملفات .<bdi dir="ltr" class="odt-ltr-term">zip.</bdi> يمكن فتحها باستخدام نفس الأدوات المساعدة. توجد معظم المكتبات الضرورية في المجلد <strong>lib</strong> أعلاه:</p>
+<p>توجد في هذه البنية الشجرية مكتبات فئات <bdi dir="ltr" class="odt-ltr-term">Java</bdi> اللازمة للتطوير <bdi dir="ltr" class="odt-ltr-term">STRUTS.</bdi> وتوجد هذه المكتبات في ملفات .jar أو .war، وهي ملفات مشابهة لملفات .<bdi dir="ltr" class="odt-ltr-term">zip.</bdi> ويمكن فتحها باستخدام نفس الأدوات المساعدة. وتوجد معظم المكتبات اللازمة في المجلد <strong>lib</strong> أعلاه:</p>
 <p><img src="images/1000000000000155000001C6FB537612.png" width="341" height="454" style="width:9.021cm;height:12.01cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000155000001C6FB537612.png" /></p>
-<p>بالإضافة إلى مكتبات فئات .jar، توجد ملفات .dtd (تعريف نوع المستند) التي تحتوي على قواعد التحقق من صحة ملفات <bdi dir="ltr" class="odt-ltr-term">XML.</bdi> يمكن لملف <bdi dir="ltr" class="odt-ltr-term">XML</bdi> الإشارة إلى ملف <bdi dir="ltr" class="odt-ltr-term">DTD</bdi> من هذا النوع في محتواه. سيستخدم البرنامج (المسمى <strong>محلل</strong>) الذي يحلل محتوى ملف <bdi dir="ltr" class="odt-ltr-term">XML</bdi> قواعد التحقق من الصحة الموجودة في ملف <bdi dir="ltr" class="odt-ltr-term">DTD</bdi> المشار إليه لتحديد ما إذا كان ملف <bdi dir="ltr" class="odt-ltr-term">XML</bdi> صحيحًا من الناحية النحوية. على سبيل المثال، يحدد ملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config</bdi>_1_1.dtd</strong> قواعد إنشاء ملف التكوين <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> لإصدار <bdi dir="ltr" class="odt-ltr-term">Struts 1.1</bdi>.</p>
-<p>لنلقِ نظرة الآن على مكان وضع العناصر المختلفة لهيكل دليل <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> لنشر تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> على خادم <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi></p>
+<p>بالإضافة إلى مكتبات الفئات بتنسيق .jar، توجد ملفات .dtd (تعريف نوع المستند) التي تحتوي على قواعد صحة ملفات <bdi dir="ltr" class="odt-ltr-term">XML.</bdi> ويمكن لملف <bdi dir="ltr" class="odt-ltr-term">XML</bdi> أن يشير في محتواه إلى ملف من هذا النوع مثل <bdi dir="ltr" class="odt-ltr-term">DTD.</bdi> سيستخدم البرنامج (المسمى <strong>«المحلل»</strong>) الذي يحلل محتوى الملف <bdi dir="ltr" class="odt-ltr-term">XML</bdi> قواعد الصحة الموجودة في الملف <bdi dir="ltr" class="odt-ltr-term">DTD</bdi> المشار إليه لتحديد ما إذا كان الملف <bdi dir="ltr" class="odt-ltr-term">XML</bdi> صحيحًا من الناحية النحوية. وهكذا، على سبيل المثال، يحدد الملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config</bdi>_1_1.dtd</strong> قواعد إنشاء ملف التكوين <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> للإصدار 1.1 من <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi></p>
+<p>لنرى الآن أين يجب وضع العناصر المختلفة في شجرة <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> لنشر تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> داخل خادم <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi></p>
 <h2 id="15-struts">1.5. <span style="color: #4f81bd">نشر تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi></span></h2>
-<p>تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> هو تطبيق ويب مثل أي تطبيق آخر. لذلك فهو يتبع قواعد النشر الخاصة بالحاوية التي يعمل فيها. هنا، سيتم تشغيل تطبيق — سنسميه <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></strong> — بواسطة خادم <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> الإصدار 4.<bdi dir="ltr" class="odt-ltr-term">x.</bdi> يتم تضمين إجراء النشر الخاص بـ <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> الإصدار 5.x في الملحق. هنا، سنتبع قواعد النشر الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> 4.<bdi dir="ltr" class="odt-ltr-term">x:</bdi></p>
+<p>تطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> هو تطبيق ويب كأي تطبيق آخر. ولذلك فإنه يتبع قواعد النشر الخاصة بالحاوية التي يتم تشغيله فيها. هنا، سيتم تشغيل تطبيق، سنسميه <bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi>، بواسطة خادم <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> الإصدار 4.<bdi dir="ltr" class="odt-ltr-term">x.</bdi> وستجد في الملحق طريقة النشر الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> الإصدار 5.<bdi dir="ltr" class="odt-ltr-term">x.</bdi> نحن نتبع هنا قواعد النشر الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> 4.<bdi dir="ltr" class="odt-ltr-term">x:</bdi></p>
 <ol>
-  <li>نحدد سياق <b><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi> </b>في ملف التكوين<b> <bdi dir="ltr" class="odt-ltr-term">server.xml</bdi> </b>الخاص بـ <bdi dir="ltr" class="odt-ltr-term">Tomcat:</bdi>
+  <li>نقوم بتعريف سياق <b>«<bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi>» </b>في ملف التكوين <b><bdi dir="ltr" class="odt-ltr-term">server.xml</bdi> </b>الخاص بـ <bdi dir="ltr" class="odt-ltr-term">Tomcat:</bdi>
   </li>
 </ol>
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="w">                </span><span class="nt">&lt;Context</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;/strutspersonne&quot;</span><span class="w"> </span><span class="na">docBase=</span><span class="s">&quot;e:/data/serge/web/struts/personne&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 </code></pre></div>
-<p>بمجرد الانتهاء من ذلك، نعيد تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> إذا لزم الأمر حتى يأخذ السياق الجديد في الاعتبار. يمكننا التحقق من صحة السياق عن طريق طلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne</bdi></strong>:</p>
+<p>بعد الانتهاء من ذلك، نعيد تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> إذا لزم الأمر حتى يأخذ السياق الجديد في الاعتبار. يمكننا التحقق من صحة السياق عن طريق طلب <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne</bdi></strong>:</p>
 <p><img src="images/10000000000001BD000000D7528F00B9.png" width="445" height="215" style="width:11.772cm;height:5.689cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001BD000000D7528F00B9.png" /></p>
-<p>إذا لم تظهر لنا صفحة خطأ، فهذا يعني أن السياق صحيح.</p>
+<p>إذا لم تظهر لنا صفحة أخطاء، فهذا يعني أن السياق صحيح.</p>
 <ol start="2">
   <li>نقوم بإنشاء المجلد الفرعي <b><bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi> </b>في المجلد الفعلي المرتبط بسياق <b><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></b>.
   </li>
-  <li>في مجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi> الخاص بالتطبيق، نحدد ملف تكوين<b> <bdi dir="ltr" class="odt-ltr-term">web.xml</bdi> </b>الخاص بالتطبيق:
+  <li>في المجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi> الخاص بالتطبيق، نقوم بتعريف ملف التكوين <b><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi> </b>الخاص بالتطبيق:
   </li>
 </ol>
 
@@ -996,29 +997,29 @@
 <a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="nt">&lt;/web-app&gt;</span>
 </code></pre></div>
 <ul>
-  <li>فئة وحدة التحكم (<bdi dir="ltr" class="odt-ltr-term">servlet</bdi>) للتطبيق هي فئة <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> محددة مسبقًا تسمى <b><bdi dir="ltr" class="odt-ltr-term">ActionServlet</bdi></b>. وهي موجودة في ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts.jar</bdi></b>. لضمان أن يتمكن <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> من العثور على هذه الفئة، سنضع <b><bdi dir="ltr" class="odt-ltr-term">struts.jar</bdi> </b>في المجلد<b> &lt;<bdi dir="ltr" class="odt-ltr-term">tomcat</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">common</bdi>\lib</b>، وهو أحد المجلدات التي يبحث فيها <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> عند البحث عن الفئات. في الواقع، سنضع جميع ملفات .jar الموجودة في المجلد<b> &lt;<bdi dir="ltr" class="odt-ltr-term">struts</bdi>&gt;\lib </b>هناك، حيث <b>&lt;<bdi dir="ltr" class="odt-ltr-term">struts</bdi>&gt; </b>هو المجلد الجذر لشجرة دليل <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> 
+  <li>فئة وحدة التحكم (<bdi dir="ltr" class="odt-ltr-term">servlet</bdi>) الخاصة بالتطبيق هي فئة محددة مسبقًا في <bdi dir="ltr" class="odt-ltr-term">Struts</bdi>، وتسمى <b><bdi dir="ltr" class="odt-ltr-term">ActionServlet</bdi></b>. وهي موجودة في الملف <b><bdi dir="ltr" class="odt-ltr-term">struts.jar</bdi></b>. ولكي يتمكن <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> من العثور على هذه الفئة، سنضع <b>ملف <bdi dir="ltr" class="odt-ltr-term">struts.jar</bdi> </b>في المجلد <b>&lt;<bdi dir="ltr" class="odt-ltr-term">tomcat</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">common</bdi>\lib</b>، وهو أحد المجلدات التي يبحث فيها <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> عند البحث عن الفئات. في الواقع، سنضع فيه جميع ملفات .jar الموجودة في المجلد <b>&lt;<bdi dir="ltr" class="odt-ltr-term">struts</bdi>&gt;\lib</b>، حيث يمثل <b>&lt;<bdi dir="ltr" class="odt-ltr-term">struts</bdi>&gt; </b>المجلد الجذر لشجرة <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> 
   </li>
 </ul>
 
-<p><img src="images/1000000000000169000000C999526481.png" width="361" height="201" style="width:9.55cm;height:5.316cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000169000000C999526481.png" /></p>
+<p><img src="images/1000000000000169000000C999526481.png" width="361" height="201" style="width:9.55cm;height:5.318cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000169000000C999526481.png" /></p>
 <ul>
-  <li>سنضع أيضًا ملفات <b><bdi dir="ltr" class="odt-ltr-term">struts-el.jar</bdi> </b>و <b><bdi dir="ltr" class="odt-ltr-term">jstl.jar</bdi> </b>الموجودة في <b>&lt;<bdi dir="ltr" class="odt-ltr-term">struts</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">contrib</bdi>\<bdi dir="ltr" class="odt-ltr-term">struts-el</bdi>\lib</b>:
+  <li>سنضع أيضًا الملفين <b><bdi dir="ltr" class="odt-ltr-term">struts-el.jar</bdi> </b>و <b><bdi dir="ltr" class="odt-ltr-term">jstl.jar</bdi> </b>الموجودين في <b>&lt;<bdi dir="ltr" class="odt-ltr-term">struts</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">contrib</bdi>\<bdi dir="ltr" class="odt-ltr-term">struts-el</bdi>\lib</b>:
   </li>
 </ul>
 
-<p><img src="images/100000000000017B000000E499EBD4BD.png" width="379" height="228" style="width:10.026cm;height:6.031cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000017B000000E499EBD4BD.png" /></p>
+<p><img src="images/100000000000017B000000E499EBD4BD.png" width="379" height="228" style="width:10.026cm;height:6.033cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000017B000000E499EBD4BD.png" /></p>
 <ul>
-  <li>هنا، لدينا إمكانية الوصول إلى خادم الويب. وهذا ليس هو الحال دائمًا. إذا قمت بنشر تطبيق ويب/جافا في حاوية ويب لا تديرها بنفسك، فمن الأفضل أن يتضمن التطبيق جميع المكتبات التي يحتاجها. يجب بعد ذلك وضع هذه المكتبات في المجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF/lib</bdi>، الذي يجب عليك إنشاؤه.
+  <li>هنا، لدينا إمكانية الوصول إلى خادم الويب. وهذا ليس هو الحال دائمًا. إذا تم نشر تطبيق ويب/جافا في حاوية ويب لا نديرها بأنفسنا، فمن الأفضل أن يضم التطبيق جميع المكتبات التي يحتاجها. ويجب عندئذٍ وضعها في المجلد <b><bdi dir="ltr" class="odt-ltr-term">WEB-INF/lib</bdi> </b>الذي يجب إنشاؤه.
   </li>
-  <li>لاحظنا أن وحدة التحكم تتطلب معلومات معينة، والتي تجدها عادةً في ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>الموجود في نفس المجلد الذي يوجد فيه <b>ملف <bdi dir="ltr" class="odt-ltr-term">web.xml</bdi></b>. في الواقع، يمكن تكوين اسم هذا الملف. المعلمة <b><bdi dir="ltr" class="odt-ltr-term">config</bdi> </b>المذكورة أعلاه هي التي تحدد هذا الاسم.
+  <li>لقد أشرنا إلى أن وحدة التحكم تحتاج إلى عدد معين من المعلومات التي تجدها عادةً في ملف <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>الموجود في نفس المجلد الذي يوجد فيه <b>ملف <bdi dir="ltr" class="odt-ltr-term">web.xml</bdi></b>. في الواقع، يمكن تخصيص اسم هذا الملف. والمعلمة <b><bdi dir="ltr" class="odt-ltr-term">config</bdi> </b>المذكورة أعلاه هي التي تحدد هذا الاسم.
   </li>
-  <li>تشير العلامة<b> &lt;<bdi dir="ltr" class="odt-ltr-term">servlet-mapping</bdi>&gt; </b>إلى أنه سيتم الوصول إلى وحدة التحكم عبر جميع عناوين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> التي تنتهي باللاحقة<b> .do</b>. هذا التعيين مطلوب من قبل <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> سيتم بعد ذلك تصفية عناوين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> هذه بواسطة وحدة التحكم، التي لن تقبل سوى عناوين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المعلنة في ملف التكوين<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></b> الخاص بها
+  <li>تشير العلامة <b>&lt;<bdi dir="ltr" class="odt-ltr-term">servlet-mapping</bdi>&gt; </b>إلى أن وحدة التحكم سيتم الوصول إليها عبر جميع ملفات <bdi dir="ltr" class="odt-ltr-term">URL</bdi> التي تنتهي باللاحقة <b>.do</b>.  وهذا الربط مطلوب من قبل <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> سيتم بعد ذلك تصفية ملفات <bdi dir="ltr" class="odt-ltr-term">URL</bdi> هذه بواسطة وحدة التحكم التي لن تقبل سوى ملفات <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المُعلنة في ملف التكوين الخاص بها <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></b>
   </li>
 </ul>
 
-<p>في الوقت الحالي، ملف <strong><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi></strong> الخاص بنا كافٍ.</p>
-<ol>
-  <li>سنطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <b>/<bdi dir="ltr" class="odt-ltr-term">main.do</bdi> </b>من تطبيق <b><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></b>. وفقًا لملف<b> <bdi dir="ltr" class="odt-ltr-term">web.xml</bdi> </b>السابق، سيتم تمرير عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> هذا إلى <bdi dir="ltr" class="odt-ltr-term">servlet</bdi><b> <bdi dir="ltr" class="odt-ltr-term">org.apache.struts.action.</bdi> </b>سيتم إنشاء مثيل لفئة <b><bdi dir="ltr" class="odt-ltr-term">ActionServlet</bdi> </b>واستدعاء طريقة <b><bdi dir="ltr" class="odt-ltr-term">init</bdi></b> الخاصة بها. تحاول هذه الطريقة قراءة ملف التكوين المحدد بواسطة المعلمة <b><bdi dir="ltr" class="odt-ltr-term">config</bdi></b>. لذلك يجب أن يكون هذا الملف موجودًا. نقوم بإنشاء ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>التالي:
+<p>في الوقت الحالي، يكفي ملفنا <strong><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi></strong>.</p>
+<ol start="5">
+  <li>سنطلب <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <b>/<bdi dir="ltr" class="odt-ltr-term">main.do</bdi> </b>من تطبيق <b><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></b>. استنادًا إلى ملف <b><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi> </b>السابق، سيتم إرسال ملف <bdi dir="ltr" class="odt-ltr-term">URL</bdi> هذا إلى السيرفلت <b><bdi dir="ltr" class="odt-ltr-term">org.apache.struts.action.</bdi> </b>سيتم إنشاء مثيل للفئة <b><bdi dir="ltr" class="odt-ltr-term">ActionServlet</bdi> </b>واستدعاء أسلوبها <b><bdi dir="ltr" class="odt-ltr-term">init</bdi></b>. يحاول هذا الأسلوب قراءة ملف التكوين المحدد بواسطة المعلمة <b><bdi dir="ltr" class="odt-ltr-term">config</bdi></b>. لذا يجب أن يكون هذا الملف موجودًا. نقوم بإنشاء الملف <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>التالي:
   </li>
 </ol>
 
@@ -1038,19 +1039,19 @@
 <a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">    </span><span class="nt">&lt;/action-mappings&gt;</span>
 <a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="nt">&lt;/struts-config&gt;</span>
 </code></pre></div>
-<p>لاحظ أن ملف <bdi dir="ltr" class="odt-ltr-term">DTD</bdi> الخاص بـ <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> يختلف عن <strong>ملف <bdi dir="ltr" class="odt-ltr-term">web.</bdi></strong>xml، مما يشير إلى أنهما لا يمتلكان نفس البنية. لكل عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> يجب على وحدة التحكم معالجته، نحتاج إلى تعريف علامة <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">action</bdi>&gt;</strong>. تُستخدم هذه العلامة لإخبار وحدة التحكم بما يجب القيام به عند تلقي طلب لهذا العنوان. هنا، نحدد العناصر التالية:</p>
+<p>تجدر الإشارة إلى أن الملف <bdi dir="ltr" class="odt-ltr-term">DTD</bdi> الخاص بـ <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> يختلف عن الملف <strong><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi></strong>، مما يشير إلى أن هذين الملفين لا يتشاركان في نفس البنية. لكل ملف <bdi dir="ltr" class="odt-ltr-term">URL</bdi> يتعين على وحدة التحكم معالجته، يتعين علينا تعريف علامة <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">action</bdi>&gt;</strong>. وتُستخدم هذه العلامة لإرشاد وحدة التحكم إلى الإجراء الذي يجب عليها اتخاذه عند طلب ملف <bdi dir="ltr" class="odt-ltr-term">URL</bdi> هذا. وهنا، نحدد العناصر التالية:</p>
 <ol>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">path</bdi>=&quot;/<bdi dir="ltr" class="odt-ltr-term">main</bdi>&quot;</b>: يحدد اسم عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي تم تكوينه بواسطة علامة<b> &lt;<bdi dir="ltr" class="odt-ltr-term">action</bdi>&gt;</b>. اللاحقة<b> .do </b>ضمنية.
+  <li><b><bdi dir="ltr" class="odt-ltr-term">path</bdi>=&quot;/<bdi dir="ltr" class="odt-ltr-term">main</bdi>&quot;</b>: يحدد مسار <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي تم تكوينه بواسطة العلامة <b>&lt;<bdi dir="ltr" class="odt-ltr-term">action</bdi>&gt;</b>. اللاحقة <b>.do </b>ضمنية.
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">type</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">org.apache.struts.actions.ForwardAction</bdi>&quot;</b>: يحدد اسم فئة <b><bdi dir="ltr" class="odt-ltr-term">Action</bdi> </b>التي يجب أن تتعامل مع الطلب. هنا، نستخدم فئة <b><bdi dir="ltr" class="odt-ltr-term">Action</bdi></b> محددة مسبقًا في <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> لا تقوم هذه الفئة بأي شيء من تلقاء نفسها، بل تقوم بإعادة توجيه طلب العميل إلى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المحدد في سمة <b><bdi dir="ltr" class="odt-ltr-term">parameter</bdi></b>.
+  <li><b><bdi dir="ltr" class="odt-ltr-term">type</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">org.apache.struts.actions.ForwardAction</bdi>&quot;</b>: يحدد اسم فئة <b><bdi dir="ltr" class="odt-ltr-term">Action</bdi> </b>التي يجب أن تعالج الطلب. هنا، نستخدم فئة <b><bdi dir="ltr" class="odt-ltr-term">Action</bdi> </b>محددة مسبقًا في <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> وهي لا تقوم بأي شيء بنفسها، بل تقوم بتوجيه طلب العميل إلى <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المحددة في السمة <b><bdi dir="ltr" class="odt-ltr-term">parameter</bdi></b>.
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">parameter</bdi>=&quot;/<bdi dir="ltr" class="odt-ltr-term">main.html</bdi>&quot;</b>: اسم عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي يجب إعادة توجيه الطلب إليه. هنا، هو ملف <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> ثابت.
+  <li><b><bdi dir="ltr" class="odt-ltr-term">parameter</bdi>=&quot;/<bdi dir="ltr" class="odt-ltr-term">main.html</bdi>&quot;</b>: اسم ملف <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي يجب توجيه الطلب إليه. وهو هنا ملف <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> ثابت.
   </li>
 </ol>
 
-<p>باختصار، عندما يطلب المستخدم عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">main.do</bdi>،</strong> سيتم توجيهه إلى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">main.html</bdi></strong>.</p>
-<ol>
-  <li>سيكون ملف<b> <bdi dir="ltr" class="odt-ltr-term">main.html</bdi> </b>كما يلي:
+<p>باختصار، عندما يطلب المستخدم ملف <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">main.do</bdi>،</strong> سيحصل على ملف <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">main.html</bdi></strong>.</p>
+<ol start="5">
+  <li>وسيكون ملف <b><bdi dir="ltr" class="odt-ltr-term">main.html</bdi> </b>كما يلي:
   </li>
 </ol>
 
@@ -1063,27 +1064,27 @@
 <a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>يوجد هذا الملف في مجلد التطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne/views</bdi></strong>:</p>
+<p>يتم وضع هذا الملف في مجلد التطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne/vues</bdi></strong>:</p>
 <p><img src="images/10000000000001340000006A304F9E8B.png" width="308" height="106" style="width:8.147cm;height:2.805cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001340000006A304F9E8B.png" /></p>
-<p>يمكن الوصول إليه مباشرة عبر عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne/main.html</bdi></strong>:</p>
+<p>يمكن طلبه مباشرةً باستخدام <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne/main.html</bdi></strong>:</p>
 <p><img src="images/100000000000021B00000075CAF57BC4.png" width="539" height="117" style="width:14.259cm;height:3.096cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000021B00000075CAF57BC4.png" /></p>
-<p>هنا، <strong>لم يتدخل</strong> وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> الخاصة بالتطبيق<strong>،</strong> لأنها لا تتدخل إلا عند طلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> من النوع <strong>*.do</strong>. ومع ذلك، في هذه الحالة، طلبنا عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">vues/main.html</bdi></strong>.</p>
+<p>هنا، <strong>لم يتدخل</strong> عنصر التحكم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> الخاص بالتطبيق لأنه لا يتدخل إلا عند طلب <bdi dir="ltr" class="odt-ltr-term">URL</bdi> من النوع <strong>*.do</strong>. أما هنا، فقد تم طلب <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">vues/main.html</bdi></strong>.</p>
 <ol>
-  <li>يجب وضع ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>الذي تم إنشاؤه مسبقًا في نفس مجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi> الذي يوجد فيه ملف<b> <bdi dir="ltr" class="odt-ltr-term">web.xml</bdi></b>:
+  <li>يجب وضع الملف <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>الذي تم إنشاؤه سابقًا في نفس المجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi> الذي يوجد فيه الملف <b><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi></b>:
   </li>
 </ol>
 
 <p><img src="images/10000000000001360000004DABBDF95D.png" width="310" height="77" style="width:8.2cm;height:2.037cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001360000004DABBDF95D.png" /></p>
 <ol>
-  <li>سنقوم الآن بالتحقق من أن وحدة التحكم في التطبيق <b><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi> </b>تعمل بشكل صحيح عن طريق طلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <b>/<bdi dir="ltr" class="odt-ltr-term">main.do</bdi> </b>بعد إعادة تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> إذا لزم الأمر.
+  <li>سنقوم الآن بالتحقق من عمل وحدة التحكم في تطبيق <b><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></b> بشكل صحيح عن طريق طلب الملفين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <b>/<bdi dir="ltr" class="odt-ltr-term">main.do</bdi> </b>بعد إعادة تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi>، إذا لزم الأمر.
   </li>
 </ol>
 
 <p><img src="images/10000000000001DE00000074F290CE3D.png" width="478" height="116" style="width:12.645cm;height:3.069cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001DE00000074F290CE3D.png" /></p>
-<p>هنا، تدخلت وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> لأننا طلبنا عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> من النوع <strong>*.do</strong>. وقد نجحنا في الحصول على الصفحة المتوقعة (<strong><bdi dir="ltr" class="odt-ltr-term">main.html</bdi></strong>). وأصبح لدينا الآن المكونات الأساسية اللازمة لتشغيل تطبيقنا: سياق <bdi dir="ltr" class="odt-ltr-term">strutsperson</bdi><strong>ne</strong>، وملفات التكوين <strong><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi> و<bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong>، ومكتبات <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi></p>
-<p>ماذا كان سيحدث لو طلبنا عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> مثل <strong>/<bdi dir="ltr" class="odt-ltr-term">toto.</bdi></strong>do؟ وفقًا لملف <strong><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi></strong> الخاص بتطبيق <bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi>، يتم استدعاء وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> للتعامل مع الأمر. ثم تتحقق من ملف التكوين <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.html</bdi></strong> الخاص بها ولا تجد أي تكوين لعنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">toto</bdi></strong>. ماذا تفعل إذن؟ دعونا نجرب:</p>
-<p><img src="images/10000000000002C80000014D10E10263.png" width="680" height="318" style="width:17.988cm;height:8.414cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002C80000014D10E10263.png" /></p>
-<p>نحصل على صفحة خطأ، وهو أمر يبدو طبيعيًا. يمكننا الآن الانتقال إلى كتابة تطبيق.</p>
+<p>هنا تدخلت وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> لأننا طلبنا صفحة من نوع <strong>*.do</strong> (<bdi dir="ltr" class="odt-ltr-term">URL</bdi>). وقد حصلنا بالفعل على الصفحة المتوقعة (<strong><bdi dir="ltr" class="odt-ltr-term">main.html</bdi></strong>). وبذلك يكون لدينا العناصر الأساسية لتشغيل تطبيقنا: سياق <bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi>، وملفات التكوين <strong><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi></strong> و <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong>، ومكتبات <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi></p>
+<p>ماذا كان سيحدث لو طلبنا ملفًا من نوع <strong>/<bdi dir="ltr" class="odt-ltr-term">toto.do</bdi></strong> باسم <bdi dir="ltr" class="odt-ltr-term">URL</bdi>؟ وفقًا لملف <strong><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi></strong> الخاص بتطبيق <bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi>، يتم عندئذٍ استدعاء وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> لمعالجته. ثم يبحث هذا المتحكم في ملف التكوين الخاص به <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.html</bdi></strong> ولا يجد أي تكوين لـ <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">toto</bdi></strong>. ماذا يفعل إذن؟ لنجرب:</p>
+<p><img src="images/10000000000002C80000014D10E10263.png" width="680" height="318" style="width:17.988cm;height:8.412cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002C80000014D10E10263.png" /></p>
+<p>نحصل على صفحة أخطاء، وهو ما يبدو طبيعيًا. يمكننا الآن البدء في كتابة تطبيق.</p>
 
 
 

@@ -460,7 +460,7 @@
   <a href="#42-dynaactionform" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.2. كتابة فئة DynaActionForm المرتبطة بالنموذج الديناميكي
+        4.2. كتابة الفئة DynaActionForm المرتبطة بالنموذج الديناميكي
       
     </span>
   </a>
@@ -468,10 +468,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#43-formaction" class="md-nav__link">
+  <a href="#43-formulaireaction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.3. فئة FormAction الجديدة
+        4.3. الفئة الجديدة FormulaireAction
       
     </span>
   </a>
@@ -505,7 +505,7 @@
   <a href="#442" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.4.2. طرق العرض
+        4.4.2. الطرق
       
     </span>
   </a>
@@ -527,7 +527,7 @@
   <a href="#444-web-inf" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.4.4. مجلد WEB-INF
+        4.4.4. المجلد WEB-INF
       
     </span>
   </a>
@@ -603,14 +603,14 @@
   
   
     <li class="md-nav__item">
-      <a href="nmdhj-html.html" class="md-nav__link">
+      <a href="lnmdhj-html.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. نماذج HTML
+    6. النماذج HTML
   
 
     
@@ -630,14 +630,14 @@
   
   
     <li class="md-nav__item">
-      <a href="-tbyq-quiest.html" class="md-nav__link">
+      <a href="-ltbyq-quiest.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    7.  تطبيق QuiEst
+    7.  التطبيق QuiEst
   
 
     
@@ -684,14 +684,14 @@
   
   
     <li class="md-nav__item">
-      <a href="lml-m-mdr-lbynt.html" class="md-nav__link">
+      <a href="stll-mdr-lbynt.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    9. العمل مع مصدر البيانات
+    9. استغلال مصدر البيانات
   
 
     
@@ -711,14 +711,14 @@
   
   
     <li class="md-nav__item">
-      <a href="lmlq.html" class="md-nav__link">
+      <a href="lmrfqt.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. الملاحق
+    10. المرفقات
   
 
     
@@ -750,11 +750,11 @@
 
 <h1 id="4">4. <span style="color: #365f91">استخدام النماذج الديناميكية</span></h1>
 <h2 id="41">4.1. <span style="color: #4f81bd">إعلان النموذج الديناميكي</span></h2>
-<p>لقد رأينا أن <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> يستخدم كائنات <strong><bdi dir="ltr" class="odt-ltr-term">ActionForm</bdi></strong> لتخزين قيم نماذج <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> التي تعالجها مختلف سيرفلتات التطبيق. لكل نموذج في تطبيقنا، نحتاج إلى إنشاء فئة مشتقة من <strong><bdi dir="ltr" class="odt-ltr-term">ActionForm</bdi></strong>. قد يصبح هذا الأمر مرهقًا بسرعة نظرًا لأنه لكل حقل xx، يجب أن نكتب طريقتين: <strong><bdi dir="ltr" class="odt-ltr-term">setXx</bdi></strong> و <strong><bdi dir="ltr" class="odt-ltr-term">getXx</bdi></strong>. يوفر <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> خيار استخدام نماذج </p>
+<p>لقد رأينا أن <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> تستخدم كائنات <strong><bdi dir="ltr" class="odt-ltr-term">ActionForm</bdi></strong> لتخزين قيم النماذج <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> التي تعالجها سيرفلتات التطبيق المختلفة. لكل نموذج في تطبيقنا، يتعين علينا إنشاء فئة مشتقة من <strong><bdi dir="ltr" class="odt-ltr-term">ActionForm</bdi></strong>. وقد يصبح هذا الأمر مرهقًا بسرعة، حيث يتعين علينا كتابة طريقتين، هما <strong><bdi dir="ltr" class="odt-ltr-term">setXx</bdi></strong> و <strong><bdi dir="ltr" class="odt-ltr-term">getXx</bdi></strong>، لكل حقل <bdi dir="ltr" class="odt-ltr-term">xx.</bdi> يوفر لنا <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> إمكانية استخدام نماذج </p>
 <ul>
-  <li>التي يتم إعلان هيكلها في ملف <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> داخل قسم &lt;<bdi dir="ltr" class="odt-ltr-term">form-beans</bdi>&gt;
+  <li>يتم تعريف هيكلها في الملف <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> ضمن القسم &lt;<bdi dir="ltr" class="odt-ltr-term">form-beans</bdi>&gt;
   </li>
-  <li>، والتي يتم إنشاؤها ديناميكيًا بواسطة بيئة <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> وفقًا للهيكل المعلن
+  <li>والتي يتم إنشاؤها ديناميكيًا بواسطة بيئة <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> وفقًا للبنية المُعلنة
   </li>
 </ul>
 
@@ -766,15 +766,15 @@
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="p">&lt;/</span><span class="nt">form-bean</span><span class="p">&gt;</span>            
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">&lt;/</span><span class="nt">form-beans</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>لكل حقل في النموذج، نحدد علامة &lt;<strong><bdi dir="ltr" class="odt-ltr-term">form-property</bdi></strong>&gt; بسمتين:</p>
+<p>لكل حقل في النموذج، يتم تعريف علامة &lt;<strong><bdi dir="ltr" class="odt-ltr-term">form-property</bdi></strong>&gt; بسمتين:</p>
 <ul>
   <li><b><bdi dir="ltr" class="odt-ltr-term">name</bdi></b>: اسم الحقل
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">type</bdi></b>: نوعه في <bdi dir="ltr" class="odt-ltr-term">Java</bdi>
+  <li><b><bdi dir="ltr" class="odt-ltr-term">type</bdi></b>: نوعه في لغة جافا
   </li>
 </ul>
 
-<p>نظرًا لأن قيم النموذج المرسلة بواسطة عميل الويب هي سلاسل نصية، فإن الأنواع الأكثر استخدامًا هي <strong><bdi dir="ltr" class="odt-ltr-term">java.lang.String</bdi></strong> للحقول ذات القيمة الواحدة و <strong><bdi dir="ltr" class="odt-ltr-term">java.lang.String</bdi>[]</strong> للحقول متعددة القيم (مربعات الاختيار التي تحمل الاسم نفسه، وقوائم الاختيار المتعدد، وما إلى ذلك). تحتوي فئة <bdi dir="ltr" class="odt-ltr-term">DynactionForm</bdi>، مثل فئة <bdi dir="ltr" class="odt-ltr-term">ActionForm</bdi>، على طريقة <strong><bdi dir="ltr" class="odt-ltr-term">validate</bdi></strong> لا تقوم بأي شيء. لكي تتحقق من صحة معلمات النموذج، يجب عليك توسيعها وكتابة طريقة <strong><bdi dir="ltr" class="odt-ltr-term">validate</bdi></strong> بنفسك. وبالتالي، سيكون إعلان النموذج كما يلي:</p>
+<p>نظرًا لأن قيم النموذج التي يرسلها عميل الويب هي سلاسل أحرف، فإن الأنواع الأكثر استخدامًا هي <strong><bdi dir="ltr" class="odt-ltr-term">java.lang.String</bdi></strong> للحقول ذات القيمة الواحدة <strong>و<bdi dir="ltr" class="odt-ltr-term">java.lang.String</bdi>[]</strong> للحقول ذات القيم المتعددة (مربعات الاختيار التي تحمل الاسم نفسه، وقوائم الاختيار المتعدد، ...). تحتوي الفئة <strong><bdi dir="ltr" class="odt-ltr-term">DynactionForm</bdi>،</strong> شأنها شأن الفئة <strong><bdi dir="ltr" class="odt-ltr-term">ActionForm</bdi>،</strong> على طريقة <strong><bdi dir="ltr" class="odt-ltr-term">validate</bdi></strong> لا تؤدي أي وظيفة. ولجعلها تتحقق من صحة معلمات النموذج، يجب إنشاء فئة مشتقة منها وكتابة طريقة <strong><bdi dir="ltr" class="odt-ltr-term">validate</bdi></strong> بنفسك. وبالتالي، سيكون إعلان النموذج كما يلي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>    <span class="p">&lt;</span><span class="nt">form-beans</span><span class="p">&gt;</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>        <span class="p">&lt;</span><span class="nt">form-bean</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;frmPersonne&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;istia.st.struts.personne.PersonneDynaForm&quot;</span><span class="p">&gt;</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>            <span class="p">&lt;</span><span class="nt">form-property</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nom&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;java.lang.String&quot;</span> <span class="na">initial</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">/&gt;</span>
@@ -782,52 +782,52 @@
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>        <span class="p">&lt;/</span><span class="nt">form-bean</span><span class="p">&gt;</span>            
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="p">&lt;/</span><span class="nt">form-beans</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>سنحتاج إلى كتابة فئة <strong><bdi dir="ltr" class="odt-ltr-term">istia.st.struts.personne.PersonneDynaForm</bdi></strong> بأنفسنا.</p>
-<h2 id="42-dynaactionform">4.2. <span style="color: #4f81bd">كتابة فئة <bdi dir="ltr" class="odt-ltr-term">DynaActionForm</bdi> المرتبطة بالنموذج الديناميكي</span></h2>
-<p>في الأعلى، قمنا بربط الفئة <strong><bdi dir="ltr" class="odt-ltr-term">istia.st.struts.personne.PersonneDynaForm</bdi></strong> بالنموذج (<bdi dir="ltr" class="odt-ltr-term">name, age</bdi>). سنقوم الآن بكتابة هذه الفئة:</p>
+<p>يجب أن نقوم بكتابة الفئة <strong><bdi dir="ltr" class="odt-ltr-term">istia.st.struts.personne.PersonneDynaForm</bdi></strong>.</p>
+<h2 id="42-dynaactionform">4.2. <span style="color: #4f81bd">كتابة الفئة <bdi dir="ltr" class="odt-ltr-term">DynaActionForm</bdi> المرتبطة بالنموذج الديناميكي</span></h2>
+<p>فيما سبق، قمنا بربط الفئة <strong><bdi dir="ltr" class="odt-ltr-term">istia.st.struts.personne.PersonneDynaForm</bdi></strong> بالنموذج (الاسم، العمر). ونقوم الآن بكتابة هذه الفئة:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">istia.st.struts.personne</span><span class="p">;</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">javax.servlet.http.*</span><span class="p">;</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">org.apache.struts.action.*</span><span class="p">;</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">PersonneDynaForm</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">DynaActionForm</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">   </span><span class="c1">// validation</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">   </span><span class="c1">// التحقق من صحة البيانات</span>
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="n">ActionErrors</span><span class="w"> </span><span class="nf">validate</span><span class="p">(</span><span class="n">ActionMapping</span><span class="w"> </span><span class="n">mapping</span><span class="p">,</span><span class="w"> </span><span class="n">HttpServletRequest</span><span class="w"> </span><span class="n">request</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="c1">// error management</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="c1">// معالجة الأخطاء</span>
 <a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="n">ActionErrors</span><span class="w"> </span><span class="n">erreurs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ActionErrors</span><span class="p">();</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">     </span><span class="c1">// name must be non-empty</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">     </span><span class="c1">// يجب ألا يكون حقل الاسم فارغًا</span>
 <a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">nom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="p">)</span><span class="k">this</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="s">&quot;nom&quot;</span><span class="p">);</span>
 <a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">nom</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">nom</span><span class="p">.</span><span class="na">trim</span><span class="p">().</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">      </span><span class="n">erreurs</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;nomvide&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ActionError</span><span class="p">(</span><span class="s">&quot;personne.formulaire.nom.vide&quot;</span><span class="p">));</span>
 <a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">     </span><span class="c1">// age must be non-empty</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">     </span><span class="c1">// يجب ألا يكون حقل العمر فارغًا</span>
 <a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="p">)</span><span class="k">this</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="s">&quot;age&quot;</span><span class="p">);</span>
 <a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">age</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">age</span><span class="p">.</span><span class="na">trim</span><span class="p">().</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">      </span><span class="n">erreurs</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;agevide&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ActionError</span><span class="p">(</span><span class="s">&quot;personne.formulaire.age.vide&quot;</span><span class="p">));</span>
 <a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">      </span><span class="c1">// age must be a positive integer</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">      </span><span class="c1">// يجب أن يكون العمر عددًا صحيحًا موجبًا</span>
 <a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">age</span><span class="p">.</span><span class="na">matches</span><span class="p">(</span><span class="s">&quot;^\\s*\\d+\\s*$&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">        </span><span class="n">erreurs</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;ageincorrect&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ActionError</span><span class="p">(</span><span class="s">&quot;personne.formulaire.age.incorrect&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">));</span>
-<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">        </span><span class="c1">// return the list of errors</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">        </span><span class="c1">// عرض قائمة الأخطاء</span>
 <a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">      </span><span class="p">}</span>
 <a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="c1">//if</span>
-<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">     </span><span class="c1">// return the error list</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">     </span><span class="c1">// يتم عرض قائمة الأخطاء</span>
 <a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">erreurs</span><span class="p">;</span>
 <a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="p">}</span><span class="c1">//class</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="p">}</span><span class="c1">//فئة</span>
 </code></pre></div>
-<p>يجب ملاحظة النقاط التالية:</p>
+<p>النقاط التي يجب ملاحظتها هي التالية:</p>
 <ul>
-  <li>تستمد الفئة من <b><bdi dir="ltr" class="odt-ltr-term">DynaActionForm</bdi></b>
+  <li>تُشتق الفئة من <b><bdi dir="ltr" class="odt-ltr-term">DynaActionForm</bdi></b>
   </li>
-  <li>تمت إعادة كتابة طريقة <b><bdi dir="ltr" class="odt-ltr-term">validate</bdi></b> الخاصة بفئة <b><bdi dir="ltr" class="odt-ltr-term">DynaActionForm</bdi></b>. عند تنفيذها بواسطة وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi>، يتم إنشاء كائن <b><bdi dir="ltr" class="odt-ltr-term">PersonneDynaForm</bdi></b>. يحتوي هذا الكائن على قاموس تكون مفاتيحه هي حقول النموذج <b><bdi dir="ltr" class="odt-ltr-term">name</bdi> </b>و <b>age</b>، وقيمه هي قيم تلك الحقول. للوصول إلى حقل داخل طرق <b><bdi dir="ltr" class="odt-ltr-term">DynaActionForm</bdi></b>، استخدم طريقة<b> <bdi dir="ltr" class="odt-ltr-term">Object get</bdi>(<bdi dir="ltr" class="odt-ltr-term">String fieldName</bdi>)</b>. لتعيين قيمة لحقل ما، استخدم طريقة<b> <bdi dir="ltr" class="odt-ltr-term">void set</bdi>(<bdi dir="ltr" class="odt-ltr-term">String fieldName, Object value</bdi>)</b>. راجع تعريف فئة <b><bdi dir="ltr" class="odt-ltr-term">DynaActionForm</bdi> </b>للحصول على وصف كامل.
+  <li>تمت إعادة كتابة الطريقة <b><bdi dir="ltr" class="odt-ltr-term">validate</bdi> </b>الخاصة بالفئة <b><bdi dir="ltr" class="odt-ltr-term">DynaActionForm</bdi></b>. عند تنفيذها بواسطة وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi>، تم إنشاء الكائن <b><bdi dir="ltr" class="odt-ltr-term">PersonneDynaForm</bdi></b>. وهو يحتوي على قاموس تحتوي مفاتيحه على حقول النموذج <b>«الاسم</b>» <b>و«العمر</b>»، وقيمه على قيم هذه الحقول. للوصول إلى حقل ما داخل طرق <b><bdi dir="ltr" class="odt-ltr-term">DynaActionForm</bdi>، </b>يتم استخدام الطريقة <b><bdi dir="ltr" class="odt-ltr-term">Object get</bdi>(<bdi dir="ltr" class="odt-ltr-term">String nomDuChamp</bdi>)</b>. وإذا أردنا تعيين قيمة لحقل ما، فيمكننا استخدام الطريقة <b><bdi dir="ltr" class="odt-ltr-term">void set</bdi>(<bdi dir="ltr" class="odt-ltr-term">String nomDuChamp, Object valeur</bdi>)</b>. يرجى الرجوع إلى تعريف الفئة <b><bdi dir="ltr" class="odt-ltr-term">DynaActionForm</bdi> </b>للحصول على التعريف الكامل.
   </li>
-  <li>بمجرد استرداد قيم حقول الاسم والعمر في النموذج، لا تختلف طريقة <b><bdi dir="ltr" class="odt-ltr-term">validate</bdi> </b>عن تلك التي تمت كتابتها عندما تم ربط النموذج بكائن <b><bdi dir="ltr" class="odt-ltr-term">ActionForm</bdi></b>.
+  <li>بمجرد استرداد قيم الحقلين «الاسم» و«العمر» من النموذج، لا تختلف طريقة <b><bdi dir="ltr" class="odt-ltr-term">validate</bdi> </b>عن تلك التي تمت كتابتها عندما كان النموذج مرتبطًا بكائن <b><bdi dir="ltr" class="odt-ltr-term">ActionForm</bdi></b>.
   </li>
 </ul>
 
-<h2 id="43-formaction">4.3. <span style="color: #4f81bd">فئة <bdi dir="ltr" class="odt-ltr-term">FormAction</bdi> الجديدة</span></h2>
+<h2 id="43-formulaireaction">4.3. <span style="color: #4f81bd">الفئة الجديدة <bdi dir="ltr" class="odt-ltr-term">FormulaireAction</bdi></span></h2>
 <p>يحدد ملف التكوين الإجراء <strong>/<bdi dir="ltr" class="odt-ltr-term">main</bdi></strong> التالي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>...
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="nt">&lt;form-beans&gt;</span>
@@ -848,7 +848,7 @@
 <a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">            </span><span class="nt">&lt;forward</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;reponse&quot;</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;/reponse.do&quot;</span><span class="nt">/&gt;</span>
 <a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">        </span><span class="nt">&lt;/action&gt;</span>
 </code></pre></div>
-<p>هذا التعريف هو نفسه الموجود في تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></strong>. يتم تنفيذ الإجراء <strong>/<bdi dir="ltr" class="odt-ltr-term">main</bdi></strong> بواسطة كائن من نوع <strong><bdi dir="ltr" class="odt-ltr-term">FormulaireAction</bdi></strong>. كان هذا الكائن يستقبل القيم من نموذج <strong><bdi dir="ltr" class="odt-ltr-term">frmPersonne</bdi></strong> في كائن من نوع <strong><bdi dir="ltr" class="odt-ltr-term">FormulaireBean</bdi></strong>. والآن يستقبلها في كائن من نوع <strong><bdi dir="ltr" class="odt-ltr-term">PersonneDynaForm</bdi></strong>. لذلك، يجب إعادة كتابة الفئة:</p>
+<p>هذا التعريف هو نفسه الموجود في تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></strong>. يتم تنفيذ الإجراء <strong>/<bdi dir="ltr" class="odt-ltr-term">main</bdi></strong> بواسطة كائن من النوع  <strong><bdi dir="ltr" class="odt-ltr-term">FormulaireAction</bdi></strong>. كان هذا الكائن يتلقى قيم النموذج <strong><bdi dir="ltr" class="odt-ltr-term">frmPersonne</bdi></strong> في كائن من النوع <strong><bdi dir="ltr" class="odt-ltr-term">FormulaireBean</bdi></strong>. أما الآن، فيتلقى هذه القيم في كائن من النوع <strong><bdi dir="ltr" class="odt-ltr-term">PersonneDynaForm</bdi></strong>. لذا، يجب إعادة كتابة الفئة:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">istia.st.struts.personne</span><span class="p">;</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">org.apache.struts.action.Action</span><span class="p">;</span>
@@ -866,39 +866,39 @@
 <a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="n">ActionForward</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="n">ActionMapping</span><span class="w"> </span><span class="n">mapping</span><span class="p">,</span><span class="w"> </span><span class="n">ActionForm</span><span class="w"> </span><span class="n">form</span><span class="p">,</span>
 <a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">           </span><span class="n">HttpServletRequest</span><span class="w"> </span><span class="n">request</span><span class="p">,</span><span class="w"> </span><span class="n">HttpServletResponse</span><span class="w"> </span><span class="n">response</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">IOException</span><span class="p">,</span><span class="n">ServletException</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>
-<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">     </span><span class="c1">// we have a valid form, otherwise we wouldn&#39;t have got here</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">     </span><span class="c1">// لدينا نموذج صالح، وإلا لما وصلنا إلى هذه المرحلة</span>
 <a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">    </span><span class="n">PersonneDynaForm</span><span class="w"> </span><span class="n">formulaire</span><span class="o">=</span><span class="p">(</span><span class="n">PersonneDynaForm</span><span class="p">)</span><span class="n">form</span><span class="p">;</span>
 <a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="w">    </span><span class="n">request</span><span class="p">.</span><span class="na">setAttribute</span><span class="p">(</span><span class="s">&quot;nom&quot;</span><span class="p">,</span><span class="n">formulaire</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="s">&quot;nom&quot;</span><span class="p">));</span>
 <a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">    </span><span class="n">request</span><span class="p">.</span><span class="na">setAttribute</span><span class="p">(</span><span class="s">&quot;age&quot;</span><span class="p">,</span><span class="n">formulaire</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="s">&quot;age&quot;</span><span class="p">));</span>
 <a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">mapping</span><span class="p">.</span><span class="na">findForward</span><span class="p">(</span><span class="s">&quot;reponse&quot;</span><span class="p">);</span>
-<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">  </span><span class="p">}</span><span class="c1">//execute</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">  </span><span class="p">}</span><span class="c1">//تنفيذ</span>
 <a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="p">}</span>
 </code></pre></div>
-<p>يجب ملاحظة النقاط التالية:</p>
+<p>النقاط التي يجب ملاحظتها هي التالية:</p>
 <ul>
-  <li>يجب استيراد فئة <b><bdi dir="ltr" class="odt-ltr-term">PersonneDynaForm</bdi></b>، التي تحتوي على بيانات النموذج، للوصول إلى تعريفها
+  <li>يجب استيراد الفئة <b><bdi dir="ltr" class="odt-ltr-term">PersonneDynaForm</bdi> </b>التي تحتوي على بيانات النموذج للوصول إلى تعريفها
   </li>
-  <li>تسترد طريقة <b><bdi dir="ltr" class="odt-ltr-term">execute</bdi> </b>قيم معلمات النموذج باستخدام طريقة<b> [<bdi dir="ltr" class="odt-ltr-term">DynaActionForm</bdi>].get</b>.
+  <li>تسترد الطريقة <b><bdi dir="ltr" class="odt-ltr-term">execute</bdi> </b>قيم معلمات النموذج باستخدام الطريقة <b>[<bdi dir="ltr" class="odt-ltr-term">DynaActionForm</bdi>].get</b>.
   </li>
 </ul>
 
-<p>بالمقارنة مع فئة <strong><bdi dir="ltr" class="odt-ltr-term">FormAction</bdi></strong> في تطبيق <bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi>، لم يتغير سوى طريقة الوصول إلى قيم النموذج.</p>
+<p>بالنسبة للفئة <strong><bdi dir="ltr" class="odt-ltr-term">FormulaireAction</bdi></strong> في تطبيق <bdi dir="ltr" class="odt-ltr-term">strutsperson</bdi><strong>ne</strong>، لم يتغير سوى طريقة الوصول إلى قيم النموذج.</p>
 <h2 id="44-strutspersonne1">4.4. <span style="color: #4f81bd">نشر واختبار تطبيق <bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></span></h2>
 <h3 id="441">4.4.1. <span style="color: #4f81bd">إنشاء السياق</span></h3>
-<p>لقد أطلقنا على هذا التطبيق الجديد اسم <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></strong>. نقوم بإنشاء تعريف جديد في ملف <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">tomcat</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">conf</bdi>\<bdi dir="ltr" class="odt-ltr-term">serveur.xml</bdi></strong> لـ <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> 4.<bdi dir="ltr" class="odt-ltr-term">x:</bdi></p>
+<p>أطلقنا على هذا التطبيق الجديد اسم <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></strong>. نقوم بإنشاء تعريف جديد في ملف <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">tomcat</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">conf</bdi>\<bdi dir="ltr" class="odt-ltr-term">serveur.xml</bdi></strong> الخاص بـ <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> 4.<bdi dir="ltr" class="odt-ltr-term">x:</bdi></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="w">    </span><span class="nt">&lt;Context</span><span class="w"> </span><span class="na">path=</span><span class="s">&quot;/strutspersonne1&quot;</span><span class="w"> </span><span class="na">docBase=</span><span class="s">&quot;e:/data/serge/web/struts/personne1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 </code></pre></div>
-<p>بمجرد الانتهاء من ذلك، يجب إعادة تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> يمكنك التحقق من صحة السياق عن طريق طلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL:</bdi></p>
+<p>بعد الانتهاء من ذلك، يجب إعادة تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> يمكن التحقق من صحة السياق عن طريق طلب <bdi dir="ltr" class="odt-ltr-term">URL:</bdi></p>
 <p><strong><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne1/</bdi></strong></p>
-<p><img src="images/10000000000001BF000000FBAC84E5C1.png" width="447" height="251" style="width:11.825cm;height:6.639cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001BF000000FBAC84E5C1.png" /></p>
-<h3 id="442">4.4.2. <span style="color: #4f81bd">طرق العرض</span></h3>
-<p>انسخ مجلد <strong><bdi dir="ltr" class="odt-ltr-term">views</bdi></strong> من تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></strong> إلى مجلد تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></strong>. لم تتغير طرق العرض.</p>
-<p><img src="images/100000000000016400000093AF06E517.png" width="356" height="147" style="width:9.417cm;height:3.888cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000016400000093AF06E517.png" /></p>
+<p><img src="images/10000000000001BF000000FBAC84E5C1.png" width="447" height="251" style="width:11.825cm;height:6.641cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001BF000000FBAC84E5C1.png" /></p>
+<h3 id="442">4.4.2. <span style="color: #4f81bd">الطرق</span></h3>
+<p>سنقوم بنسخ مجلد <strong>«<bdi dir="ltr" class="odt-ltr-term">vues</bdi>»</strong> الخاص بتطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></strong> إلى مجلد تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></strong>. ففي الواقع، لم تتغير الصفحات.</p>
+<p><img src="images/100000000000016400000093AF06E517.png" width="356" height="147" style="width:9.417cm;height:3.889cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000016400000093AF06E517.png" /></p>
 <h3 id="443">4.4.3. <span style="color: #4f81bd">تجميع الفئات</span></h3>
-<p>لدينا فئتان يجب إنشاؤهما: <strong><bdi dir="ltr" class="odt-ltr-term">PersonneDynaForm</bdi></strong> و <bdi dir="ltr" class="odt-ltr-term">FormulaireAction</bdi>، حيث تستخدم الأخيرة الأولى. يمكننا إنشاؤهما وتجميعهما باستخدام مشروع <bdi dir="ltr" class="odt-ltr-term">JBuilder:</bdi></p>
+<p>لدينا فئتان يجب إنشاؤهما: <strong><bdi dir="ltr" class="odt-ltr-term">PersonneDynaForm</bdi></strong> و <bdi dir="ltr" class="odt-ltr-term">FormulaireAction</bdi>، حيث تستخدم الثانية الأولى. يمكننا إنشاؤهما وتجميعهما باستخدام مشروع <bdi dir="ltr" class="odt-ltr-term">JBuilder:</bdi></p>
 <p><img src="images/10000000000000C400000076AFFB08BF.png" width="196" height="118" style="width:5.186cm;height:3.122cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000C400000076AFFB08BF.png" /></p>
-<h3 id="444-web-inf">4.4.4. <span style="color: #4f81bd">مجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi></span></h3>
-<p>انسخ مجلد <strong><bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi></strong> من تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></strong> إلى مجلد تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></strong>. وقد طرأت تغييرات على بعض الملفات:</p>
+<h3 id="444-web-inf">4.4.4. <span style="color: #4f81bd">المجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi></span></h3>
+<p>سنقوم بنسخ المجلد <strong><bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi></strong> من تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></strong> إلى مجلد تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi></strong>. ستتغير بعض الملفات:</p>
 <p><img src="images/100000000000014900000077A5BAE4CE.png" width="329" height="119" style="width:8.703cm;height:3.149cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000014900000077A5BAE4CE.png" /></p>
 <p>يصبح ملف التكوين <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> كما يلي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot; ?&gt;</span>
@@ -946,10 +946,10 @@
 <a id="__codelineno-6-43" name="__codelineno-6-43" href="#__codelineno-6-43"></a><span class="w">    </span><span class="nt">&lt;message-resources</span><span class="w"> </span><span class="na">parameter=</span><span class="s">&quot;ressources.personneressources&quot;</span><span class="nt">/&gt;</span><span class="w">    </span>
 <a id="__codelineno-6-44" name="__codelineno-6-44" href="#__codelineno-6-44"></a><span class="nt">&lt;/struts-config&gt;</span>
 </code></pre></div>
-<p>هذا الملف مطابق لملف تطبيق <bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi>، باستثناء تعريف النموذج الديناميكي (القسم المحدد بإطار).</p>
-<p>في المجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF/classes</bdi>، ضع الفئات التي تم تجميعها بواسطة <bdi dir="ltr" class="odt-ltr-term">JBuilder:</bdi></p>
+<p>هذا الملف مطابق لملف تطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></strong> باستثناء التعريف الديناميكي للنموذج (الجزء المحاط بإطار).</p>
+<p>في المجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF/classes</bdi>، سنضع الفئات التي تم تجميعها بواسطة <bdi dir="ltr" class="odt-ltr-term">JBuilder:</bdi></p>
 <p><img src="images/100000000000020500000069F5F8D51F.png" width="517" height="105" style="width:13.677cm;height:2.778cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000020500000069F5F8D51F.png" /></p>
-<p>في المجلد <strong><bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi>\<bdi dir="ltr" class="odt-ltr-term">classes</bdi>\</strong><bdi dir="ltr" class="odt-ltr-term">resources</bdi>، ضع ملف الرسائل. لم يتغير.</p>
+<p>في المجلد <strong><bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi>\<bdi dir="ltr" class="odt-ltr-term">classes</bdi>\</strong><bdi dir="ltr" class="odt-ltr-term">ressources</bdi>، نضع ملف الرسائل. لم يتغير هذا الملف.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>personne.formulaire.nom.vide=&lt;li&gt;Vous devez indiquer un nom&lt;/li&gt;
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>personne.formulaire.age.vide=&lt;li&gt;Vous devez indiquer un age&lt;/li&gt;
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>personne.formulaire.age.incorrect=&lt;li&gt;L&#39;âge [{0}] est incorrect&lt;/li&gt;
@@ -957,22 +957,22 @@
 <a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>errors.footer=&lt;/ul&gt;
 </code></pre></div>
 <p><img src="images/1000000000000195000000689018085D.png" width="405" height="104" style="width:10.714cm;height:2.752cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000195000000689018085D.png" /></p>
-<h2 id="45">4.5. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">الاختبارات</span></strong></span></h2>
-<p>نحن جاهزون للاختبار. فيما يلي بعض لقطات الشاشة التي ندعو القارئ إلى إعادة إنتاجها.</p>
-<p>اطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne1/formulaire.do</bdi></strong>:</p>
-<p><img src="images/10000000000001A5000000FC5BB2788A.png" width="421" height="252" style="width:11.137cm;height:6.666cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001A5000000FC5BB2788A.png" /></p>
-<p>انقر على زر [إرسال] دون ملء الحقول:</p>
-<p><img src="images/10000000000001F2000000D65B879ADE.png" width="498" height="214" style="width:13.174cm;height:5.66cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F2000000D65B879ADE.png" /></p>
-<p>حاول مرة أخرى مع وجود خطأ في حقل العمر:</p>
-<p><img src="images/10000000000001A600000100626802BF.png" width="422" height="256" style="width:11.164cm;height:6.772cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001A600000100626802BF.png" /></p>
+<h2 id="45">4.5. <span style="color: #4f81bd">الاختبارات</span></h2>
+<p>نحن جاهزون لإجراء الاختبارات. فيما يلي بعض لقطات الشاشة التي يُطلب من القارئ محاكاتها.</p>
+<p>نطلب من القارئ إعادة إنتاج <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne1/formulaire.do</bdi></strong>:</p>
+<p><img src="images/10000000000001A5000000FC5BB2788A.png" width="421" height="252" style="width:11.137cm;height:6.668cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001A5000000FC5BB2788A.png" /></p>
+<p>نستخدم الزر [<bdi dir="ltr" class="odt-ltr-term">Envoyer</bdi>] دون ملء الحقول:</p>
+<p><img src="images/10000000000001F2000000D65B879ADE.png" width="498" height="214" style="width:13.174cm;height:5.662cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F2000000D65B879ADE.png" /></p>
+<p>نكرر المحاولة مع وجود خطأ في حقل «العمر»:</p>
+<p><img src="images/10000000000001A600000100626802BF.png" width="422" height="256" style="width:11.164cm;height:6.773cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001A600000100626802BF.png" /></p>
 <p>نحصل على الرد التالي:</p>
-<p><img src="images/10000000000001F2000000C7D0D592A9.png" width="498" height="199" style="width:13.174cm;height:5.263cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F2000000C7D0D592A9.png" /></p>
-<p>حاول مرة أخرى، مع إدخال القيم الصحيحة هذه المرة:</p>
-<p><img src="images/100000000000019500000102485CE3F3.png" width="405" height="258" style="width:10.714cm;height:6.824cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000019500000102485CE3F3.png" /></p>
-<p>نتلقى الرد التالي:</p>
+<p><img src="images/10000000000001F2000000C7D0D592A9.png" width="498" height="199" style="width:13.174cm;height:5.265cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F2000000C7D0D592A9.png" /></p>
+<p>نحاول مرة أخرى، هذه المرة بإدخال القيم الصحيحة:</p>
+<p><img src="images/100000000000019500000102485CE3F3.png" width="405" height="258" style="width:10.714cm;height:6.826cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000019500000102485CE3F3.png" /></p>
+<p>نحصل على الإجابة التالية:</p>
 <p><img src="images/10000000000001F8000000E6A0B8514D.png" width="504" height="230" style="width:13.333cm;height:6.085cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F8000000E6A0B8514D.png" /></p>
 <h2 id="46">4.6. <span style="color: #4f81bd">الخلاصة</span></h2>
-<p>يسهل استخدام النماذج الديناميكية كتابة فئات <strong><bdi dir="ltr" class="odt-ltr-term">ActionForm</bdi></strong> المسؤولة عن تخزين قيم النموذج. يمكننا المضي قدماً في إدارة النماذج. في تطبيق <bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi><strong>1</strong>، أنشأنا فئة <strong><bdi dir="ltr" class="odt-ltr-term">PersonneDynaForm</bdi></strong> للتحقق من صحة قيم النموذج (الاسم، العمر). في الممارسة العملية، تحدث بعض عمليات التحقق من الصحة بشكل متكرر: حقل غير فارغ، حقل يتحقق من صحة تعبير عادي محدد، حقل عدد صحيح، حقل تاريخ، إلخ. يمكن بعد ذلك تحديد هذا النوع من التحقق من الصحة القياسي في ملف التكوين <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.html</bdi></strong>. إذا كانت جميع عمليات التحقق من الصحة المطلوب إجراؤها &quot;قياسية&quot;، فلا داعي لكتابة فئة للنموذج. وهذا ما سنقوم بفحصه الآن.</p>
+<p>يسهل استخدام النماذج الديناميكية كتابة الفئات من النوع <strong><bdi dir="ltr" class="odt-ltr-term">ActionForm</bdi></strong> المسؤولة عن تخزين قيم النماذج. ويمكننا الذهاب أبعد من ذلك قليلاً في تبسيط إدارة النماذج. في تطبيق <bdi dir="ltr" class="odt-ltr-term">strutspersonne1</bdi>، أنشأنا فئة <strong><bdi dir="ltr" class="odt-ltr-term">PersonneDynaForm</bdi></strong> للتحقق من صحة قيم (الاسم، العمر) في النموذج. في الممارسة العملية، تتكرر بعض عمليات التحقق بشكل متكرر: الحقل غير فارغ، الحقل الذي يتحقق من تعبير منتظم معين، الحقل الصحيح، حقل التاريخ، ... يمكن عندئذٍ طلب هذا النوع من عمليات التحقق القياسية في ملف التكوين <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.html</bdi></strong>. إذا كانت جميع عمليات التحقق المطلوبة «قياسية»، فلن يكون هناك حاجة لكتابة فئة خاصة بالنموذج. وهذا ما سنراه الآن.</p>
 
 
 

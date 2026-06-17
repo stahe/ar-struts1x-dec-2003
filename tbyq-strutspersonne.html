@@ -395,7 +395,7 @@
   <a href="#21" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1. كيف يعمل التطبيق
+        2.1. كيفية عمل التطبيق
       
     </span>
   </a>
@@ -417,7 +417,7 @@
   <a href="#23-struts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.3. تجميع الفئات المطلوبة لتطبيق Struts
+        2.3. تجميع الفئات اللازمة لتطبيق Struts
       
     </span>
   </a>
@@ -437,10 +437,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#241-errorspersonnejsp" class="md-nav__link">
+  <a href="#241-erreurspersonnejsp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4.1. طريقة العرض errors.personne.jsp
+        2.4.1. الطريقة erreurs.personne.jsp
       
     </span>
   </a>
@@ -448,10 +448,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#242-errorspersonjsp" class="md-nav__link">
+  <a href="#242-erreurspersonnejsp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4.2. اختبار عرض errors.person.jsp
+        2.4.2. اختبار العرض erreurs.personne.jsp
       
     </span>
   </a>
@@ -462,7 +462,7 @@
   <a href="#243-reponsepersonnejsp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4.3. طريقة العرض reponse.personne.jsp
+        2.4.3. الطريقة reponse.personne.jsp
       
     </span>
   </a>
@@ -473,7 +473,7 @@
   <a href="#244-reponsepersonnejsp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4.4. اختبار عرض reponse.personne.jsp
+        2.4.4. اختبار العرض reponse.personne.jsp
       
     </span>
   </a>
@@ -484,7 +484,7 @@
   <a href="#245-formulairepersonnejsp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4.5. طريقة العرض formulaire.personne.jsp
+        2.4.5. الصفحة formulaire.personne.jsp
       
     </span>
   </a>
@@ -492,10 +492,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#246-formulairepersonnejsp" class="md-nav__link">
+  <a href="#246-bean-formulairepersonnejsp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4.6. البيان المرتبط بالنموذج formulaire.personne.jsp
+        2.4.6. الـ bean المرتبط بالنموذج formulaire.personne.jsp
       
     </span>
   </a>
@@ -614,14 +614,14 @@
   
   
     <li class="md-nav__item">
-      <a href="nmdhj-html.html" class="md-nav__link">
+      <a href="lnmdhj-html.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. نماذج HTML
+    6. النماذج HTML
   
 
     
@@ -641,14 +641,14 @@
   
   
     <li class="md-nav__item">
-      <a href="-tbyq-quiest.html" class="md-nav__link">
+      <a href="-ltbyq-quiest.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    7.  تطبيق QuiEst
+    7.  التطبيق QuiEst
   
 
     
@@ -695,14 +695,14 @@
   
   
     <li class="md-nav__item">
-      <a href="lml-m-mdr-lbynt.html" class="md-nav__link">
+      <a href="stll-mdr-lbynt.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    9. العمل مع مصدر البيانات
+    9. استغلال مصدر البيانات
   
 
     
@@ -722,14 +722,14 @@
   
   
     <li class="md-nav__item">
-      <a href="lmlq.html" class="md-nav__link">
+      <a href="lmrfqt.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. الملاحق
+    10. المرفقات
   
 
     
@@ -760,74 +760,74 @@
 
 
 <h1 id="2-strutspersonne">2. <span style="color: #365f91">تطبيق <bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></span></h1>
-<p>لقد قمنا بتنفيذ تطبيق <strong>&quot;<bdi dir="ltr" class="odt-ltr-term">person</bdi></strong>&quot; باستخدام الطريقة التقليدية: سيرفلتس وصفحات <bdi dir="ltr" class="odt-ltr-term">JSP.</bdi> نقترح الآن تقديم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> باستخدام هذا التطبيق نفسه.</p>
-<h2 id="21">2.1. <span style="color: #4f81bd">كيف يعمل التطبيق</span></h2>
-<p>دعونا نستعرض كيفية عمل تطبيق <strong>&quot;<bdi dir="ltr" class="odt-ltr-term">person</bdi>&quot;</strong> الذي قمنا بتطويره. يتكون من:</p>
+<p>لقد تعاملنا مع تطبيق <strong>«<bdi dir="ltr" class="odt-ltr-term">person</bdi>»</strong> بالطريقة التقليدية، باستخدام السيرفلت وصفحات <bdi dir="ltr" class="odt-ltr-term">JSP.</bdi> ونقترح الآن تقديم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> باستخدام هذا التطبيق نفسه.</p>
+<h2 id="21">2.1. <span style="color: #4f81bd">كيفية عمل التطبيق</span></h2>
+<p>دعونا نستعرض هنا كيفية عمل تطبيق <strong>«<bdi dir="ltr" class="odt-ltr-term">person</bdi>»</strong> الذي قمنا بتطويره. يتكون التطبيق من:</p>
 <ul>
-  <li><bdi dir="ltr" class="odt-ltr-term">Servlet</bdi> <b>رئيسي</b>. يتولى هذا معالجة جميع منطق التطبيق.
+  <li>من سيرفلت <b>رئيسي</b>. وهو الذي يتولى تنفيذ جميع العمليات المنطقية للتطبيق.
   </li>
-  <li>ثلاث صفحات <bdi dir="ltr" class="odt-ltr-term">JSP:</bdi> <b><bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi> </b>و <b><bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi> </b>و <b><bdi dir="ltr" class="odt-ltr-term">erreurs.personne.jsp</bdi></b>
+  <li>ثلاث صفحات <bdi dir="ltr" class="odt-ltr-term">JSP: formulaire.personne.jsp</bdi>، <bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi>، <b><bdi dir="ltr" class="odt-ltr-term">erreurs.personne.jsp</bdi></b>
   </li>
 </ul>
 
-<p>يعمل التطبيق على النحو التالي. يمكن الوصول إليه عبر عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/personne/main</bdi></strong>. عند هذا العنوان، يتم عرض نموذج مقدم من صفحة <strong><bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi></strong>:</p>
-<p><img src="images/1000000000000181000000EE943A5129.png" width="385" height="238" style="width:10.185cm;height:6.295cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000181000000EE943A5129.png" /></p>
-<p><strong>يقوم</strong> المستخدم <strong>بملء</strong> النموذج والنقر على زر [<bdi dir="ltr" class="odt-ltr-term">Submit</bdi>]. زر [<bdi dir="ltr" class="odt-ltr-term">Reset</bdi>] هو زر <strong>إعادة</strong> تعيين، مما يعني أنه يعيد المستند إلى الحالة التي تم استلامه بها. زر [<bdi dir="ltr" class="odt-ltr-term">Delete</bdi>] هو <strong>زر</strong> قياسي. يجب على المستخدم إدخال اسم وعمر صالحين. إذا لم يكن الأمر كذلك، يتم إرسال صفحة خطأ إليه عبر صفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">erreurs.personne.jsp</bdi></strong>. فيما يلي بعض الأمثلة:</p>
+<p>وتعمل التطبيق على النحو التالي. يمكن الوصول إليه عبر الرابط <strong><bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/personne/main</bdi></strong>. وعند هذا الرابط، يظهر نموذج مقدم من الصفحة <strong><bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi></strong>:</p>
+<p><img src="images/1000000000000181000000EE943A5129.png" width="385" height="238" style="width:10.185cm;height:6.297cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000181000000EE943A5129.png" /></p>
+<p>يقوم المستخدم بملء النموذج والضغط على الزر [<bdi dir="ltr" class="odt-ltr-term">Envoyer</bdi>] من نوع <strong>«إرسال</strong>». أما الزر [<bdi dir="ltr" class="odt-ltr-term">Rétablir</bdi>] فهو من نوع <strong>«إعادة</strong> الضبط»، <bdi dir="ltr" class="odt-ltr-term">c.a.d</bdi>، حيث يعيد المستند إلى الحالة التي تم استلامه بها. الزر [<bdi dir="ltr" class="odt-ltr-term">Effacer</bdi>] هو زر من النوع <strong><bdi dir="ltr" class="odt-ltr-term">button</bdi></strong>. يجب على المستخدم إدخال اسم وعمر صحيحين. إذا لم يكن الأمر كذلك، يتم إرسال صفحة أخطاء إليه عبر الصفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">erreurs.personne.jsp</bdi></strong>. فيما يلي بعض الأمثلة:</p>
 <p><strong>التبادل رقم 1</strong></p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>الطلب
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>demande
 </code></pre></div>
 </div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>الرد
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>réponse
 </code></pre></div>
-</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000011C000000F7CB15923D.png" width="284" height="247" style="display:inline-block; margin:4px;width:7.512cm;height:6.533cm;" class="odt-zoomable" data-zoom-src="images/100000000000011C000000F7CB15923D.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000019E0000008BA0C7AA85.png" width="414" height="139" style="display:inline-block; margin:4px;width:10.952cm;height:3.678cm;" class="odt-zoomable" data-zoom-src="images/100000000000019E0000008BA0C7AA85.png" /></td></tr></table>
+</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000011C000000F7CB15923D.png" width="284" height="247" style="display:inline-block; margin:4px;width:7.512cm;height:6.535cm;" class="odt-zoomable" data-zoom-src="images/100000000000011C000000F7CB15923D.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000019E0000008BA0C7AA85.png" width="414" height="139" style="display:inline-block; margin:4px;width:10.952cm;height:3.678cm;" class="odt-zoomable" data-zoom-src="images/100000000000019E0000008BA0C7AA85.png" /></td></tr></table>
 
-<p>إذا اتبعت رابط [العودة إلى النموذج]، فستجد النموذج في الحالة التي تركته عليها:</p>
-<p><strong>التبادل رقم 2</strong></p>
+<p>إذا اتبعنا الرابط [<bdi dir="ltr" class="odt-ltr-term">Retour au formulaire</bdi>]، فسنجده في الحالة التي تركناه عليها:</p>
+<p><strong>المراسلة رقم 2</strong></p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>طلب
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>demande
 </code></pre></div>
 </div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>الرد
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>réponse
 </code></pre></div>
 </div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000019700000097ECADF2E2.png" width="407" height="151" style="display:inline-block; margin:4px;width:10.767cm;height:3.995cm;" class="odt-zoomable" data-zoom-src="images/100000000000019700000097ECADF2E2.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000101000000B3BA43B161.png" width="257" height="179" style="display:inline-block; margin:4px;width:6.8cm;height:4.736cm;" class="odt-zoomable" data-zoom-src="images/1000000000000101000000B3BA43B161.png" /></td></tr></table>
 
-<p>إذا أرسل المستخدم بيانات صالحة، فإن التطبيق يرسل استجابة عبر صفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi></strong>.</p>
+<p>إذا أرسل المستخدم بيانات صحيحة، فإن التطبيق يرسل له ردًا عبر الصفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> <strong><bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi></strong>.</p>
 <p><strong>التبادل رقم 1</strong></p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>الطلب
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>demande
 </code></pre></div>
 </div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>الرد
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>réponse
 </code></pre></div>
 </div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000F6000000B4C2BD6142.png" width="246" height="180" style="display:inline-block; margin:4px;width:6.509cm;height:4.763cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F6000000B4C2BD6142.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000DB000000AE9A49ACD9.png" width="219" height="174" style="display:inline-block; margin:4px;width:5.794cm;height:4.604cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DB000000AE9A49ACD9.png" /></td></tr></table>
 
-<p>إذا اتبعت رابط [العودة إلى النموذج]، فستجد النموذج في الحالة التي تركته عليها:</p>
-<p><strong>التبادل رقم 2</strong></p>
+<p>إذا اتبعنا الرابط [<bdi dir="ltr" class="odt-ltr-term">Retour au formulaire</bdi>]، فسنجده في الحالة التي تركناه عليها:</p>
+<p><strong>المراسلة رقم 2</strong></p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>الطلب
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>demande
 </code></pre></div>
 </div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>الرد
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>réponse
 </code></pre></div>
 </div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000DC000000B87D1CA95C.png" width="220" height="184" style="display:inline-block; margin:4px;width:5.821cm;height:4.868cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DC000000B87D1CA95C.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000102000000BFE8C1AA58.png" width="258" height="191" style="display:inline-block; margin:4px;width:6.826cm;height:5.054cm;" class="odt-zoomable" data-zoom-src="images/1000000000000102000000BFE8C1AA58.png" /></td></tr></table>
 
 <h2 id="22-struts">2.2. <span style="color: #4f81bd">بنية <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> للتطبيق</span></h2>
 <p>سنعتمد بنية <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> التالية:</p>
-<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000005340000027B494721AE.png" width="643" height="306" style="display:inline-block; margin:4px;width:17cm;height:8.103cm;" class="odt-zoomable" data-zoom-src="images/10000000000005340000027B494721AE.png" /></td></tr></table>
+<table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000005340000027B494721AE.png" width="643" height="306" style="display:inline-block; margin:4px;width:17cm;height:8.105cm;" class="odt-zoomable" data-zoom-src="images/10000000000005340000027B494721AE.png" /></td></tr></table>
 
 <ul>
-  <li>ستكون هناك ثلاث طرق للعرض 
+  <li>ستكون هناك ثلاث طرق عرض 
   </li>
-  <li>سيكون وحدة التحكم هي تلك التي يوفرها <bdi dir="ltr" class="odt-ltr-term">Struts</bdi>
+  <li>وسيكون وحدة التحكم هي تلك التي توفرها <bdi dir="ltr" class="odt-ltr-term">Struts</bdi>
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">FormBean</bdi> </b>هي الفئة المسؤولة عن تخزين القيم من النموذج الذي يعرضه العرض <b><bdi dir="ltr" class="odt-ltr-term">form.person.jsp</bdi></b>
+  <li><b><bdi dir="ltr" class="odt-ltr-term">FormulaireBean</bdi> </b>هي الفئة المسؤولة عن تخزين قيم النموذج المعروض في العرض <b><bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi></b>
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">FormAction</bdi> </b>هي الفئة المسؤولة عن معالجة قيم <b><bdi dir="ltr" class="odt-ltr-term">FormBean</bdi> </b>وتحديد صفحة الاستجابة المراد إرسالها: 
+  <li><b><bdi dir="ltr" class="odt-ltr-term">FormulaireAction</bdi> </b>هي الفئة المسؤولة عن معالجة قيم <b><bdi dir="ltr" class="odt-ltr-term">FormulaireBean</bdi> </b>وتحديد صفحة الرد المطلوب إرسالها: 
     <ul>
-      <li>عرض<b> <bdi dir="ltr" class="odt-ltr-term">errors.person.jsp</bdi> </b>إذا كانت بيانات النموذج غير صحيحة
+      <li>الطريقة <b><bdi dir="ltr" class="odt-ltr-term">erreurs.personne.jsp</bdi> </b>إذا كانت بيانات النموذج خاطئة
       </li>
-      <li>عرض<b> <bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi> </b>في الحالات الأخرى
+      <li>عرض <b><bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi> </b>في الحالات الأخرى
       </li>
     </ul>
   </li>
@@ -835,46 +835,46 @@
 
 <p>بالنسبة للمطور، تتمثل المهمة في كتابة الكود:</p>
 <ul>
-  <li>العروض الثلاثة
+  <li>للطرق الثلاثة
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">FormBean</bdi> </b>المرتبط بالنموذج
+  <li>للفئة <b><bdi dir="ltr" class="odt-ltr-term">FormulaireBean</bdi> </b>المرتبطة بالنموذج
   </li>
-  <li>فئة <b><bdi dir="ltr" class="odt-ltr-term">FormAction</bdi> </b>المسؤولة عن معالجة النموذج
+  <li>لفئة <b><bdi dir="ltr" class="odt-ltr-term">FormulaireAction</bdi> </b>المسؤولة عن معالجة النموذج
   </li>
 </ul>
 
-<h2 id="23-struts">2.3. <span style="color: #4f81bd">تجميع الفئات المطلوبة لتطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi></span></h2>
-<p>لتجميع الفئات المطلوبة لتطبيقنا، سنستخدم <bdi dir="ltr" class="odt-ltr-term">JBuilder.</bdi> يعمل <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> مع <bdi dir="ltr" class="odt-ltr-term">JDK</bdi> لا يحتوي على الفئات المطلوبة لتطبيقات <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> يمكننا تكوين <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> على النحو التالي:</p>
+<h2 id="23-struts">2.3. <span style="color: #4f81bd">تجميع الفئات اللازمة لتطبيق <bdi dir="ltr" class="odt-ltr-term">Struts</bdi></span></h2>
+<p>لتجميع الفئات اللازمة لتطبيقنا، سنستخدم <bdi dir="ltr" class="odt-ltr-term">Jbuilder.</bdi> يعمل هذا البرنامج مع ملف <bdi dir="ltr" class="odt-ltr-term">JDK</bdi> الذي لا يحتوي على الفئات اللازمة لتطبيقات <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> يمكننا تهيئة <bdi dir="ltr" class="odt-ltr-term">Jbuilder</bdi> بالطريقة التالية:</p>
 <ul>
-<li>أدوات / تكوين <bdi dir="ltr" class="odt-ltr-term">JDKs</bdi></li>
+<li>الخيار «<bdi dir="ltr" class="odt-ltr-term">Tools</bdi>» (الأدوات) / «<bdi dir="ltr" class="odt-ltr-term">Configure JDKs</bdi>» (تكوين <bdi dir="ltr" class="odt-ltr-term">JDK</bdi>)</li>
 </ul>
 <p><img src="images/10000000000001A3000001AA2F602FA8.png" width="419" height="426" style="width:11.084cm;height:11.269cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001A3000001AA2F602FA8.png" /></p>
 <ul>
-<li>استخدم زر [إضافة] لإضافة ملفات .jar التي يوفرها <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> إلى أرشيفات فئات <bdi dir="ltr" class="odt-ltr-term">JBuilder.</bdi> إذا كنت قد قمت باستخراج أرشيف <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> إلى القرص الخاص بك، فيمكنك إضافة جميع ملفات .jar من المجلد <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">struts</bdi>&gt;/lib</strong> إلى <bdi dir="ltr" class="odt-ltr-term">JBuilder:</bdi></li>
+<li>استخدم الزر [<bdi dir="ltr" class="odt-ltr-term">Add/Ajouter</bdi>] لإضافة ملفات .jar التي يوفرها <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> إلى أرشيفات فئات <bdi dir="ltr" class="odt-ltr-term">JBuilder.</bdi> إذا تم فك ضغط أرشيف <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> على القرص، فيمكن إضافة جميع ملفات .jar الموجودة في المجلد <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">struts</bdi>&gt;/lib</strong> إلى <bdi dir="ltr" class="odt-ltr-term">Jbuilder:</bdi></li>
 </ul>
 <p><img src="images/100000000000016F0000011E3E8ECBF9.png" width="367" height="286" style="width:9.708cm;height:7.565cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000016F0000011E3E8ECBF9.png" /></p>
-<p>يمكنك إضافة جميع ملفات .jar المذكورة أعلاه إلى أرشيفات <bdi dir="ltr" class="odt-ltr-term">JBuilder.</bdi> وقد رأينا بالفعل أن <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> يحتاج أيضًا إلى الوصول إلى أرشيفات <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> بالنسبة لـ <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> 4.x، يمكنك وضع ملفات .jar الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> في <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">tomcat4</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">common</bdi>\lib</strong>. بالنسبة لـ <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> 5.x، يمكنك وضعها في <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">tomcat5</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">shared</bdi>\lib</strong>. يمكنك بعد ذلك تكوين <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> لتحديد موقع ملفات .jar الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> في نفس موقع <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> هذا ما تم فعله في لقطة الشاشة التي تظهر ملفات .jar الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> المذكورة سابقًا. تم أخذها من <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">tomcat5</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">shared</bdi>\<bdi dir="ltr" class="odt-ltr-term">lib.</bdi></strong></p>
-<p>لذا، إذا أبلغ <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> أنه لا يمكنه العثور على فئة <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> أثناء ترجمة فئة ما، فتحقق من أمرين:</p>
+<p>يمكن إضافة جميع ملفات .jar المذكورة أعلاه إلى أرشيفات <bdi dir="ltr" class="odt-ltr-term">Jbuilder.</bdi> لقد رأينا سابقًا أن <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> يحتاج أيضًا إلى الوصول إلى أرشيفات <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> بالنسبة لـ <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> 4.x، يمكن وضع ملفات .jar الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> في <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">tomcat4</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">common</bdi>\lib</strong>. أما بالنسبة لـ <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> 5.x، فيمكن وضعها في <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">tomcat5</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">shared</bdi>\lib</strong>. يمكننا بعد ذلك تحديد أن يبحث <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> عن ملفات .jar الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> في نفس المكان الذي يبحث فيه <bdi dir="ltr" class="odt-ltr-term">Tomcat.</bdi> وهذا ما تم فعله في لقطة الشاشة التي تظهر ملفات .jar الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">JBuilder</bdi> أعلاه. فقد تم أخذها من <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">tomcat5</bdi>&gt;\<bdi dir="ltr" class="odt-ltr-term">shared</bdi>\<bdi dir="ltr" class="odt-ltr-term">lib.</bdi></strong></p>
+<p>لذا، إذا أشار <bdi dir="ltr" class="odt-ltr-term">Jbuilder</bdi> أثناء ترجمة فئة ما إلى أنه لا يجد فئة <bdi dir="ltr" class="odt-ltr-term">Struts</bdi>، فتحقق من أمرين:</p>
 <ul>
-  <li>تهجئة الفئة
+  <li>تهجئة اسم الفئة
   </li>
-  <li>ملفات .jar المستخدمة بواسطة <bdi dir="ltr" class="odt-ltr-term">JBuilder.</bdi> يجب تضمين جميع ملفات <bdi dir="ltr" class="odt-ltr-term">Struts .jar.</bdi>
+  <li>ملفات .jar التي يستخدمها <bdi dir="ltr" class="odt-ltr-term">Jbuilder.</bdi> يجب أن تكون جميع ملفات .jar الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> موجودة ضمنها.
   </li>
 </ul>
 
 <h2 id="24-strutspersonne">2.4. <span style="color: #4f81bd">طرق عرض تطبيق <bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></span></h2>
-<p>طرق العرض الثلاثة للتطبيق هي كما يلي:</p>
+<p>الطرق الثلاثة للتطبيق هي التالية:</p>
 <ul>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">form.person.jsp</bdi></b>: يعرض النموذج لإدخال اسم الشخص وعمره
+  <li><b><bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi></b>: تعرض نموذج إدخال الاسم والعمر لشخص ما
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi></b>: يعرض القيم التي تم إدخالها إذا كانت صالحة
+  <li><b><bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi></b>: تعرض القيم التي تم إدخالها إذا كانت صالحة
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">errors.person.jsp</bdi></b>: يعرض أي أخطاء
+  <li><b><bdi dir="ltr" class="odt-ltr-term">erreurs.personne.jsp</bdi></b>: تعرض الأخطاء إن وجدت
   </li>
 </ul>
 
-<h3 id="241-errorspersonnejsp">2.4.1. <span style="color: #4f81bd">طريقة العرض <bdi dir="ltr" class="odt-ltr-term">errors.personne.jsp</bdi></span></h3>
-<p>سيتم تعريف هذا العرض، الذي يعرض قائمة بالأخطاء، على النحو التالي:</p>
+<h3 id="241-erreurspersonnejsp">2.4.1. <span style="color: #4f81bd">الطريقة <bdi dir="ltr" class="odt-ltr-term">erreurs.personne.jsp</bdi></span></h3>
+<p>سيتم تعريف هذا العرض الذي يعرض قائمة بالأخطاء على النحو التالي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="err">&lt;</span>%@ taglib uri=&quot;/WEB-INF/struts-html.tld&quot; prefix=&quot;html&quot; %&gt;
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
 <a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
@@ -892,9 +892,9 @@
 </code></pre></div>
 <p>هناك ميزتان جديدتان في هذا الكود:</p>
 <ol>
-  <li>وجود علامات<b> &lt;<bdi dir="ltr" class="odt-ltr-term">html:XX/</bdi>&gt;</b>، وهي ليست علامات <bdi dir="ltr" class="odt-ltr-term">HTML.</bdi> يمكنك إنشاء مكتبات لعلامات <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> التي يتم تحويلها إلى كود <bdi dir="ltr" class="odt-ltr-term">Java</bdi> عند تحويل صفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> إلى سيرفلت.
+  <li>وجود علامات <b>&lt;<bdi dir="ltr" class="odt-ltr-term">html:XX/</bdi>&gt; </b>التي تختلف عن علامات <bdi dir="ltr" class="odt-ltr-term">HTML.</bdi> يمكن بالفعل إنشاء مكتبات لعلامات <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> التي يتم تحويلها إلى كود <bdi dir="ltr" class="odt-ltr-term">Java</bdi> عند تحويل الصفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> إلى سيرفلت.
   </li>
-  <li>يجب أن تعلن صفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> عن مكتبات العلامات التي تستخدمها. وهي تفعل ذلك هنا بالسطر 
+  <li>يجب أن تعلن الصفحة <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> عن مكتبات العلامات التي تستخدمها. وهي تفعل ذلك هنا بالسطر 
   </li>
 </ol>
 
@@ -902,49 +902,49 @@
 </code></pre></div>
 <p>يقدم هذا السطر معلومتين:</p>
 <ul>
-  <li><b>uri</b>: موقع الملف الذي يحكم قواعد استخدام المكتبة. يتم تضمين ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-html.tld</bdi> </b>في توزيع <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> في المثال أعلاه، تم وضعه في مجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF.</bdi>
+  <li><b>uri</b>: موقع الملف الذي ينظم قواعد استخدام المكتبة. يتم توفير الملف <b><bdi dir="ltr" class="odt-ltr-term">struts-html.tld</bdi> </b>ضمن حزمة توزيع <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> وفي المثال أعلاه، سيتم وضعه في المجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF.</bdi>
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">prefix</bdi></b>: المعرف المستخدم في الكود لإضافة بادئة لعلامات المكتبة. وهذا يمنع تعارضات التسمية التي قد تنشأ عند استخدام مكتبات علامات متعددة في وقت واحد. من الممكن العثور على علامتين تحملان نفس الاسم في مكتبتين مختلفتين. ومن خلال إعطاء كل مكتبة بادئة مختلفة، يتم التخلص من أي غموض.
+  <li><b><bdi dir="ltr" class="odt-ltr-term">prefix</bdi></b>: المعرف المستخدم في الكود لإضافة بادئة إلى علامات المكتبة. وهذا يتيح تجنب تعارضات الأسماء التي قد تنشأ عند استخدام عدة مكتبات علامات في آن واحد. فمن الممكن وجود علامتين تحملان الاسم نفسه في مكتبتين مختلفتين. ومن خلال إعطاء بادئة مختلفة لكل مكتبة، يتم إزالة أي غموض.
   </li>
 </ul>
 
 <ul>
-  <li>تعرض علامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">html:errors</bdi></b>&gt; قائمة الأخطاء التي يرسلها وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> إليها.
+  <li>تعرض العلامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">html:errors</bdi></b>&gt; قائمة الأخطاء التي يرسلها إليها وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi>
   </li>
-  <li>تقوم علامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">html:link</bdi></b>&gt; بإنشاء رابط يشير إلى <b>/<bdi dir="ltr" class="odt-ltr-term">C/page</bdi> </b>حيث
+  <li>تقوم العلامة &lt;<b><bdi dir="ltr" class="odt-ltr-term">html:link</bdi></b>&gt; بإنشاء رابط يشير إلى <b>/<bdi dir="ltr" class="odt-ltr-term">C/page</bdi> </b>حيث
     <ul>
-      <li><b>حيث <bdi dir="ltr" class="odt-ltr-term">C</bdi> </b>هو سياق التطبيق
+      <li>حيث <b><bdi dir="ltr" class="odt-ltr-term">C</bdi> </b>هو سياق التطبيق
       </li>
-      <li><b><bdi dir="ltr" class="odt-ltr-term">page</bdi> </b>هو عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المحدد في سمة <bdi dir="ltr" class="odt-ltr-term">page</bdi> للعلامة
+      <li><b><bdi dir="ltr" class="odt-ltr-term">page</bdi> </b>هي القيمة <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المحددة في سمة <bdi dir="ltr" class="odt-ltr-term">page</bdi> للعلامة
       </li>
     </ul>
   </li>
 </ul>
 
-<p>ال</p>
+<p>العلامة</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>    <span class="p">&lt;</span><span class="nt">html:link</span> <span class="na">page</span><span class="o">=</span><span class="s">&quot;/formulaire.do&quot;</span><span class="p">&gt;</span>
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>            Retour au formulaire
 <a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>        <span class="p">&lt;/</span><span class="nt">html:link</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>سيؤدي إلى إنشاء كود <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> التالي:</p>
+<p>العلامة ستولد الكود <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> التالي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/C/formulaire.do&quot;</span><span class="p">&gt;</span>Retour au formulaire<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>حيث <strong><bdi dir="ltr" class="odt-ltr-term">C</bdi></strong> هو سياق التطبيق</p>
-<h3 id="242-errorspersonjsp">2.4.2. <span style="color: #4f81bd">اختبار عرض <bdi dir="ltr" class="odt-ltr-term">errors.person.jsp</bdi></span></h3>
+<h3 id="242-erreurspersonnejsp">2.4.2. <span style="color: #4f81bd">اختبار العرض <bdi dir="ltr" class="odt-ltr-term">erreurs.personne.jsp</bdi></span></h3>
 <ul>
-  <li>يتم وضع ملف<b> <bdi dir="ltr" class="odt-ltr-term">errors.person.jsp</bdi> </b>في مجلد <b><bdi dir="ltr" class="odt-ltr-term">views</bdi> </b>الخاص بتطبيق <b><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></b>:
+  <li>يتم وضع الملف <b><bdi dir="ltr" class="odt-ltr-term">erreurs.personne.jsp</bdi> </b>في مجلد <b>«<bdi dir="ltr" class="odt-ltr-term">vues</bdi>» </b>الخاص بتطبيق <b><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></b>:
   </li>
 </ul>
 
 <p><img src="images/1000000000000153000000457E445417.png" width="339" height="69" style="width:8.968cm;height:1.826cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000153000000457E445417.png" /></p>
 <ul>
-  <li>يتم أخذ ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-html.tld</bdi> </b>من توزيع <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> (<b>&lt;<bdi dir="ltr" class="odt-ltr-term">struts</bdi>&gt;/lib</b>) ووضعه في <b><bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi></b>:
+  <li>يتم أخذ الملف <b><bdi dir="ltr" class="odt-ltr-term">struts-html.tld</bdi> </b>من توزيع <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> (<b>&lt;<bdi dir="ltr" class="odt-ltr-term">struts</bdi>&gt;/lib</b>) ووضعه في <b><bdi dir="ltr" class="odt-ltr-term">WEB-INF</bdi></b>:
   </li>
 </ul>
 
 <p><img src="images/100000000000013A0000005CC82C53BC.png" width="314" height="92" style="width:8.306cm;height:2.434cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000013A0000005CC82C53BC.png" /></p>
 <ul>
-  <li>يتم تعديل ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>على النحو التالي:
+  <li>يتم تعديل الملف <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>على النحو التالي:
   </li>
 </ul>
 
@@ -969,14 +969,14 @@
 <a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="w">    </span><span class="nt">&lt;/action-mappings&gt;</span>
 <a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="nt">&lt;/struts-config&gt;</span>
 </code></pre></div>
-<p>نقوم بإنشاء عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> جديد <strong>هو /<bdi dir="ltr" class="odt-ltr-term">errors</bdi></strong> في ملف التكوين ليتولى معالجته وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> وسيتم إعادة توجيه عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">errors.do</bdi></strong> إلى صفحة العرض <strong>/<bdi dir="ltr" class="odt-ltr-term">views/errors.person.jsp</bdi></strong>. ويتم وضع ملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> في مجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF.</bdi></p>
+<p>نقوم بإنشاء ملف تكوين جديد باسم <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">erreurs</bdi></strong> في ملف التكوين ليتم معالجته بواسطة وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> سيتم إعادة توجيه <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">erreurs.do</bdi></strong> إلى العرض <strong>/<bdi dir="ltr" class="odt-ltr-term">vues/erreurs.personne.jsp</bdi></strong>. يتم وضع الملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> في المجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF.</bdi></p>
 <ul>
-  <li>نقوم بإعادة تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> حتى يتم أخذ ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>الجديد في الاعتبار، ثم نطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi><b> <bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne/erreurs.do</bdi></b>:
+  <li>نقوم بإعادة تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> حتى يتم أخذ الملف الجديد <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>في الاعتبار، ثم نطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi><b> <bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne/erreurs.do</bdi></b>:
   </li>
 </ul>
 
 <p><img src="images/1000000000000208000000A366AB9994.png" width="520" height="163" style="width:13.757cm;height:4.313cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000208000000A366AB9994.png" /></p>
-<p>لم تنتج العلامة <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">html:errors/</bdi>&gt;</strong> أي شيء. هذا أمر طبيعي؛ لم تقم <strong><bdi dir="ltr" class="odt-ltr-term">ForwardAction</bdi></strong> بإنشاء قائمة الأخطاء التي تتوقعها العلامة. ومع ذلك، تظهر الاستجابة أعلاه أن عرض <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> الخاص بنا صحيح من الناحية النحوية على الأقل؛ وإلا لكنا قد تلقينا صفحة خطأ. دعونا نتحقق من كود <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> الذي تلقاه المتصفح (عرض/المصدر):</p>
+<p>لم تنتج العلامة <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">html:errors/</bdi>&gt;</strong> أي شيء. وهذا أمر طبيعي، حيث إن الإجراء <strong><bdi dir="ltr" class="odt-ltr-term">ForwardAction</bdi></strong> لم يُنشئ قائمة الأخطاء التي تتوقعها العلامة. ومع ذلك، تُظهر الاستجابة أعلاه أن عرضنا <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> صحيح من الناحية النحوية على الأقل، وإلا لكنا حصلنا على صفحة أخطاء. دعونا نتحقق من الكود <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> الذي تلقّاه المتصفح (عرض/المصدر):</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
 <a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
 <a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Personne - erreurs<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
@@ -987,17 +987,17 @@
 <a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>لاحظ الرابط الذي تم إنشاؤه بواسطة علامة &lt;<strong><bdi dir="ltr" class="odt-ltr-term">html:link</bdi></strong>&gt;. تم تضمين سياق <strong>/<bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></strong> تلقائيًا في الرابط. وهذا يسمح بنقل التطبيق من سياق إلى آخر (على سبيل المثال، تغيير الأجهزة) دون الحاجة إلى تغيير الروابط التي تم إنشاؤها بواسطة &lt;<strong><bdi dir="ltr" class="odt-ltr-term">html:link</bdi></strong>&gt;.</p>
-<h3 id="243-reponsepersonnejsp">2.4.3. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">طريقة العرض <bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi></span></strong></span></h3>
-<p>هذه العرض، الذي يؤكد القيم التي تم إدخالها في النموذج، هو كما يلي:</p>
+<p>تجدر الإشارة إلى الرابط الذي تم إنشاؤه بواسطة العلامة &lt;<strong><bdi dir="ltr" class="odt-ltr-term">html:link</bdi></strong>&gt;. تم تضمين السياق <strong>/<bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></strong> تلقائيًا في الرابط. وهذا يسمح بنقل التطبيق من سياق إلى آخر (تغيير الجهاز على سبيل المثال) دون الحاجة إلى تغيير الروابط التي تم إنشاؤها بواسطة &lt;<strong><bdi dir="ltr" class="odt-ltr-term">html:link</bdi></strong>&gt;.</p>
+<h3 id="243-reponsepersonnejsp">2.4.3. <span style="color: #4f81bd">الطريقة <bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi></span></h3>
+<p>هذه العرض الذي يؤكد القيم التي تم إدخالها في النموذج هو التالي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="err">&lt;</span>%@ taglib uri=&quot;/WEB-INF/struts-html.tld&quot; prefix=&quot;html&quot; %&gt;
 <a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
 <a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="err">&lt;</span>%
-<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    // on récupère les données nom, age
-<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>  //String nom=(String)request.getAttribute(&quot;nom&quot;);
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>     // نسترد البيانات «الاسم» و«العمر»
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>  //String الاسم=(String)request.getAttribute(&quot;الاسم&quot;);
 <a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>  String nom=&quot;jean&quot;;
 <a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
-<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>  //String age=(String)request.getAttribute(&quot;age&quot;); 
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>   //String age=(String)request.getAttribute(&quot;age&quot;); 
 <a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>  String age=&quot;24&quot;; 
 <a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>%&gt;
 <a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>
@@ -1025,16 +1025,16 @@
 <a id="__codelineno-14-33" name="__codelineno-14-33" href="#__codelineno-14-33"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <a id="__codelineno-14-34" name="__codelineno-14-34" href="#__codelineno-14-34"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>تعرض الصفحة معلومتين، هما [<bdi dir="ltr" class="odt-ltr-term">name</bdi>] و[age]، اللتين سيتم تمريرهما إليها من وحدة التحكم ضمن كائن <strong>الطلب</strong> المُعرَّف مسبقًا. هنا، نجري اختبارًا لن تتمكن فيه وحدة التحكم من تعيين قيم [<bdi dir="ltr" class="odt-ltr-term">name</bdi>] و[age]. ولذلك، نقوم بتهيئة هاتين المعلومتين بقيم عشوائية. بالإضافة إلى ذلك، يتم هنا أيضًا إنشاء الرابط للعودة إلى النموذج باستخدام علامة &lt;<strong><bdi dir="ltr" class="odt-ltr-term">html:link</bdi></strong>&gt;.</p>
-<h3 id="244-reponsepersonnejsp">2.4.4. <span style="color: #4f81bd">اختبار عرض <bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi></span></h3>
+<p>تعرض الصفحة معلومتين هما [nom] و [age]، اللتين سيتم تمريرهما إليها من وحدة التحكم في الكائن المحدد مسبقًا <strong><bdi dir="ltr" class="odt-ltr-term">request</bdi></strong>. هنا، نجري اختبارًا لن تتاح فيه للوحدة التحكمية فرصة تحديد قيم [nom] و [age]. ولذلك، نقوم بتهيئة هاتين المعلومتين بقيم عشوائية. علاوة على ذلك، يتم هنا أيضًا إنشاء رابط العودة إلى النموذج بواسطة علامة &lt;<strong><bdi dir="ltr" class="odt-ltr-term">html:link</bdi></strong>&gt;.</p>
+<h3 id="244-reponsepersonnejsp">2.4.4. <span style="color: #4f81bd">اختبار العرض <bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi></span></h3>
 <ul>
-  <li>يوجد ملف<b> <bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi> </b>في مجلد <b><bdi dir="ltr" class="odt-ltr-term">views</bdi> </b>الخاص بتطبيق <b><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></b>:
+  <li>يتم وضع الملف <b><bdi dir="ltr" class="odt-ltr-term">reponse.personne.jsp</bdi> </b>في مجلد <b>«<bdi dir="ltr" class="odt-ltr-term">vues</bdi>» </b>الخاص بتطبيق <b><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></b>:
   </li>
 </ul>
 
 <p><img src="images/100000000000015F0000004EBBDF68D5.png" width="351" height="78" style="width:9.285cm;height:2.064cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000015F0000004EBBDF68D5.png" /></p>
 <ul>
-  <li>يتم تعديل ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>على النحو التالي:
+  <li>تم تعديل الملف <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>على النحو التالي:
   </li>
 </ul>
 
@@ -1064,16 +1064,16 @@
 <a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a><span class="w">    </span><span class="nt">&lt;/action-mappings&gt;</span>
 <a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a><span class="nt">&lt;/struts-config&gt;</span>
 </code></pre></div>
-<p>نقوم بإنشاء عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> جديد <strong>/<bdi dir="ltr" class="odt-ltr-term">reponse</bdi></strong> في ملف التكوين ليتم معالجته بواسطة وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> سيتم إعادة توجيه عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">reponse.do</bdi></strong> إلى العرض <strong>/<bdi dir="ltr" class="odt-ltr-term">vues/reponse.personne.jsp</bdi></strong>. يتم وضع ملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> في مجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF.</bdi></p>
+<p>نقوم بإنشاء استجابة جديدة في ملف التكوين باسم <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">reponse</bdi></strong> ليتم معالجتها بواسطة وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> سيتم إعادة توجيه /<bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">reponse.do</bdi></strong> إلى العرض <strong>/<bdi dir="ltr" class="odt-ltr-term">vues/reponse.personne.jsp</bdi></strong>. يتم وضع الملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> في المجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF.</bdi></p>
 <ul>
-  <li>نقوم بإعادة تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> حتى يتم أخذ ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>الجديد في الاعتبار، ثم نطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi><b> <bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne/erreurs.do</bdi></b>:
+  <li>نقوم بإعادة تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> حتى يتم أخذ الملف الجديد <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>في الاعتبار، ثم نطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi><b> <bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne/erreurs.do</bdi></b>:
   </li>
 </ul>
 
-<p><img src="images/100000000000020A000001025729052F.png" width="522" height="258" style="width:13.809cm;height:6.824cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000020A000001025729052F.png" /></p>
-<p>نحصل على النتيجة التي توقعناها بالضبط.</p>
-<h3 id="245-formulairepersonnejsp">2.4.5. <span style="color: #4f81bd">طريقة العرض <bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi></span></h3>
-<p>تعرض هذه العرض النموذج الخاص بإدخال اسم المستخدم وعمره. وفيما يلي كود <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> الخاص بها:</p>
+<p><img src="images/100000000000020A000001025729052F.png" width="522" height="258" style="width:13.809cm;height:6.826cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000020A000001025729052F.png" /></p>
+<p>ونحصل بالفعل على النتيجة المتوقعة.</p>
+<h3 id="245-formulairepersonnejsp">2.4.5. <span style="color: #4f81bd">الصفحة <bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi></span></h3>
+<p>يعرض هذا العرض نموذج إدخال اسم المستخدم وعمره. ورمزها <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> هو كما يلي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="err">&lt;</span>%@ taglib uri=&quot;/WEB-INF/struts-html.tld&quot; prefix=&quot;html&quot; %&gt;
 <a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
 <a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
@@ -1118,64 +1118,64 @@
 <a id="__codelineno-16-42" name="__codelineno-16-42" href="#__codelineno-16-42"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <a id="__codelineno-16-43" name="__codelineno-16-43" href="#__codelineno-16-43"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>نرى مكتبة العلامات <strong><bdi dir="ltr" class="odt-ltr-term">struts-html.tld</bdi></strong> مستخدمة في عرض <strong>الأخطاء</strong>. تظهر علامات جديدة:</p>
+<p>نجد مكتبة العلامات <strong><bdi dir="ltr" class="odt-ltr-term">struts-html.tld</bdi></strong> المستخدمة في عرض <strong>الأخطاء</strong>. تظهر علامات جديدة:</p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>html:form
 </code></pre></div>
-</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">تُستخدم لإنشاء علامة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> &lt;<b><bdi dir="ltr" class="odt-ltr-term">form</bdi></b>&gt; ولتزويد وحدة التحكم بالمعلومات التي ستعالج هذا النموذج:</div><table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">تُستخدم في الوقت نفسه لتوليد العلامة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> &lt;<b><bdi dir="ltr" class="odt-ltr-term">form</bdi></b>&gt; ولتقديم معلومات إلى وحدة التحكم التي ستتولى معالجة هذا النموذج:</div><table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>action
 </code></pre></div>
 </div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي سيتم إرسال قيم النموذج إليه</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>name
 </code></pre></div>
-</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">اسم نموذج <bdi dir="ltr" class="odt-ltr-term">HTML.</bdi> وهو أيضًا اسم الكائن الذي سيخزن قيم النموذج</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>النوع
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">اسم النموذج <bdi dir="ltr" class="odt-ltr-term">HTML.</bdi> وهو أيضًا اسم الكائن (<bdi dir="ltr" class="odt-ltr-term">bean</bdi>) الذي سيخزن قيم هذا النموذج</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>type
 </code></pre></div>
-</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">اسم الفئة التي يجب إنشاء مثيل لها للحصول على <bdi dir="ltr" class="odt-ltr-term">bean</bdi> تخزين النموذج</div></td></tr></table><div style="margin:0 0 0.5em 0">لاحظ أن الطريقة المستخدمة لإرسال معلمات النموذج (<bdi dir="ltr" class="odt-ltr-term">GET/POST</bdi>) إلى وحدة التحكم غير محددة. يمكن القيام بذلك باستخدام سمة <b><bdi dir="ltr" class="odt-ltr-term">method</bdi></b>. إذا كانت هذه السمة مفقودة، يتم استخدام طريقة <b><bdi dir="ltr" class="odt-ltr-term">POST</bdi> </b>بشكل افتراضي.</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">اسم الفئة التي يجب إنشاء مثيل لها للحصول على الكائن (<bdi dir="ltr" class="odt-ltr-term">bean</bdi>) المسؤول عن تخزين النموذج</div></td></tr></table><div style="margin:0 0 0.5em 0">يُلاحظ أن طريقة إرسال معلمات النموذج (<bdi dir="ltr" class="odt-ltr-term">GET/POST</bdi>) إلى وحدة التحكم غير محددة. يمكن القيام بذلك باستخدام السمة <b><bdi dir="ltr" class="odt-ltr-term">method</bdi></b>. وفي حالة عدم وجودها، يتم استخدام الطريقة <b><bdi dir="ltr" class="odt-ltr-term">POST</bdi> </b>بشكل افتراضي.</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>html:text
 </code></pre></div>
 </div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">تُستخدم لإنشاء العلامة <b>&lt;<bdi dir="ltr" class="odt-ltr-term">input type</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">text</bdi>&quot; <bdi dir="ltr" class="odt-ltr-term">value</bdi>=&quot;...&quot;&gt;</b>:</div><table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>الخاصية
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>property
 </code></pre></div>
-</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">اسم الحقل في حبة النموذج الذي سيتم ربطه بحقل الإدخال. عند إرسال النموذج إلى الخادم (العميل -&gt; الخادم)، سيأخذ حقل الحبة قيمة حقل الإدخال. عند عرض النموذج (الخادم -&gt; العميل)، يتم عرض القيمة الموجودة في حقل الحبة في حقل الإدخال.</div></td></tr></table></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">اسم حقل <bdi dir="ltr" class="odt-ltr-term">bean</bdi> الخاص بالنموذج الذي سيتم ربطه بمجال الإدخال. عند إرسال النموذج إلى الخادم (العميل -&gt; الخادم)، سيتخذ حقل <bdi dir="ltr" class="odt-ltr-term">bean</bdi> قيمة حقل الإدخال. وعند عرض النموذج (الخادم -&gt; العميل)، تُعرض القيمة الموجودة في حقل <bdi dir="ltr" class="odt-ltr-term">bean</bdi> في مجال الإدخال.</div></td></tr></table></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>html:submit
 </code></pre></div>
-</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يُستخدم لإنشاء علامة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> &lt;<b><bdi dir="ltr" class="odt-ltr-term">input type</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">submit</bdi>&quot;</b>...&gt;</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يُستخدم لإنشاء العلامة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> &lt;<b><bdi dir="ltr" class="odt-ltr-term">input type</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">submit</bdi>&quot;</b>...&gt;</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>html:reset
 </code></pre></div>
-</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يُستخدم لإنشاء علامة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> &lt;<b><bdi dir="ltr" class="odt-ltr-term">input type</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">reset</bdi>&quot;</b>...&gt;</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يُستخدم لإنشاء العلامة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> &lt;<b><bdi dir="ltr" class="odt-ltr-term">input type</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">reset</bdi>&quot;</b>...&gt;</div></td></tr><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>html:button
 </code></pre></div>
-</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يُستخدم لإنشاء علامة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> &lt;<b><bdi dir="ltr" class="odt-ltr-term">input type</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">button</bdi>&quot;</b>...&gt;</div></td></tr></table>
+</div></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><div style="margin:0 0 0.5em 0">يُستخدم لإنشاء العلامة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> &lt;<b><bdi dir="ltr" class="odt-ltr-term">input type</bdi>=&quot;<bdi dir="ltr" class="odt-ltr-term">button</bdi>&quot;</b>...&gt;</div></td></tr></table>
 
-<h3 id="246-formulairepersonnejsp">2.4.6. <span style="color: #4f81bd">البيان المرتبط بالنموذج <bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi></span></h3>
+<h3 id="246-bean-formulairepersonnejsp">2.4.6. <span style="color: #4f81bd">الـ <bdi dir="ltr" class="odt-ltr-term">bean</bdi> المرتبط بالنموذج <bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi></span></h3>
 <ul>
-  <li>مع <bdi dir="ltr" class="odt-ltr-term">Struts</bdi>، يجب أن يكون كل نموذج مرتبطًا بـ <bdi dir="ltr" class="odt-ltr-term">bean</bdi> مسؤول عن تخزين قيم النموذج والحفاظ عليها في الجلسة الحالية. <bdi dir="ltr" class="odt-ltr-term">bean</bdi> هو فئة <bdi dir="ltr" class="odt-ltr-term">Java</bdi> يجب أن تلتزم بصيغة محددة. يجب أن يمتد <bdi dir="ltr" class="odt-ltr-term">bean</bdi> المرتبط بنموذج ما إلى فئة <b><bdi dir="ltr" class="odt-ltr-term">ActionForm</bdi> </b>المحددة في مكتبة <bdi dir="ltr" class="odt-ltr-term">Struts:</bdi>
+  <li>في <bdi dir="ltr" class="odt-ltr-term">Struts</bdi>، يجب أن يرتبط كل نموذج بـ«بيان» (<bdi dir="ltr" class="odt-ltr-term">bean</bdi>) مسؤول عن حفظ قيم النموذج والاحتفاظ بها في الجلسة الحالية. «البيان» هو فئة <bdi dir="ltr" class="odt-ltr-term">Java</bdi> يجب أن تتبع صيغة معينة. يجب أن يكون «البيان» المرتبط بالنموذج مشتقًا من الفئة <b><bdi dir="ltr" class="odt-ltr-term">ActionForm</bdi> </b>المُعرَّفة في مكتبات <bdi dir="ltr" class="odt-ltr-term">Struts:</bdi>
   </li>
 </ul>
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">FormulaireBean</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">ActionForm</span><span class="w"> </span><span class="p">{</span>
 </code></pre></div>
 <ul>
-  <li>يجب أن تتطابق أسماء سمات <bdi dir="ltr" class="odt-ltr-term">bean</bdi> مع حقول النموذج (سمات <b>خصائص </b>علامات<b> &lt;<bdi dir="ltr" class="odt-ltr-term">html:text</bdi>&gt; </b>الخاصة بالنموذج). استنادًا إلى الكود من النموذج السابق، يجب أن يحتوي <bdi dir="ltr" class="odt-ltr-term">bean</bdi> على حقلين باسم <b><bdi dir="ltr" class="odt-ltr-term">name</bdi> </b>و <b>age</b>.
+  <li>يجب أن تتطابق أسماء سمات «البيان» مع حقول النموذج (سمات <b><bdi dir="ltr" class="odt-ltr-term">property</bdi> </b>لعلامات <b><bdi dir="ltr" class="odt-ltr-term">html:text</bdi> </b>في النموذج). وبناءً على كود النموذج السابق، يجب أن يحتوي «البيان» على حقلين يُسميان <b>«الاسم</b>» <b>و«العمر</b>».
   </li>
-  <li>لكل حقل <bdi dir="ltr" class="odt-ltr-term">XX</bdi> في النموذج، يجب أن يحدد <bdi dir="ltr" class="odt-ltr-term">bean</bdi> طريقتين:
+  <li>لكل حقل <bdi dir="ltr" class="odt-ltr-term">XX</bdi> في النموذج، يجب أن يحدد «البيان» طريقتين:
     <ul>
-      <li><bdi dir="ltr" class="odt-ltr-term">public void</bdi> <b><bdi dir="ltr" class="odt-ltr-term">setXX</bdi></b>(<bdi dir="ltr" class="odt-ltr-term">Type value</bdi>): لتعيين قيمة لخاصية <bdi dir="ltr" class="odt-ltr-term">XX</bdi>
+      <li><bdi dir="ltr" class="odt-ltr-term">public void</bdi> <b><bdi dir="ltr" class="odt-ltr-term">setXX</bdi></b>(<bdi dir="ltr" class="odt-ltr-term">Type valeur</bdi>): لتعيين قيمة للسمة <bdi dir="ltr" class="odt-ltr-term">XX</bdi>
       </li>
-      <li><bdi dir="ltr" class="odt-ltr-term">public</bdi> <b><bdi dir="ltr" class="odt-ltr-term">getXX</bdi></b>(<bdi dir="ltr" class="odt-ltr-term">Value type</bdi>): لاسترداد قيمة حقل <bdi dir="ltr" class="odt-ltr-term">XX</bdi>
+      <li><bdi dir="ltr" class="odt-ltr-term">Type</bdi> <b><bdi dir="ltr" class="odt-ltr-term">getXX</bdi></b>(): للحصول على قيمة الحقل <bdi dir="ltr" class="odt-ltr-term">XX</bdi>
       </li>
     </ul>
   </li>
 </ul>
 
-<p>يمكن أن يكون الفول المرتبط بالنموذج السابق كما يلي:</p>
+<p>قد يكون «البيان» المرتبط بالنموذج السابق كما يلي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">istia.st.struts.personne</span><span class="p">;</span>
 <a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>
 <a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">org.apache.struts.action.ActionForm</span><span class="p">;</span>
 <a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>
 <a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">FormulaireBean</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">ActionForm</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="w">   </span><span class="c1">// name</span>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="w">   </span><span class="c1">// الاسم</span>
 <a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">nom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
 <a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">getNom</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">nom</span><span class="p">;</span>
@@ -1184,7 +1184,7 @@
 <a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">nom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nom</span><span class="p">;</span>
 <a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a>
-<a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a><span class="w">   </span><span class="c1">// age</span>
+<a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a><span class="w">   </span><span class="c1">// العمر</span>
 <a id="__codelineno-27-16" name="__codelineno-27-16" href="#__codelineno-27-16"></a><span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
 <a id="__codelineno-27-17" name="__codelineno-27-17" href="#__codelineno-27-17"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">getAge</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-27-18" name="__codelineno-27-18" href="#__codelineno-27-18"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
@@ -1194,12 +1194,12 @@
 <a id="__codelineno-27-22" name="__codelineno-27-22" href="#__codelineno-27-22"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-27-23" name="__codelineno-27-23" href="#__codelineno-27-23"></a><span class="p">}</span>
 </code></pre></div>
-<p>سنقوم بتجميع هذه الفئة باستخدام <bdi dir="ltr" class="odt-ltr-term">JBuilder.</bdi></p>
+<p>سيتم ترجمة هذه الفئة باستخدام <bdi dir="ltr" class="odt-ltr-term">JBuilder.</bdi></p>
 <h3 id="247-formulairepersonnejsp">2.4.7. <span style="color: #4f81bd">اختبار عرض <bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi></span></h3>
-<p>يتم وضع ملف <strong><bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi></strong> في مجلد <strong><bdi dir="ltr" class="odt-ltr-term">views</bdi></strong> الخاص بتطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></strong>:</p>
+<p>يتم وضع الملف <strong><bdi dir="ltr" class="odt-ltr-term">formulaire.personne.jsp</bdi></strong> في مجلد <strong>«<bdi dir="ltr" class="odt-ltr-term">vues</bdi>»</strong> الخاص بتطبيق <strong><bdi dir="ltr" class="odt-ltr-term">strutspersonne</bdi></strong>:</p>
 <p><img src="images/100000000000015E0000005D985EE8CF.png" width="350" height="93" style="width:9.259cm;height:2.461cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000015E0000005D985EE8CF.png" /></p>
 <ul>
-  <li>يتم تعديل ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>على النحو التالي:
+  <li>تم تعديل الملف <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>على النحو التالي:
   </li>
 </ul>
 
@@ -1234,20 +1234,20 @@
 <a id="__codelineno-28-29" name="__codelineno-28-29" href="#__codelineno-28-29"></a><span class="w">    </span><span class="nt">&lt;/action-mappings&gt;</span>
 <a id="__codelineno-28-30" name="__codelineno-28-30" href="#__codelineno-28-30"></a><span class="nt">&lt;/struts-config&gt;</span>
 </code></pre></div>
-<p>في ملف التكوين، نقوم بإنشاء عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> جديد <strong>/<bdi dir="ltr" class="odt-ltr-term">form</bdi></strong> ليتولى معالجته وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> سيتم إعادة توجيه عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">form.do</bdi></strong> إلى العرض <strong>/<bdi dir="ltr" class="odt-ltr-term">views/form.person.jsp</bdi></strong>. يتم وضع ملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> في مجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF.</bdi></p>
+<p>نقوم بإنشاء نموذج جديد في ملف التكوين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">formulaire</bdi></strong> ليتم معالجته بواسطة وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts.</bdi> سيتم إعادة توجيه <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">formulaire.do</bdi></strong> إلى العرض <strong>/<bdi dir="ltr" class="odt-ltr-term">vues/formulaire.personne.jsp</bdi></strong>. يتم وضع الملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi></strong> في المجلد <bdi dir="ltr" class="odt-ltr-term">WEB-INF.</bdi></p>
 <ul>
-  <li>نضع فئة <b><bdi dir="ltr" class="odt-ltr-term">FormulaireBean</bdi> </b>في <b><bdi dir="ltr" class="odt-ltr-term">WEB-INF/classes</bdi></b>:
+  <li>نضع الفئة <b><bdi dir="ltr" class="odt-ltr-term">FormulaireBean</bdi> </b>في <b><bdi dir="ltr" class="odt-ltr-term">WEB-INF/classes</bdi></b>:
   </li>
 </ul>
 
 <p><img src="images/10000000000001FF00000066D8ACF269.png" width="511" height="102" style="width:13.518cm;height:2.699cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001FF00000066D8ACF269.png" /></p>
 <ul>
-  <li>نقوم بإعادة تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> حتى يتم أخذ ملف<b> <bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>الجديد في الاعتبار، ثم نطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi><b> <bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne/formulaire.do</bdi></b>:
+  <li>نقوم بإعادة تشغيل <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> حتى يتم أخذ الملف الجديد <b><bdi dir="ltr" class="odt-ltr-term">struts-config.xml</bdi> </b>في الاعتبار، ثم نطلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi><b> <bdi dir="ltr" class="odt-ltr-term">http://localhost:8080/strutspersonne/formulaire.do</bdi></b>:
   </li>
 </ul>
 
-<p><img src="images/1000000000000191000000FB1E91DDC5.png" width="401" height="251" style="width:10.608cm;height:6.639cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000191000000FB1E91DDC5.png" /></p>
-<p>يتم عرض النموذج بشكل صحيح. قد نشعر بالفضول لمعرفة كيف تم &quot;ترجمة&quot; علامات <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">html:XX</bdi>&gt;</strong> المنتشرة في جميع أنحاء كود <bdi dir="ltr" class="odt-ltr-term">JSP</bdi> الخاص بالنموذج:</p>
+<p><img src="images/1000000000000191000000FB1E91DDC5.png" width="401" height="251" style="width:10.608cm;height:6.641cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000191000000FB1E91DDC5.png" /></p>
+<p>نحصل على النموذج بالفعل. قد يثير فضولنا أن نلقي نظرة على كيفية «ترجمة» العلامات <strong>&lt;<bdi dir="ltr" class="odt-ltr-term">html:XX</bdi>&gt;</strong> التي كانت منتشرة في كود النموذج <bdi dir="ltr" class="odt-ltr-term">JSP:</bdi></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
 <a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;pragma&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;no-cache&quot;</span><span class="p">&gt;</span> 
 <a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
@@ -1293,9 +1293,9 @@
 <a id="__codelineno-29-43" name="__codelineno-29-43" href="#__codelineno-29-43"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <a id="__codelineno-29-44" name="__codelineno-29-44" href="#__codelineno-29-44"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>في النموذج الناتج، يعمل زر [<bdi dir="ltr" class="odt-ltr-term">Reset</bdi>] وزر [<bdi dir="ltr" class="odt-ltr-term">Clear</bdi>]. يقوم زر [<bdi dir="ltr" class="odt-ltr-term">Submit</bdi>] بإعادة التوجيه إلى عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">strutspersonne/main.do</bdi></strong>. وفقًا لملف <strong><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi></strong> الخاص بالتطبيق، سيتولى وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> معالجة هذا الأمر. وفقًا لملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.html</bdi></strong>، يجب على وحدة التحكم إعادة توجيه الطلب إلى العرض <strong>/<bdi dir="ltr" class="odt-ltr-term">vues/main.html</bdi></strong>. دعونا نجرب ذلك:</p>
+<p>في النموذج الناتج، تعمل الأزرار |إعادة التعيين] و [<bdi dir="ltr" class="odt-ltr-term">Effacer</bdi>]. الزر [<bdi dir="ltr" class="odt-ltr-term">Envoyer</bdi>] من نوع <strong>الإرسال (<bdi dir="ltr" class="odt-ltr-term">submit</bdi>)</strong> يعيد التوجيه إلى <bdi dir="ltr" class="odt-ltr-term">URL</bdi> <strong>/<bdi dir="ltr" class="odt-ltr-term">strutspersonne/main.do</bdi></strong>. وفقًا لملف <strong><bdi dir="ltr" class="odt-ltr-term">web.xml</bdi></strong> الخاص بالتطبيق، سيتولى وحدة التحكم <bdi dir="ltr" class="odt-ltr-term">Struts</bdi> معالجته. ووفقًا لملف <strong><bdi dir="ltr" class="odt-ltr-term">struts-config.html</bdi></strong>، يجب على وحدة التحكم إعادة توجيه الطلب إلى العرض <strong>/<bdi dir="ltr" class="odt-ltr-term">vues/main.html</bdi></strong>. لنجرب ذلك:</p>
 <p><img src="images/10000000000002060000009339E6DD43.png" width="518" height="147" style="width:13.704cm;height:3.889cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002060000009339E6DD43.png" /></p>
-<p>كل شيء يعمل كما هو متوقع. ما زلنا بحاجة إلى معالجة قيم النموذج فعليًا، أي كتابة فئة <strong><bdi dir="ltr" class="odt-ltr-term">Action</bdi></strong> التي ستستقبل بيانات النموذج في كائن <strong><bdi dir="ltr" class="odt-ltr-term">FormBean</bdi></strong>.</p>
+<p>كل شيء يسير كما هو متوقع. يبقى لنا الآن معالجة قيم النموذج فعليًا، <bdi dir="ltr" class="odt-ltr-term">c.a.d.</bdi> نكتب فئة من نوع <strong><bdi dir="ltr" class="odt-ltr-term">Action</bdi></strong> ستستقبل بيانات النموذج في كائن <strong><bdi dir="ltr" class="odt-ltr-term">FormulaireBean</bdi></strong>.</p>
 
 
 
